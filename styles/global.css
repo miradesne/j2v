@@ -22,11 +22,6 @@ a:hover {
   text-decoration: underline;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
 @font-face {
   font-family: "Roobert";
   src: url("/fonts/Roobert/Roobert-Regular.otf");
@@ -34,10 +29,24 @@ img {
   font-weight: 400;
   font-display: swap;
 }
+
 @font-face {
   font-family: "Roobert";
   src: url("/fonts/Roobert/Roobert-Medium.otf");
-  font-style: medium;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roobert";
+  src: url("/fonts/Roobert/Roobert-Bold.otf");
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Life";
+  src: url("/fonts/Life/Life-Regular.otf");
   font-weight: 500;
   font-display: swap;
 }

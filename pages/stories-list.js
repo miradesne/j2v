@@ -6,7 +6,7 @@ import { getSortedPostsData } from '../lib/posts'
 import { getAllPostsForHome } from '../lib/posts-graphql'
 import utilStyles from '../styles/utils.module.css'
 import storyCardStyles from '../components/story-card.module.scss'
-import storyListPageStyles from '../components/storylistpage.module.css'
+import storyListPageStyles from '../components/story-list-page.module.css'
 
 function LocalPostsSection({ posts }) {
   return (
@@ -22,7 +22,7 @@ function LocalPostsSection({ posts }) {
             </div>
             <div className={storyCardStyles.description}>
               <Link href={`/posts/${id}`}>
-                  <a>{title}</a>
+                  <div className={storyCardStyles.title}>{title}</div>
               </Link>
               <br />
               <small className={utilStyles.lightText}>
@@ -39,18 +39,25 @@ function LocalPostsSection({ posts }) {
 function WordPressPosts({ posts }) {
   return (
     <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-      <h2 className={utilStyles.headingLg}>Our Stories</h2>
+      <div className={`${utilStyles.heading2Xl} ${storyListPageStyles.heading}`}>
+        Our Stories
+      </div>
+      <div className={`${utilStyles.bodyText} ${storyListPageStyles.subtitle}`}>
+        Learn from others’ experiences and make your own success
+      </div>
       <div className={utilStyles.cardList}>
         {posts.map(({ node }) => (
           <div className={storyCardStyles.card} key={node.slug}>
-            <div className={storyCardStyles.meta} >
+            <div className={storyCardStyles.meta}>
               <div className={storyCardStyles.photo}>
-                <img src={ node.featuredImage.node.sourceUrl } />
+                <img
+                  className={storyCardStyles.img} 
+                  src={ node.featuredImage.node.sourceUrl } />
               </div>
             </div>
             <div className={storyCardStyles.description}>
               <Link href={`/posts/${node.slug}`}>
-                  <a>{node.title}</a>
+                  <div className={storyCardStyles.title}>{node.title}</div>
               </Link>
               <br />
               <small className={utilStyles.lightText}>

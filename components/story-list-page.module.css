@@ -1,0 +1,21 @@
+.latestStoriesBackground {
+  position:absolute;
+  right: 0px;
+  top: 136px;
+  height: 874px;
+  width: 954px;
+}
+
+.heading {
+  height: 141px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.subtitle {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 94px;
+}

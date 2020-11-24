@@ -19,6 +19,12 @@ export default function Layout({ children, home }) {
             as="font"
             crossOrigin=""
           />
+          <link
+            rel="preload"
+            href="/fonts/Roobert/Roobert-Bold.otf"
+            as="font"
+            crossOrigin=""
+          />
           <link rel="icon" href="/favicon.ico" />
           <meta
             name="description"
