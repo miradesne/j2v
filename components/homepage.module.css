@@ -178,13 +178,13 @@ Theme Name: Custom Home
 	background-repeat: no-repeat;
 }
 .bg-quote-pink {
-	background-image: url('https://journeytovalley.org/wp-content/uploads/2020/10/Story-Card-pink.png');
+	background-image: url('/images/homepage/Story-Card-pink.webp');
 }
 .bg-quote-teal {
-	background-image: url('https://journeytovalley.org/wp-content/uploads/2020/10/Story-Card-2-light-blue.png');
+	background-image: url('/images/homepage/Story-Card-2-light-blue.webp');
 }
 .bg-quote-orange {
-	background-image: url('https://journeytovalley.org/wp-content/uploads/2020/10/Story-Card-orange.png');
+	background-image: url('/images/homepage/Story-Card-orange.webp');
 }
 .home-our-latest-stories-quote {
 	margin-top: 100px;

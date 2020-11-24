@@ -1,3 +1,9 @@
+.toplevel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   max-width: 1366px;
 }
@@ -20,8 +26,4 @@
 
 .backToHome {
   margin: 3rem 0 0;
-}
-
-.content {
-  margin: 40px;
 }

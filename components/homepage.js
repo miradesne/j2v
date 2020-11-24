@@ -10,11 +10,7 @@ export default function Homepage() {
 
 <div id={styles['home-we-bring-you-row']} className={styles['home-flex']}><h1>We bring you the stories of people around the world who dared trying against their perceived odds and made it to the top companies.</h1></div>
 
-
-
-<figure className={styles['wp-block-image size-large']} id={styles['home-world']}><img src="https://journeytovalley.org/wp-content/uploads/2020/09/front_pic-1.png" alt="" className={styles['wp-image-409']}/></figure>
-
-
+<figure className={styles['wp-block-image size-large']} id={styles['home-world']}><img src="images/homepage/front_pic-1.webp" alt="" /></figure>
 
 <div id={styles['home-our-goals-row']} className={styles['home-flex']}>
   <div id={styles['home-our-goals-grid-container']}>
@@ -30,7 +26,7 @@ export default function Homepage() {
   <div id={styles['home-checklist-grid-container']}>
     <div className={styles['div-list']}>
       <div className={styles['checkbox-list']}>
-          <img src="https://journeytovalley.org/wp-content/uploads/2020/10/Icon-check-mark.png" alt="" className={styles['wp-image-409']} />
+          <img src="images/homepage/Icon-check-mark.webp" alt="" />
       </div>
       <div className={styles['text-list']}>
         To share real <span className={styles['orange-text-color']}>career</span> experience.
@@ -38,7 +34,7 @@ export default function Homepage() {
     </div>
     <div className={styles['div-list']}>
       <div className={styles['checkbox-list']}>
-          <img src="https://journeytovalley.org/wp-content/uploads/2020/10/Icon-check-mark.png" alt="" className={styles['wp-image-409']} />
+          <img src="images/homepage/Icon-check-mark.webp" alt="" />
       </div>
       <div className={styles['text-list']}>
         To provide creative <span className={styles['pink-text-color']}>inspiration</span>.
@@ -46,7 +42,7 @@ export default function Homepage() {
     </div>
     <div className={styles['div-list-last']}>
       <div className={styles['checkbox-list']}>
-          <img src="https://journeytovalley.org/wp-content/uploads/2020/10/Icon-check-mark.png" alt="" className={styles['wp-image-409']} />
+          <img src="images/homepage/Icon-check-mark.webp" alt="" />
       </div>
       <div className={styles['text-list']}>
         To <span className={styles['yellow-text-color']}>help</span> each other.
