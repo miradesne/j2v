@@ -55,7 +55,9 @@
 }
 
 .lightText {
-  color: #999;
+  color: #747474;
+  font-family: Roobert;
+  font-weight: 500;
 }
 
 .latestStoriesBackground {

@@ -51,7 +51,7 @@ function WordPressPosts({ posts }) {
             <div className={storyCardStyles.meta}>
               <div className={storyCardStyles.photo}>
                 <img
-                  className={storyCardStyles.img} 
+                  className={storyCardStyles.img}
                   src={ node.featuredImage.node.sourceUrl } />
               </div>
             </div>
@@ -59,14 +59,18 @@ function WordPressPosts({ posts }) {
               <Link href={`/posts/${node.slug}`}>
                   <div className={storyCardStyles.title}>{node.title}</div>
               </Link>
-              <br />
               <small className={utilStyles.lightText}>
                 Date: <Date dateString={node.date} />
               </small>
-              <div className={storyCardStyles.excerpt}>
-                {node.excerpt.replace(/(<([^>]+)>)/gi, "")}
+              <div className={storyCardStyles.hr}></div>
+              <div className={storyCardStyles.author}>
+                <div className={storyCardStyles.name}>Firstname Lastname</div>
+                <div className={storyCardStyles.position}>
+                  Software Engineer @ Google
+                </div>
               </div>
             </div>
+            <div className={storyCardStyles.cardPadding}></div>
           </div>
         ))}
       </div>

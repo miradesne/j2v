@@ -14,6 +14,8 @@ $color_orange: #FFB929;
   font-weight: bold;
   color: black;
   font-size: 36px;
+  width: 100%;
+  flex-basis: 30%;
 }
 
 .img {
@@ -21,6 +23,7 @@ $color_orange: #FFB929;
   height: 100%;
   display: block;
   object-fit: cover;
+  z-index: 1;
 }
 
 .card {
@@ -34,7 +37,7 @@ $color_orange: #FFB929;
   font-family: sans-serif;
   border-radius: 22px;
   overflow: hidden;
-  z-index: 0;
+  z-index: 1;
   height: 264px;
   a {
     color: inherit;
@@ -52,6 +55,7 @@ $color_orange: #FFB929;
     background-size: contain;
     background-position: center;
     height: 100%;
+    z-index: 1;
   }
   .details,
   .details ul {
@@ -178,6 +182,8 @@ $color_orange: #FFB929;
     }
     .description {
       flex-basis: 60%;
+      flex-direction: column;
+      display: flex;
       &:before {
         content: "";
         background: #fff;
@@ -189,7 +195,39 @@ $color_orange: #FFB929;
         z-index: -1;
       }
     }
+    .cardPadding {
+      flex-basis: 5%;
+      background: white;
+      height: 100%;
+      z-index: 1;
+    }
   }
+}
+
+
+.hr {
+  width: 25%;
+  left: 0;
+  display: flex;
+  height: 1px;
+  background-color: #747474;
+}
+
+.author {
+  flex-grow: 1;
+  flex-direction: column;
+  display: flex;
+  align-content:space-around;
+  padding-top: 8%;
+  padding-bottom: 5%;
+}
+
+.name {
+  flex-basis: 50%;
+}
+
+.position {
+  flex-basis: 50%;
 }
 
 .excerpt {
