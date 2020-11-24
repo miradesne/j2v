@@ -53,7 +53,7 @@ export default function Homepage() {
 
 
 
-<div className={styles['home-our-latest-stories']}>
+<div id={styles['home-our-latest-stories-first']} className={styles['home-our-latest-stories']}>
   <div className={`${styles['home-our-latest-stories-column']} ${styles['home-our-latest-stories-column-left']}`}>
     <div className={`${styles['home-our-latest-stories-block']} ${styles['bg-quote-pink']}`}>
       <div className={styles['home-our-latest-stories-grid']}>
@@ -88,7 +88,7 @@ export default function Homepage() {
 
 
 
-<div className={styles['home-our-latest-stories']}>
+<div id={styles['home-our-latest-stories-second']} className={styles['home-our-latest-stories']}>
   <div className={`${styles['home-our-latest-stories-column']} ${styles['home-our-latest-stories-column-left']}`}>
     <div className={`${styles['home-our-latest-stories-block']} ${styles['bg-quote-teal']}`}>
       <div className={styles['home-our-latest-stories-grid']}>

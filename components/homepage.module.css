@@ -2,8 +2,7 @@
 Theme Name: Custom Home
 */
 
-/* Rei's Home CSS */
-
+/* Homepage CSS */
 .home-flex {
 	max-width: 1366px;
 	display: flex;
@@ -15,6 +14,7 @@ Theme Name: Custom Home
 	min-height: 220px;
 }
 #home-journey-to-valley-row h1 {
+	margin: 0px;
 	font-family: Roobert;
 	font-style: normal;
 	font-weight: bold;
@@ -24,7 +24,7 @@ Theme Name: Custom Home
 }
 
 #home-we-bring-you-row h1 {
-	max-width: 936px;
+	width: 69vw;
 	font-family: Roobert;
 	font-style: normal;
 	font-weight: normal;
@@ -41,8 +41,8 @@ Theme Name: Custom Home
 #home-our-goals-row {
 	display: flex;
 	align-items: center;
-	margin-top: 215px;
-	margin-bottom: 235px;
+	margin-top: max(15vw, 150px);
+	margin-bottom: max(15vw, 150px);
 }
 #home-our-goals-row #home-our-goals-grid-container {
 	width: 30%;
@@ -107,7 +107,8 @@ Theme Name: Custom Home
 }
 #home-our-goals-row #home-checklist-grid-container .checkbox-list {
 	height: 100%;
-	min-width: 70px;
+	min-width: 60px;
+	width: 60px;
 	margin-left: 90px;
 }
 #home-our-goals-row #home-checklist-grid-container .text-list {
@@ -138,11 +139,6 @@ Theme Name: Custom Home
 	display: flex;
 	flex-direction: row;
 }
-.home-our-latest-stories-column {
-	width: 50%;
-	display: flex;
-	flex-direction: row;
-}
 .home-our-latest-stories-column-left {
 	align-items: flex-end;
 	justify-content: flex-end;
@@ -155,7 +151,6 @@ Theme Name: Custom Home
 	margin-top: 50px;
 	margin-left: 44px;
 }
-
 
 .home-our-latest-stories #home-our-latest-stories-big-text {
 	width: 50%;
@@ -250,4 +245,92 @@ Theme Name: Custom Home
 	flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* Tablet version, 481px - 768px */
+@media screen and (max-width: 768px) {
+	#home-journey-to-valley-row {
+		min-height: 72px;
+		margin-top: 70px;
+		margin-bottom: 70px;
+	}
+	#home-journey-to-valley-row h1 {
+		font-size: 72px;
+	}
+	#home-we-bring-you-row h1 {
+		font-size: 24px;
+		line-height: 29px;
+	}
+
+	#home-our-goals-row {
+		flex-direction: column;
+	}
+	#home-our-goals-row #home-our-goals-grid-container {
+		align-self: flex-start;
+		height: 115px;
+		width: 264px;
+	}
+	#home-our-goals-grid {
+	  background-color: #2E4EA1;
+	  border-radius: 0px 22px 22px 0px;
+	  padding-top: 115px;
+	  position: relative;
+	}
+	#home-our-goals-grid #home-our-goals-inside h1 {
+	  font-size: 36px;
+	  line-height: 43px;
+	}
+	#home-our-goals-grid #home-our-goals-inside h1 br {
+	    content: " ";
+	    display: none;
+	}
+	#home-our-goals-row #home-checklist-grid-container .checkbox-list {
+		margin-left: 0px;
+	}
+	#home-our-goals-row #home-checklist-grid-container .text-list {
+	  font-size: 28px;
+	  line-height: 34px;
+		margin-left: 26px;
+	}
+
+	#home-our-latest-stories-first {
+		flex-flow: column-reverse;
+		align-items: center;
+	}
+	#home-our-latest-stories-second {
+		flex-flow: column;
+		align-items: center;
+	}
+	.home-our-latest-stories #home-our-latest-stories-big-text {
+		width: 480px;
+		margin-left: 0px;
+		align-self: flex-end;
+		justify-content: flex-end;
+		font-size: 148px;
+		line-height: 110%;
+	}
+	.home-our-latest-stories .home-our-latest-stories-column {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+	.home-our-latest-stories-column-left {
+		align-items: center;
+		justify-content: center;
+		margin-top: 70px;
+		margin-right: 0px;
+	}
+	.home-our-latest-stories-column-right {
+		align-items: center;
+		justify-content: center;
+		margin-top: 70px;
+		margin-left: 0px;
+	}
+	.home-our-latest-stories-column .home-our-latest-stories-block {
+		width: 68%;
+		min-width: 340px;
+		min-height: 296px;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
 }
