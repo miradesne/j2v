@@ -1,0 +1,251 @@
+/*
+Theme Name: Custom Home
+*/
+
+/* Rei's Home CSS */
+
+.home-flex {
+	max-width: 1366px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+#home-journey-to-valley-row {
+	min-height: 220px;
+}
+#home-journey-to-valley-row h1 {
+	font-family: Roobert;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 80px;
+	line-height: 96px;
+	color: #000000;
+}
+
+#home-we-bring-you-row h1 {
+	max-width: 936px;
+	font-family: Roobert;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 36px;
+}
+
+#home-world {
+	margin-top: 40px;
+}
+
+#home-our-goals-row {
+	display: flex;
+	align-items: center;
+	margin-top: 215px;
+	margin-bottom: 235px;
+}
+#home-our-goals-row #home-our-goals-grid-container {
+	width: 30%;
+  min-width: 200px;
+  min-height: 216px;
+}
+#home-our-goals-grid {
+  background-color: #2E4EA1;
+  border-radius: 0px 22px 22px 0px;
+  padding-top: 440px;
+  position: relative;
+}
+#home-our-goals-grid #home-our-goals-inside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home-our-goals-grid #home-our-goals-inside #home-our-goals-flexbox {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home-our-goals-grid #home-our-goals-inside h1 {
+  color: #FFFBF1;
+  font-family: Roobert;
+  font-style: normal;
+  font-size: 64px;
+  line-height: 77px;
+	text-align: left;
+}
+
+#home-our-goals-row #home-checklist-grid-container {
+	width: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	text-align: left;
+	flex-direction: column;
+}
+#home-our-goals-row #home-checklist-grid-container .div-list {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	text-align: left;
+	flex-direction: row;
+	margin-bottom: 60px;
+}
+#home-our-goals-row #home-checklist-grid-container .div-list-last {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	text-align: left;
+	flex-direction: row;
+}
+#home-our-goals-row #home-checklist-grid-container .checkbox-list {
+	height: 100%;
+	min-width: 70px;
+	margin-left: 90px;
+}
+#home-our-goals-row #home-checklist-grid-container .text-list {
+  font-family: Roobert;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+	text-align: left;
+	margin-left: 40px;
+}
+.orange-text-color {
+	color: #F46D36;
+}
+.pink-text-color {
+	color: #F39DC0;
+}
+.yellow-text-color {
+	color: #FFB929;
+}
+
+.home-our-latest-stories {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.home-our-latest-stories .home-our-latest-stories-column {
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+}
+.home-our-latest-stories-column {
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+}
+.home-our-latest-stories-column-left {
+	align-items: flex-end;
+	justify-content: flex-end;
+	margin-top: 50px;
+	margin-right: 44px;
+}
+.home-our-latest-stories-column-right {
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-top: 50px;
+	margin-left: 44px;
+}
+
+
+.home-our-latest-stories #home-our-latest-stories-big-text {
+	width: 50%;
+  min-width: 340px;
+  font-family: Roobert;
+  font-weight: 700;
+  font-size: max(min(14.0vw, 200px), 100px);
+  line-height: max(min(16.0vw, 220px), 110px);
+	text-align: right;
+	color: #FFB929;
+	opacity: 0.36;
+	margin-left: 44px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.home-our-latest-stories-column .home-our-latest-stories-block {
+	width: 80%;
+	min-width: 340px;
+	min-height: 300px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg-quote-pink {
+	background-image: url('https://journeytovalley.org/wp-content/uploads/2020/10/Story-Card-pink.png');
+}
+.bg-quote-teal {
+	background-image: url('https://journeytovalley.org/wp-content/uploads/2020/10/Story-Card-2-light-blue.png');
+}
+.bg-quote-orange {
+	background-image: url('https://journeytovalley.org/wp-content/uploads/2020/10/Story-Card-orange.png');
+}
+.home-our-latest-stories-quote {
+	margin-top: 100px;
+	width: 90%;
+  font-family: Roobert;
+  font-size: 20px;
+  line-height: 30px;
+}
+.home-our-latest-stories-block hr {
+	margin-top: 1.4vw;
+	margin-bottom: 1.4vw;
+	width: 75px;
+	border: 1px solid #c4c4c4;
+}
+.home-our-latest-stories-identity {
+	margin-bottom: 40px;
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+}
+.home-our-latest-stories-pic {
+	max-width: 100px;
+}
+.home-our-latest-stories-id-text {
+	margin-left: 40px;
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.home-our-latest-stories-name {
+  font-family: Roobert;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}
+.home-our-latest-stories-job {
+  font-family: Roobert;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+	color: #747474;
+}
+
+.home-our-latest-stories-grid {
+  padding-top: 87.28%;
+  position: relative;
+}
+.home-our-latest-stories-inside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-our-latest-stories-flexbox {
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
