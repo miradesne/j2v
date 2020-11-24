@@ -34,6 +34,8 @@ Theme Name: Custom Home
 
 #home-world {
 	margin-top: 40px;
+	display: flex;
+	justify-content: center;
 }
 
 #home-our-goals-row {
@@ -173,7 +175,7 @@ Theme Name: Custom Home
 .home-our-latest-stories-column .home-our-latest-stories-block {
 	width: 80%;
 	min-width: 340px;
-	min-height: 300px;
+	min-height: 296px;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -187,15 +189,15 @@ Theme Name: Custom Home
 	background-image: url('/images/homepage/Story-Card-orange.webp');
 }
 .home-our-latest-stories-quote {
-	margin-top: 100px;
+	margin-top: 105px;
 	width: 90%;
   font-family: Roobert;
   font-size: 20px;
   line-height: 30px;
 }
 .home-our-latest-stories-block hr {
-	margin-top: 1.4vw;
-	margin-bottom: 1.4vw;
+	margin-top: 1.0vw;
+	margin-bottom: 1.0vw;
 	width: 75px;
 	border: 1px solid #c4c4c4;
 }
@@ -218,8 +220,8 @@ Theme Name: Custom Home
 .home-our-latest-stories-name {
   font-family: Roobert;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 20px;
+  line-height: 25px;
 }
 .home-our-latest-stories-job {
   font-family: Roobert;
