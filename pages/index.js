@@ -8,9 +8,8 @@ export default function Home() {
   return (
     <>
     <Layout home>
+        <Homepage />
     </Layout>
-
-    <Homepage />
     </>
   )
 }
