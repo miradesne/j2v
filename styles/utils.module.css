@@ -53,3 +53,10 @@
 .lightText {
   color: #999;
 }
+
+.latestStoriesBackground {
+  background-image: url("/images/OurLatestStories.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+}
