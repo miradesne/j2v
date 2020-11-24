@@ -1,6 +1,6 @@
-import styles from './latest-stories.module.css'
+import styles from './homepage.module.css'
 
-export default function LatestStories() {
+export default function Homepage() {
 
   return (
 <>

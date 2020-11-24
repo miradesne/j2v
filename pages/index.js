@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout, { siteTitle } from '../components/layout'
-import LatestStories from '../components/latest-stories'
+import Homepage from '../components/homepage'
 import utilStyles from '../styles/utils.module.css'
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
     <Layout home>
     </Layout>
 
-    <LatestStories />
+    <Homepage />
     </>
   )
 }
