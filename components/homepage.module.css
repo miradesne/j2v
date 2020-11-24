@@ -33,9 +33,14 @@ Theme Name: Custom Home
 }
 
 #home-world {
+	margin: 0px;
 	margin-top: 40px;
 	display: flex;
 	justify-content: center;
+}
+#home-world img {
+	min-width: 480px;
+	object-fit: contain;
 }
 
 #home-our-goals-row {

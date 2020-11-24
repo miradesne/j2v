@@ -10,7 +10,7 @@ export default function Homepage() {
 
 <div id={styles['home-we-bring-you-row']} className={styles['home-flex']}><h1>We bring you the stories of people around the world who dared trying against their perceived odds and made it to the top companies.</h1></div>
 
-<figure className={styles['wp-block-image size-large']} id={styles['home-world']}><img src="images/homepage/front_pic-1.webp" alt="" /></figure>
+<figure  id={styles['home-world']}><img src="images/homepage/front_pic-1.webp" alt="" /></figure>
 
 <div id={styles['home-our-goals-row']} className={styles['home-flex']}>
   <div id={styles['home-our-goals-grid-container']}>
