@@ -4,6 +4,7 @@ import Date from '../components/date'
 import Layout, { siteTitle } from '../components/layout'
 import { getSortedPostsData } from '../lib/posts'
 import utilStyles from '../styles/utils.module.css'
+import storyCardStyles from '../components/story-card.module.scss'
 
 export default function StoriesList({ allPostsData }) {
   return (
@@ -12,19 +13,26 @@ export default function StoriesList({ allPostsData }) {
       <section className={utilStyles.headingMd}>…</section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
+        <div className={utilStyles.cardList}>
           {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
+            <div className={storyCardStyles.card} key={id}>
+              <div className={storyCardStyles.meta} >
+                <div className={storyCardStyles.photo}>
+                  <img src="https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg" />
+                </div>
+              </div>
+              <div className={storyCardStyles.description}>
+                <Link href={`/posts/${id}`}>
+                    <a>{title}</a>
+                </Link>
+                <br />
+                <small className={utilStyles.lightText}>
+                  <Date dateString={date} />
+                </small>
+              </div>
+            </div>
           ))}
-        </ul>
+        </div>
       </section>
     </Layout>
   )
