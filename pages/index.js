@@ -8,9 +8,7 @@ export default function Home() {
   return (
     <>
     <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
+
       <section className={utilStyles.headingMd}>
         <p>We bring you the stories of people around the world who dared
         trying against their perceived odds and made it to the top companies.</p>
@@ -19,9 +17,7 @@ export default function Home() {
           <Link href = "/stories-list"><a>our stories list</a></Link>.)
         </p>
       </section>
-
     </Layout>
-
 
     <LatestStories />
     </>

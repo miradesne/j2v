@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import HeaderNavBar from './header-nav-bar'
 
 
 const name = 'Journey to Valley'
@@ -35,29 +36,25 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <img
-              src="/images/doges.png"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
+              src="https://journeytovalley.org/wp-content/uploads/2020/09/logo.png"
+              className={`${styles.headerImage}`}
               alt={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <HeaderNavBar />
           </>
         ) : (
-          <>
+            <>
             <Link href="/">
               <a>
                 <img
-                  src="/images/doges.png"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
+                  src="https://journeytovalley.org/wp-content/uploads/2020/09/logo.png"
+                  className={`${styles.headerImage}`}
                   alt={name}
                 />
               </a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
-          </>
+            <HeaderNavBar />
+            </>
         )}
       </header>
       <main>{children}</main>

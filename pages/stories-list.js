@@ -7,7 +7,7 @@ import utilStyles from '../styles/utils.module.css'
 
 export default function StoriesList({ allPostsData }) {
   return (
-    <Layout home>
+    <Layout home={false}>
       <Head>…</Head>
       <section className={utilStyles.headingMd}>…</section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
