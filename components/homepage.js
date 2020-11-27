@@ -51,8 +51,6 @@ export default function Homepage() {
   </div>
 </div>
 
-
-
 <div id={styles['home-our-latest-stories-first']} className={styles['home-our-latest-stories']}>
   <div className={`${styles['home-our-latest-stories-column']} ${styles['home-our-latest-stories-column-left']}`}>
     <div className={`${styles['home-our-latest-stories-block']} ${styles['bg-quote-pink']}`}>
@@ -85,8 +83,6 @@ export default function Homepage() {
     Our<br />Latest<br />Stories
   </div>
 </div>
-
-
 
 <div id={styles['home-our-latest-stories-second']} className={styles['home-our-latest-stories']}>
   <div className={`${styles['home-our-latest-stories-column']} ${styles['home-our-latest-stories-column-left']}`}>
@@ -143,6 +139,12 @@ export default function Homepage() {
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<div id={styles['home-our-latest-stories-more-row']}>
+  <div id={styles['home-our-latest-stories-more']}>
+    <a href = "/stories-list">Read More</a>
   </div>
 </div>
 </>

@@ -252,6 +252,33 @@ Theme Name: Custom Home
   align-items: center;
 }
 
+#home-our-latest-stories-more-row {
+	margin-top: 170px;
+	margin-bottom: 170px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+#home-our-latest-stories-more {
+  width: 170px;
+  height: 45px;
+  color: black;
+  font-size: 24px;
+  font-family: Roobert;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #FFB929;
+  border-radius: 50px;
+}
+#home-our-latest-stories-more a {
+	color: inherit;
+	display: inline-block;
+}
+#home-our-latest-stories-more a:hover {
+	text-decoration: none;
+}
+
 /* Tablet version, 481px - 768px */
 @media screen and (max-width: 768px) {
 	#home-journey-to-valley-row {
