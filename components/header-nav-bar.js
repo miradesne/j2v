@@ -6,8 +6,16 @@ import Link from 'next/link'
 
 export default function HeaderNavBar({ children, home }) {
   return (
-    <div className={styles.button}>
-      <Link href = "/stories-list">our stories</Link>
+    <div id={styles.navbar}>
+      <div className={styles['navbar-button']}>
+        <Link href = "">Subscribe</Link>
+      </div>
+      <div className={styles['navbar-button']}>
+        <Link href = "/stories-list">Stories</Link>
+      </div>
+      <div className={styles['navbar-button']}>
+        <Link href = "">About</Link>
+      </div>
     </div>
   );
 }
