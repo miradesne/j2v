@@ -51,7 +51,9 @@ function WordPressPosts({ posts }) {
   ];
 
   return (
-    <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+    <section
+      className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${storyCardStyles.container}`}
+    >
       <div
         className={`${utilStyles.heading2Xl} ${storyListPageStyles.heading}`}
       >
@@ -87,8 +89,12 @@ function WordPressPosts({ posts }) {
                 </small>
                 <div className={storyCardStyles.hr}></div>
                 <div className={storyCardStyles.author}>
-                  <div className={storyCardStyles.name}>Firstname Lastname</div>
-                  <div className={storyCardStyles.position}>
+                  <div className={storyCardStyles.name}>
+                    By Firstname Lastname
+                  </div>
+                  <div
+                    className={`storyCardStyles.position ${utilStyles.lightText}`}
+                  >
                     Software Engineer @ Google
                   </div>
                 </div>

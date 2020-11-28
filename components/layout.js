@@ -1,13 +1,12 @@
-import Head from 'next/head'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
-import HeaderNavBar from './header-nav-bar'
-import Footer from './footer'
+import Head from "next/head";
+import styles from "./layout.module.css";
+import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
+import HeaderNavBar from "./header-nav-bar";
+import Footer from "./footer";
 
-
-const name = 'Journey to Valley'
-export const siteTitle = 'Next.js J2V Website'
+const name = "Journey to Valley";
+export const siteTitle = "Next.js J2V Website";
 
 export default function Layout({ children, home }) {
   return (
@@ -23,6 +22,12 @@ export default function Layout({ children, home }) {
           <link
             rel="preload"
             href="/fonts/Roobert/Roobert-Bold.otf"
+            as="font"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
+            href="/fonts/Life/Life-Regular.otf"
             as="font"
             crossOrigin=""
           />
@@ -51,7 +56,7 @@ export default function Layout({ children, home }) {
               <HeaderNavBar />
             </>
           ) : (
-              <>
+            <>
               <Link href="/">
                 <a>
                   <img
@@ -62,21 +67,14 @@ export default function Layout({ children, home }) {
                 </a>
               </Link>
               <HeaderNavBar />
-              </>
+            </>
           )}
         </header>
         <main>{children}</main>
-        {!home && (
-          <div className={styles.backToHome}>
-            <Link href="/">
-              <a>← Back to home</a>
-            </Link>
-          </div>
-        )}
-      <footer>
-        <Footer />
-      </footer>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     </div>
-  )
+  );
 }
