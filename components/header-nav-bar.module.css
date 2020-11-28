@@ -6,7 +6,7 @@
   align-items: flex-end;
 }
 .navbar-button {
-  width: 170px;
+  max-width: 170px;
   height: 45px;
   color: black;
   font-size: 24px;
@@ -27,4 +27,10 @@
 
 #navbar a:hover {
   text-decoration: none;
+}
+
+#navbar a {
+  max-width: 170px;
+  flex-grow: 1;
+  flex-basis: 0;
 }
