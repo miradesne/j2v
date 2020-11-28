@@ -1,5 +1,6 @@
-import styles from "./footer.module.css";
-import Link from "next/link";
+import styles from './footer.module.css'
+import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer({ children, home }) {
   return (
@@ -38,7 +39,9 @@ export default function Footer({ children, home }) {
           </div>
           <div className={styles["item-last"]}>
             <Link href="">
-              <a>Subscribe to our latest stories</a>
+              <a>
+                Subscribe to our latest stories <Image width={20} height={20} src='/images/homepage/littlearrow.svg' />
+              </a>
             </Link>
           </div>
         </div>

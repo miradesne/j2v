@@ -19,14 +19,12 @@
 .navbar-button:hover {
   border: 3px solid #FFB929;
   border-radius: 50px;
+  text-decoration: none;
 }
 .navbar-button:active {
   background-color: #FFB929;
 }
-.navbar-button a {
-  color: inherit;
-  display: inline-block;
-}
-.navbar-button a:hover {
+
+#navbar a:hover {
   text-decoration: none;
 }

@@ -95,3 +95,10 @@
   justify-content: center;
   font-size: 18px;
 }
+
+/* Tablet version, 481px - 768px */
+@media screen and (max-width: 768px) {
+  #menu-block-inner .item {
+    width: 50%;
+  }
+}

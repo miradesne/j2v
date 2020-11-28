@@ -271,11 +271,10 @@ Theme Name: Custom Home
   border: 3px solid #FFB929;
   border-radius: 50px;
 }
-#home-our-latest-stories-more a {
-	color: inherit;
+#home-our-latest-stories-more-row a {
 	display: inline-block;
 }
-#home-our-latest-stories-more a:hover {
+#home-our-latest-stories-more-row a:hover {
 	text-decoration: none;
 }
 

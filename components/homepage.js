@@ -144,9 +144,11 @@ export default function Homepage() {
 </div>
 
 <div id={styles['home-our-latest-stories-more-row']}>
-  <div id={styles['home-our-latest-stories-more']}>
-    <Link href = "/stories-list"><a>Read More</a></Link>
-  </div>
+  <Link href = "/stories-list"><a>
+    <div id={styles['home-our-latest-stories-more']}>
+      Read More
+    </div>
+  </a></Link>
 </div>
 </>
   )
