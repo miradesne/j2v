@@ -21,9 +21,9 @@ function LocalPostsSection({ posts }) {
               </div>
             </div>
             <div className={storyCardStyles.description}>
-              <Link href={`/posts/${id}`}>
+              <Link href={`/posts/${id}`}><a>
                   <div className={storyCardStyles.title}>{title}</div>
-              </Link>
+              </a></Link>
               <br />
               <small className={utilStyles.lightText}>
                 Date: <Date dateString={date} />

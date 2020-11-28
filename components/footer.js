@@ -1,5 +1,5 @@
 import styles from './footer.module.css'
-
+import Link from 'next/link'
 
 export default function Footer({ children, home }) {
   return (
@@ -16,11 +16,11 @@ export default function Footer({ children, home }) {
       <div class={styles.row} id={styles['menu-block']}>
         <div class={styles.left} />
         <div id={styles['menu-block-inner']}>
-          <div class={styles.item}><a href=''>About</a></div>
-          <div class={styles.item}><a href='/stories-list'>Stories</a></div>
-          <div class={styles.item}><a href=''>Contact us</a></div>
-          <div class={styles.item}><a href=''>Privacy policy and term</a></div>
-          <div class={styles['item-last']}><a href=''>Subscribe to our latest stories</a></div>
+          <div class={styles.item}><Link href=''><a>About</a></Link></div>
+          <div class={styles.item}><Link href='/stories-list'><a>Stories</a></Link></div>
+          <div class={styles.item}><Link href=''><a>Contact us</a></Link></div>
+          <div class={styles.item}><Link href=''><a>Privacy policy and term</a></Link></div>
+          <div class={styles['item-last']}><Link href=''><a>Subscribe to our latest stories</a></Link></div>
         </div>
       </div>
 
@@ -29,10 +29,18 @@ export default function Footer({ children, home }) {
       </div>
 
       <div class={styles.row} id={styles['socmed-block']}>
-        <a href=''><img src='images/homepage/fb_icon_grey.svg' /></a>
-        <a href=''><img src='images/homepage/linkedin_icon_grey.svg' /></a>
-        <a href=''><img src='images/homepage/twitter_icon_grey.svg' /></a>
-        <a href=''><img src='images/homepage/ig_icon_grey.svg' /></a>
+        <Link href='https://www.facebook.com/Journey-to-Valley-109788187490460/'><a>
+          <img src='images/homepage/fb_icon_grey.svg' />
+        </a></Link>
+        <Link href='https://www.linkedin.com/company/68686498/admin/'><a>
+          <img src='images/homepage/linkedin_icon_grey.svg' />
+        </a></Link>
+        <Link href='https://twitter.com/ValleyJourney'><a>
+          <img src='images/homepage/twitter_icon_grey.svg' />
+        </a></Link>
+        <Link href='https://www.instagram.com/journeytovalley/'><a>
+          <img src='images/homepage/ig_icon_grey.svg' />
+        </a></Link>
       </div>
 
       <div class={styles.row} id={styles['copyright-block']}>

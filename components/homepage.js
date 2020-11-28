@@ -1,4 +1,5 @@
 import styles from './homepage.module.css'
+import Link from 'next/link'
 
 export default function Homepage() {
 
@@ -144,7 +145,7 @@ export default function Homepage() {
 
 <div id={styles['home-our-latest-stories-more-row']}>
   <div id={styles['home-our-latest-stories-more']}>
-    <a href = "/stories-list">Read More</a>
+    <Link href = "/stories-list"><a>Read More</a></Link>
   </div>
 </div>
 </>
