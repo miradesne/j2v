@@ -1,5 +1,5 @@
 import Image from "next/image";
-import storyCardStyles from "./story-card.module.scss";
+import storyCardStyles from "./story-card-list.module.scss";
 
 export default function Img({ src }) {
   return (
