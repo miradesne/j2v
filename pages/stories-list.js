@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
+import Img from "../components/image";
 import { COLORS } from "../components/constants";
 import Date from "../components/date";
 import Layout, { siteTitle } from "../components/layout";
@@ -19,7 +19,10 @@ function LocalPostsSection({ posts }) {
           <div className={storyCardStyles.card} key={id}>
             <div className={storyCardStyles.meta}>
               <div className={storyCardStyles.photo}>
-                <Image src="https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg" />
+                <Img
+                  layout="fill"
+                  src="https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg"
+                />
               </div>
             </div>
             <div className={storyCardStyles.description}>
@@ -61,7 +64,7 @@ function WordPressPosts({ posts }) {
       </div>
       <div className={utilStyles.cardList}>
         {posts.map(({ node }, index) => {
-          let colorStyle = { "--shadow-color": index % colors.length };
+          let colorStyle = { "--shadow-color": colors[index % colors.length] };
           return (
             <div
               className={storyCardStyles.card}
@@ -70,7 +73,8 @@ function WordPressPosts({ posts }) {
             >
               <div className={storyCardStyles.meta}>
                 <div className={storyCardStyles.photo}>
-                  <Image
+                  <Img
+                    layout="fill"
                     className={storyCardStyles.img}
                     src={node.featuredImage.node.sourceUrl}
                   />
