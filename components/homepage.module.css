@@ -203,7 +203,7 @@ Theme Name: Custom Home
 }
 .home-our-latest-stories-identity {
 	margin-bottom: 40px;
-	width: 80%;
+	width: 90%;
 	display: flex;
 	flex-direction: row;
 }
@@ -265,6 +265,7 @@ Theme Name: Custom Home
   color: black;
   font-size: 24px;
   font-family: Roobert;
+	font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -276,6 +277,19 @@ Theme Name: Custom Home
 }
 #home-our-latest-stories-more-row a:hover {
 	text-decoration: none;
+}
+
+#home-downarrow {
+	height: 84px;
+	background-image: url('/images/homepage/downarrow.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 40px;
+}
+@media screen and (min-width: 769px) {
+	#home-downarrow {
+		display: none;
+	}
 }
 
 /* Tablet version, 481px - 768px */
@@ -302,10 +316,7 @@ Theme Name: Custom Home
 		width: 264px;
 	}
 	#home-our-goals-grid {
-	  background-color: #2E4EA1;
-	  border-radius: 0px 22px 22px 0px;
 	  padding-top: 115px;
-	  position: relative;
 	}
 	#home-our-goals-grid #home-our-goals-inside h1 {
 	  font-size: 36px;
@@ -363,5 +374,104 @@ Theme Name: Custom Home
 		min-height: 296px;
 		background-size: cover;
 		background-repeat: no-repeat;
+	}
+}
+
+/* Tablet version, 360px - 480px */
+@media screen and (max-width: 480px) {
+	#home-journey-to-valley-row {
+		min-height: 50px;
+		margin-top: 13px;
+		margin-bottom: 30px;
+	}
+	#home-journey-to-valley-row h1 {
+		font-size: 36px;
+		line-height: 43px;
+	}
+	#home-we-bring-you-row h1 {
+		font-size: 14px;
+		line-height: 17px;
+		width: 91.5vw;
+	}
+	#home-world {
+		margin-top: 0px;
+	}
+	#home-world img {
+		min-width: 360px;
+		min-height: 360px;
+		object-fit: contain;
+	}
+
+	#home-our-goals-row #home-our-goals-grid-container {
+		height: 80px;
+		width: 215px;
+	}
+	#home-our-goals-grid {
+	  padding-top: 80px;
+	}
+	#home-our-goals-grid #home-our-goals-inside h1 {
+	  font-size: 24px;
+	  line-height: 29px;
+	}
+	#home-our-goals-row #home-checklist-grid-container .checkbox-list img {
+		height: 100%;
+		min-width: 50px;
+		width: 50px;
+	}
+	#home-our-goals-row #home-checklist-grid-container .text-list {
+	  font-size: 18px;
+	  line-height: 22px;
+		margin-left: 40px;
+	}
+	#home-our-goals-row #home-checklist-grid-container {
+		width: 80%;
+	}
+
+	.home-our-latest-stories #home-our-latest-stories-big-text {
+		width: 100%;
+		font-size: 96px;
+	}
+	.home-our-latest-stories-column .home-our-latest-stories-block {
+		width: 92%;
+		min-width: 340px;
+		min-height: 296px;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.home-our-latest-stories-quote {
+	  font-family: Roobert;
+	  font-size: 18px;
+	  line-height: 150%;
+	}
+	.home-our-latest-stories-pic img {
+		max-width: 71px;
+	}
+	.home-our-latest-stories-id-text {
+		margin-left: 30px;
+	}
+	.home-our-latest-stories-name {
+	  font-size: 18px;
+	  line-height: 22px;
+	}
+	.home-our-latest-stories-job {
+	  font-size: 14px;
+	  line-height: 17px;
+	}
+	.home-our-latest-stories-block hr {
+		margin-top: 7.7vw;
+		margin-bottom: 1.5vw;
+		width: 75px;
+		border: 1px solid #c4c4c4;
+	}
+
+	#home-our-latest-stories-more-row {
+		margin-top: 90px;
+		margin-bottom: 90px;
+	}
+	#home-our-latest-stories-more {
+		font-size: 18px;
+	  width: 178px;
+	  height: 56px;
+		border-width: 4px;
 	}
 }

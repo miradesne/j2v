@@ -13,6 +13,9 @@ export default function Homepage() {
 
 <figure  id={styles['home-world']}><img src="images/homepage/front_pic-1.webp" alt="" /></figure>
 
+<div id={styles['home-downarrow']} className={styles['home-flex']}>
+</div>
+
 <div id={styles['home-our-goals-row']} className={styles['home-flex']}>
   <div id={styles['home-our-goals-grid-container']}>
     <div id={styles['home-our-goals-grid']}>
