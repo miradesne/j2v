@@ -1,0 +1,97 @@
+#footer-block {
+  width: 100%;
+  background: white;
+  padding: 40px;
+}
+
+.row {
+  display: flex;
+
+  font-family: Roobert;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+}
+.left {
+  width: 67px;
+  margin-right: 22px;
+}
+.right {
+  width: 100%;
+  display: flex;
+}
+
+#logo {
+  align-items: center;
+  justify-content: center;
+
+  width: 67px;
+  height: 67px;
+
+  border: 4px solid #000000;
+  border-radius: 22px;
+
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+}
+
+#title {
+  align-items: center;
+
+  font-family: Roobert;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.6;
+}
+
+#menu-block-inner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  margin-top: 13px;
+  line-height: 100%;
+}
+#menu-block-inner .item {
+  margin-top: 38px;
+  width: 33%;
+  display: flex;
+
+  color: #747474;
+  flex-grow: 0;
+}
+#menu-block-inner a {
+  color: #747474;
+  text-decoration: none;
+}
+#menu-block-inner .item-last {
+  margin-top: 38px;
+  width: 33%;
+  display: flex;
+
+  color: #747474;
+  flex-grow: 1;
+}
+
+#follow-us-block {
+  margin-top: 110px;
+  display: flex;
+  justify-content: center;
+}
+
+#socmed-block {
+  display: flex;
+  justify-content: center;
+}
+#socmed-block img {
+  margin: 8px;
+}
+
+#copyright-block {
+  margin-top: 65px;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}

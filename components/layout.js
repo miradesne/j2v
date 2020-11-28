@@ -3,6 +3,7 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import HeaderNavBar from './header-nav-bar'
+import Footer from './footer'
 
 
 const name = 'Journey to Valley'
@@ -72,6 +73,9 @@ export default function Layout({ children, home }) {
             </Link>
           </div>
         )}
+      <footer>
+        <Footer />
+      </footer>
       </div>
     </div>
   )

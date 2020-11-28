@@ -67,7 +67,7 @@ export default function Homepage() {
               </div>
               <div className={styles['home-our-latest-stories-id-text']}>
                 <div className={styles['home-our-latest-stories-name']}>
-                  Firstname L
+                  Firstname Lastname
                 </div>
                 <div className={styles['home-our-latest-stories-job']}>
                   Software Engineer @ Facebook
@@ -100,7 +100,7 @@ export default function Homepage() {
               </div>
               <div className={styles['home-our-latest-stories-id-text']}>
                 <div className={styles['home-our-latest-stories-name']}>
-                  Firstname L
+                  Firstname Lastname
                 </div>
                 <div className={styles['home-our-latest-stories-job']}>
                   Software Engineer @ Facebook
@@ -128,7 +128,7 @@ export default function Homepage() {
               </div>
               <div className={styles['home-our-latest-stories-id-text']}>
                 <div className={styles['home-our-latest-stories-name']}>
-                  Firstname L
+                  Firstname Lastname
                 </div>
                 <div className={styles['home-our-latest-stories-job']}>
                   Software Engineer @ Facebook
