@@ -81,9 +81,11 @@ function WordPressPosts({ posts }) {
                 </div>
               </div>
               <div className={storyCardStyles.description}>
-                <Link href={`/posts/${node.slug}`}>
-                  <div className={storyCardStyles.title}>{node.title}</div>
-                </Link>
+                <div className={storyCardStyles.title}>
+                  <Link href={`/posts/${node.slug}`}>
+                    <a>{node.title}</a>
+                  </Link>
+                </div>
                 <small className={utilStyles.lightText}>
                   Date: <Date dateString={node.date} />
                 </small>

@@ -20,6 +20,10 @@ $color_orange: #ffb929;
   font-size: 36px;
   width: 100%;
   flex-basis: 30%;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .img {
@@ -46,9 +50,6 @@ $color_orange: #ffb929;
   height: 264px;
   a {
     color: inherit;
-    &:hover {
-      color: $color_prime;
-    }
   }
 
   .meta {

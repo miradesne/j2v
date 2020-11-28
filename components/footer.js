@@ -1,6 +1,6 @@
-import styles from './footer.module.css'
-import Link from 'next/link'
-import Image from 'next/image'
+import styles from "./footer.module.css";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer({ children, home }) {
   return (
@@ -18,7 +18,7 @@ export default function Footer({ children, home }) {
         <div className={styles.left} />
         <div id={styles["menu-block-inner"]}>
           <div className={styles.item}>
-            <Link href="">
+            <Link href="/">
               <a>About</a>
             </Link>
           </div>
@@ -28,19 +28,24 @@ export default function Footer({ children, home }) {
             </Link>
           </div>
           <div className={styles.item}>
-            <Link href="">
+            <Link href="/">
               <a>Contact us</a>
             </Link>
           </div>
           <div className={styles.item}>
-            <Link href="">
+            <Link href="/">
               <a>Privacy policy and term</a>
             </Link>
           </div>
           <div className={styles["item-last"]}>
-            <Link href="">
+            <Link href="/">
               <a>
-                Subscribe to our latest stories <Image width={20} height={20} src='/images/homepage/littlearrow.svg' />
+                Subscribe to our latest stories{" "}
+                <Image
+                  width={20}
+                  height={20}
+                  src="/images/homepage/littlearrow.svg"
+                />
               </a>
             </Link>
           </div>

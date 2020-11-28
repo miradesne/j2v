@@ -1,9 +1,8 @@
-import Head from 'next/head'
-import Layout from '../../components/layout'
-import Date from '../../components/date'
-import { getAllPostIds, getPostData } from '../../lib/posts'
-import utilStyles from '../../styles/utils.module.css'
-
+import Head from "next/head";
+import Layout from "../../components/layout";
+import Date from "../../components/date";
+import { getAllPostIds, getPostAndMorePosts } from "../../lib/posts-graphql";
+import utilStyles from "../../styles/utils.module.css";
 
 export default function Post({ postData }) {
   return (
@@ -16,25 +15,26 @@ export default function Post({ postData }) {
         <div className={utilStyles.lightText}>
           <Date dateString={postData.date} />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div dangerouslySetInnerHTML={{ __html: postData.content }} />
       </article>
     </Layout>
-  )
+  );
 }
 
 export async function getStaticPaths() {
-  const paths = getAllPostIds()
+  const paths = await getAllPostIds();
   return {
     paths,
     fallback: false
-  }
+  };
 }
 
 export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id)
+  const data = await getPostAndMorePosts(params.id);
+  const postData = data.post;
   return {
     props: {
       postData
     }
-  }
+  };
 }
