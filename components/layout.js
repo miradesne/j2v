@@ -73,10 +73,11 @@ export default function Layout({ children, home }) {
           )}
         </header>
         <main>{children}</main>
-        <footer>
-          <Footer />
-        </footer>
       </div>
+
+      <footer id={styles["footer-toplevel"]}>
+        <Footer />
+      </footer>
     </div>
   );
 }

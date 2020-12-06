@@ -1,5 +1,5 @@
 #footer-block {
-  width: 100%;
+  max-width: 1366px;
   background: white;
   padding: 40px;
 }
