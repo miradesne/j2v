@@ -11,7 +11,10 @@ Theme Name: Custom Home
 	text-align: center;
 }
 #home-journey-to-valley-row {
-	min-height: 220px;
+	margin-top: 56px;
+	margin-bottom: 56px;
+	margin-left: 84px;
+	margin-right: 84px;
 }
 #home-journey-to-valley-row h1 {
 	margin: 0px;
@@ -314,6 +317,8 @@ Theme Name: Custom Home
 		min-height: 72px;
 		margin-top: 70px;
 		margin-bottom: 70px;
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 	#home-journey-to-valley-row h1 {
 		font-size: 72px;

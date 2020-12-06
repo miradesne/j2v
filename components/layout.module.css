@@ -11,16 +11,17 @@
 }
 
 .header {
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: max(9.6vw, 40px);
+  margin-right: max(9.6vw, 40px);
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
 .headerImage {
-  width: 6rem;
-  height: auto;
-  max-width: 100%;
+  width: 90px;
   border: none;
   vertical-align: middle;
   display: inline-block;
