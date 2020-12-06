@@ -269,10 +269,11 @@ Theme Name: Custom Home
 	justify-content: center;
 }
 #home-our-latest-stories-more {
-  width: 170px;
-  height: 45px;
+  width: 256px;
+  height: 78px;
   color: black;
   font-size: 24px;
+	line-height: 120%;
   font-family: Roobert;
 	font-weight: bold;
   display: flex;
@@ -286,6 +287,12 @@ Theme Name: Custom Home
 }
 #home-our-latest-stories-more-row a:hover {
 	text-decoration: none;
+}
+#home-our-latest-stories-more:hover {
+	background-color: #FFB929;
+}
+#home-our-latest-stories-more:active {
+	color: white;
 }
 
 #home-downarrow {
