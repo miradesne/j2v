@@ -1,16 +1,18 @@
 #navbar {
   width: 100%;
-  height: 45px;
+  height: 60px;
   display: flex;
   flex-direction: row-reverse;
-  align-items: flex-end;
+  align-items: center;
 }
 .navbar-button {
-  margin-left: 52px;
-  margin-right: 52px;
-  height: 45px;
+  padding-left: 52px;
+  padding-right: 52px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   color: black;
   font-size: 24px;
+  line-height: 100%;
   font-family: Roobert;
   font-weight: bold;
   display: flex;
@@ -18,6 +20,10 @@
   align-items: center;
 }
 .navbar-button:hover {
+  padding-left: 49px;
+  padding-right: 49px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border: 3px solid #FFB929;
   border-radius: 50px;
   text-decoration: none;
@@ -31,4 +37,5 @@
 }
 
 #navbar a {
+  display: inline-block;
 }
