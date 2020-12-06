@@ -60,6 +60,13 @@ Theme Name: Custom Home
   padding-top: 440px;
   position: relative;
 }
+
+@media screen and (min-width: 1367px) {
+	#home-our-goals-grid {
+	  border-radius: 22px 22px 22px 22px;
+	}
+}
+
 #home-our-goals-grid #home-our-goals-inside {
   position: absolute;
   top: 0;
@@ -154,7 +161,7 @@ Theme Name: Custom Home
 	align-items: flex-start;
 	justify-content: flex-start;
 	margin-top: 50px;
-	margin-left: 44px;
+	margin-left: 22px;
 }
 
 .home-our-latest-stories #home-our-latest-stories-big-text {
@@ -174,8 +181,8 @@ Theme Name: Custom Home
 
 .home-our-latest-stories-column .home-our-latest-stories-block {
 	width: 80%;
-	min-width: 340px;
-	min-height: 296px;
+	min-width: 360px;
+	min-height: 320px;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -188,15 +195,8 @@ Theme Name: Custom Home
 .bg-quote-orange {
 	background-image: url('/images/homepage/Story-Card-orange.webp');
 }
-.home-our-latest-stories-quote {
-	margin-top: 105px;
-	width: 90%;
-  font-family: Roobert;
-  font-size: 20px;
-  line-height: 30px;
-}
 .home-our-latest-stories-block hr {
-	margin-top: 1.0vw;
+	margin-top: 4.0vw;
 	margin-bottom: 1.0vw;
 	width: 75px;
 	border: 1px solid #c4c4c4;
@@ -217,18 +217,27 @@ Theme Name: Custom Home
 	flex-direction: column;
 	justify-content: center;
 }
+.home-our-latest-stories-quote {
+	margin-top: 105px;
+	width: 90%;
+  font-family: Roobert;
+  font-size: 24px;
+  line-height: 100%;
+}
 .home-our-latest-stories-name {
   font-family: Roobert;
   font-weight: bold;
   font-size: 20px;
-  line-height: 25px;
+  line-height: 100%;
 }
 .home-our-latest-stories-job {
   font-family: Roobert;
   font-weight: 500;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 100%;
 	color: #747474;
+
+	margin-top: 16px;
 }
 
 .home-our-latest-stories-grid {
@@ -374,6 +383,19 @@ Theme Name: Custom Home
 		min-height: 296px;
 		background-size: cover;
 		background-repeat: no-repeat;
+	}
+
+	.home-our-latest-stories-quote {
+	  font-size: 20px;
+	  line-height: 125%;
+	}
+	.home-our-latest-stories-name {
+	  font-size: 18px;
+	  line-height: 100%;
+	}
+	.home-our-latest-stories-job {
+	  font-size: 14px;
+	  line-height: 100%;
 	}
 }
 

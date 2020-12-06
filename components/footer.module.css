@@ -73,6 +73,14 @@
 
   color: #747474;
   flex-grow: 1;
+  align-items: flex-end;
+}
+.item-last a {
+  display: flex;
+  align-items: flex-end;
+}
+.item-last img {
+  margin-left: 10px;
 }
 
 #follow-us-block {
@@ -99,6 +107,11 @@
 /* Tablet version, 481px - 768px */
 @media screen and (max-width: 768px) {
   #menu-block-inner .item {
-    width: 50%;
+    width: 100%;
+    margin-left: 8px;
+  }
+  #menu-block-inner .item-last {
+    width: 100%;
+    margin-left: 8px;
   }
 }

@@ -8,7 +8,7 @@ export default function HeaderNavBar({ children, home }) {
     <div id={styles.navbar}>
       <Link href="/">
         <a>
-          <div className={styles["navbar-button"]}>Subscribe</div>
+          <div className={styles["navbar-button"]}>Subscribe to our latest stories</div>
         </a>
       </Link>
       <Link href="/stories-list">
