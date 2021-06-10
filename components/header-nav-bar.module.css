@@ -3,27 +3,34 @@
   height: 45px;
   display: flex;
   flex-direction: row-reverse;
-  align-items: flex-end;
+  align-items: center;
 }
 .navbar-button {
-  margin-left: 52px;
-  margin-right: 52px;
-  height: 45px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
   color: black;
   font-size: 24px;
   font-family: Roobert;
+  line-height: 20px;
+  letter-spacing: -1.1px;
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 3px solid transparent;
+  padding: 15px 49px;
 }
+
 .navbar-button:hover {
-  border: 3px solid #FFB929;
+  border: 3px solid #ffb929;
   border-radius: 50px;
   text-decoration: none;
+  cursor: pointer;
 }
 .navbar-button:active {
-  background-color: #FFB929;
+  background-color: #ffb929;
 }
 
 #navbar a:hover {
