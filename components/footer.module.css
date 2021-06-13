@@ -102,8 +102,28 @@
   display: flex;
   justify-content: center;
 }
+
 #socmed-block img {
   margin: 8px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+#socmed-block-fb:hover {
+  content: url('/images/homepage/fb_icon_yellow.svg');
+}
+
+#socmed-block-ln:hover {
+  content: url('/images/homepage/linkedin_icon_yellow.svg');
+}
+
+#socmed-block-tw:hover {
+  content: url('/images/homepage/twitter_icon_yellow.svg');
+}
+
+#socmed-block-ig:hover {
+  content: url('/images/homepage/ig_icon_yellow.svg');
 }
 
 #copyright-block {

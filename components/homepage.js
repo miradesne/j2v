@@ -153,6 +153,26 @@ export default function Homepage() {
           </a>
         </Link>
       </div>
+
+      <div id={styles['subscribe-to-our-latest-stories']}>
+        <div id={styles['subscribe-to-our-latest-stories-left']}>
+          <div id={styles['subscribe-to-our-latest-stories-sub-title']}>
+            <h3>Subscribe To</h3>
+            <h3>Our Latest Stories</h3>
+          </div>
+          <input
+            id={styles['subscribe-to-our-latest-stories-input']}
+            type='email'
+            name='subscriber-email'
+            placeholder={'Enter your email here...'}></input>
+          <Link href='/stories-list'>
+            <a id={styles['subscribe-to-our-latest-stories-more']}>Read More</a>
+          </Link>
+        </div>
+        <div id={styles['subscribe-to-our-latest-stories-right']}>
+          <img src={'/images/homepage/blog_image.svg'}></img>
+        </div>
+      </div>
     </>
   );
 }

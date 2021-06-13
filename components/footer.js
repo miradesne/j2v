@@ -55,24 +55,16 @@ export default function Footer({ children, home }) {
 
         <div className={styles.row} id={styles['socmed-block']}>
           <Link href='https://www.facebook.com/Journey-to-Valley-109788187490460/'>
-            <a>
-              <img src='/images/homepage/fb_icon_grey.svg' />
-            </a>
+            <img id={styles['socmed-block-fb']} src={'/images/homepage/fb_icon_grey.svg'} />
           </Link>
           <Link href='https://www.linkedin.com/company/68686498/admin/'>
-            <a>
-              <img src='/images/homepage/linkedin_icon_grey.svg' />
-            </a>
+            <img id={styles['socmed-block-ln']} src={'/images/homepage/linkedin_icon_grey.svg'} />
           </Link>
           <Link href='https://twitter.com/ValleyJourney'>
-            <a>
-              <img src='/images/homepage/twitter_icon_grey.svg' />
-            </a>
+            <img id={styles['socmed-block-tw']} src={'/images/homepage/twitter_icon_grey.svg'} />
           </Link>
           <Link href='https://www.instagram.com/journeytovalley/'>
-            <a>
-              <img src='/images/homepage/ig_icon_grey.svg' />
-            </a>
+            <img id={styles['socmed-block-ig']} src={'/images/homepage/ig_icon_grey.svg'} />
           </Link>
         </div>
 

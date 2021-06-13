@@ -269,7 +269,8 @@ Theme Name: Custom Home
   display: flex;
   justify-content: center;
 }
-#home-our-latest-stories-more {
+#home-our-latest-stories-more,
+#subscribe-to-our-latest-stories-more {
   width: 256px;
   height: 78px;
   color: black;
@@ -302,6 +303,45 @@ Theme Name: Custom Home
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 40px;
+}
+
+#subscribe-to-our-latest-stories {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 395px;
+}
+#subscribe-to-our-latest-stories-sub-title h3 {
+  font-family: Roobert;
+  font-size: 48px;
+  line-height: 57.6px;
+  margin: 0;
+  padding: 0;
+}
+#subscribe-to-our-latest-stories-sub-title {
+  margin-bottom: 83px;
+}
+#subscribe-to-our-latest-stories-input {
+  border: 3px solid black;
+  border-radius: 22px;
+  box-sizing: border-box;
+  width: 553px;
+  height: 89px;
+  font-size: 24px;
+  padding: 17px 24px 16px 17px;
+  outline: none;
+  margin-bottom: 50px;
+}
+#subscribe-to-our-latest-stories-more:hover {
+  text-decoration: none;
+  background-color: #ffb929;
+}
+#subscribe-to-our-latest-stories-more:active {
+  color: white;
+}
+#subscribe-to-our-latest-stories-right img {
+  width: 588px;
+  height: 588px;
 }
 @media screen and (min-width: 769px) {
   #home-downarrow {
