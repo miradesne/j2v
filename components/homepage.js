@@ -21,7 +21,7 @@ export default function Homepage() {
 
       <div id={styles['home-downarrow']} className={styles['home-flex']}></div>
 
-      <div id={styles['home-our-goals-row']} className={styles['home-flex']}>
+      {/* <div id={styles['home-our-goals-row']} className={styles['home-flex']}>
         <div id={styles['home-our-goals-grid-container']}>
           <div id={styles['home-our-goals-grid']}>
             <div id={styles['home-our-goals-inside']}>
@@ -61,7 +61,7 @@ export default function Homepage() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div id={styles['home-our-latest-stories-first']} className={styles['home-our-latest-stories']}>
         <div className={`${styles['home-our-latest-stories-column']} ${styles['home-our-latest-stories-column-left']}`}>

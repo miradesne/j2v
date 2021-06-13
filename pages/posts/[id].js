@@ -1,12 +1,12 @@
-import Head from "next/head";
-import Layout from "../../components/layout";
-import Date from "../../components/date";
-import { getAllPostIds, getPostAndMorePosts } from "../../lib/posts-graphql";
-import utilStyles from "../../styles/utils.module.css";
+import Head from 'next/head';
+import Layout from '../../components/layout';
+import Date from '../../components/date';
+import { getAllPostIds, getPostAndMorePosts } from '../../lib/posts-graphql';
+import utilStyles from '../../styles/utils.module.css';
 
 export default function Post({ postData }) {
   return (
-    <Layout>
+    <Layout home={false}>
       <Head>
         <title>{postData.title}</title>
       </Head>
@@ -25,7 +25,7 @@ export async function getStaticPaths() {
   const paths = await getAllPostIds();
   return {
     paths,
-    fallback: false
+    fallback: false,
   };
 }
 
@@ -34,7 +34,7 @@ export async function getStaticProps({ params }) {
   const postData = data.post;
   return {
     props: {
-      postData
-    }
+      postData,
+    },
   };
 }

@@ -6,8 +6,8 @@
   padding-top: 20px;
 }
 #footer-block-arrow-bg {
-	background-image: url('/images/homepage/footer_arrow.svg');
-	background-repeat: no-repeat;
+  background-image: url('/images/homepage/footer_arrow.svg');
+  background-repeat: no-repeat;
   height: 47px;
   position: relative;
   top: -27px;
