@@ -34,8 +34,9 @@
   align-items: center;
   justify-content: center;
 
-  width: 67px;
-  height: 67px;
+  width: 80px;
+  height: 69px;
+  padding: 0;
 
   border: 4px solid #000000;
   border-radius: 22px;

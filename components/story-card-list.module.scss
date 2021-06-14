@@ -27,7 +27,7 @@ $color_orange: #ffb929;
 }
 
 .img {
-  layout: fill;
+  // layout: fill;
   width: 100%;
   height: 100%;
   display: block;
@@ -91,19 +91,19 @@ $color_orange: #ffb929;
     .author:before {
       font-family: FontAwesome;
       margin-right: 10px;
-      content: "\f007";
+      content: '\f007';
     }
 
     .date:before {
       font-family: FontAwesome;
       margin-right: 10px;
-      content: "\f133";
+      content: '\f133';
     }
 
     .tags {
       ul:before {
         font-family: FontAwesome;
-        content: "\f02b";
+        content: '\f02b';
         margin-right: 10px;
       }
       li {
@@ -142,7 +142,7 @@ $color_orange: #ffb929;
         display: inline-block;
         position: relative;
         &:after {
-          content: "\f061";
+          content: '\f061';
           font-family: FontAwesome;
           margin-left: -10px;
           opacity: 0;
@@ -163,7 +163,7 @@ $color_orange: #ffb929;
     &:first-of-type {
       margin-top: 1.25rem;
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         height: 5px;
         background: $color_prime;
@@ -190,7 +190,7 @@ $color_orange: #ffb929;
       flex-direction: column;
       display: flex;
       &:before {
-        content: "";
+        content: '';
         background: #fff;
         width: 30px;
         position: absolute;
@@ -245,4 +245,63 @@ $color_orange: #ffb929;
   display: -webkit-box;
   -webkit-line-clamp: 3; /* number of lines to show */
   -webkit-box-orient: vertical;
+}
+
+.cardPagination {
+  display: flex;
+  justify-content: center;
+  padding: auto;
+  margin: auto;
+  margin-bottom: 209px;
+
+  .cardPaginationNav {
+    width: 178px;
+    height: 54px;
+    color: black;
+    font-size: 24px;
+    line-height: 28.8px;
+    font-family: Roobert;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 50px;
+
+    &:hover {
+      border: 3px solid transparent;
+      background-color: #ffb929;
+      cursor: pointer;
+    }
+  }
+  .cardPaginationNumber {
+    display: flex;
+    justify-content: center;
+    margin: auto 162px;
+
+    .cardPaginationIndex,
+    .cardPaginationDownArrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 39px;
+      height: 34px;
+      border: 3px solid black;
+
+      padding: 0;
+    }
+
+    .cardPaginationIndex {
+      border-radius: 50px 0 0 50px;
+      border-right: 1.6px solid black;
+    }
+    .cardPaginationDownArrow {
+      border-radius: 0 50px 50px 0;
+      border-left: 1.6px solid black;
+      &:hover {
+        background-color: #ffb929;
+        cursor: pointer;
+      }
+    }
+  }
 }
