@@ -348,6 +348,13 @@ Theme Name: Custom Home
     display: none;
   }
 }
+@media screen and (max-width: 1180px) {
+  #subscribe-to-our-latest-stories {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 /* Tablet version, 481px - 768px */
 @media screen and (max-width: 768px) {
@@ -362,6 +369,14 @@ Theme Name: Custom Home
   #home-we-bring-you-row h1 {
     font-size: 24px;
     line-height: 29px;
+  }
+  #home-world {
+    margin-bottom: 0;
+  }
+
+  #home-downarrow {
+    margin-top: 41px;
+    margin-bottom: 147px;
   }
 
   #home-our-goals-row {
@@ -444,6 +459,14 @@ Theme Name: Custom Home
   .home-our-latest-stories-job {
     font-size: 14px;
     line-height: 100%;
+  }
+  #home-our-latest-stories-more-row {
+    margin-bottom: 200px;
+  }
+
+  #subscribe-to-our-latest-stories {
+    display: none;
+    flex-direction: column;
   }
 }
 

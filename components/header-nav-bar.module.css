@@ -37,5 +37,9 @@
   text-decoration: none;
 }
 
-/* #navbar a {
-} */
+@media screen and (max-width: 768px) {
+  .navbar-button {
+    padding: 15px 30px;
+    letter-spacing: -0.5px;
+  }
+}

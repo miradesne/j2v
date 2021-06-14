@@ -136,12 +136,16 @@
 
 /* Tablet version, 481px - 768px */
 @media screen and (max-width: 768px) {
+  #menu-block-inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
   #menu-block-inner .item {
-    width: 100%;
-    margin-left: 8px;
+    width: 50%;
+    /* margin-left: 8px; */
   }
   #menu-block-inner .item-last {
     width: 100%;
-    margin-left: 8px;
+    /* margin-left: 8px; */
   }
 }
