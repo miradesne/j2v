@@ -33,6 +33,7 @@ export default function Layout({ children, home }) {
           {home ? (
             <>
               <img src='https://journeytovalley.org/wp-content/uploads/2020/09/logo.png' className={`${styles.headerImage}`} alt={name} />
+
               <HeaderNavBar home />
             </>
           ) : (

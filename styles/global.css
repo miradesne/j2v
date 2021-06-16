@@ -2,8 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
   line-height: 1.6;
   font-size: 18px;
   background-color: #fffbf1;
@@ -23,30 +23,51 @@ a:hover {
 }
 
 @font-face {
-  font-family: "Roobert";
-  src: url("/fonts/Roobert/Roobert-Regular.otf");
+  font-family: 'Roobert';
+  src: url('/fonts/Roobert/Roobert-Regular.otf');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Roobert";
-  src: url("/fonts/Roobert/Roobert-Medium.otf");
+  font-family: 'Roobert';
+  src: url('/fonts/Roobert/Roobert-Medium.otf');
   font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Roobert";
-  src: url("/fonts/Roobert/Roobert-Bold.otf");
+  font-family: 'Roobert';
+  src: url('/fonts/Roobert/Roobert-Bold.otf');
   font-weight: bold;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Life";
-  src: url("/fonts/Life/Life-Regular.otf");
+  font-family: 'Life';
+  src: url('/fonts/Life/Life-Regular.otf');
   font-weight: 500;
   font-display: swap;
+}
+
+.slide-in-right-enter {
+  transform: translate(100%);
+}
+
+.slide-in-right-enter-active {
+  transform: translate(0);
+  opacity: 1;
+  transition: all 400ms;
+}
+
+.slide-in-right-exit {
+  transform: translate(0);
+  opacity: 1;
+}
+
+.slide-in-right-exit-active {
+  transform: translate(100%);
+  opacity: 0;
+  transition: all 400ms;
 }
