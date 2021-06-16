@@ -47,7 +47,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   #navbar {
     display: none;
   }
@@ -81,10 +81,17 @@
   #navbarSideDrawer {
     display: flex;
     flex-direction: column-reverse;
-    padding-top: 20px;
+    padding-top: 30px;
   }
 
   #navbarSideDrawer .navbar-button {
-    margin: 5px auto;
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0 auto;
+    width: 100%;
+    border: transparent;
+    border-radius: 0;
+    outline: none;
+    height: 50px;
   }
 }

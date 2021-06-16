@@ -32,8 +32,9 @@ export default function Layout({ children, home }) {
         <header className={styles.header}>
           {home ? (
             <>
-              <img src='https://journeytovalley.org/wp-content/uploads/2020/09/logo.png' className={`${styles.headerImage}`} alt={name} />
-
+              <a>
+                <img src='https://journeytovalley.org/wp-content/uploads/2020/09/logo.png' className={`${styles.headerImage}`} alt={name} />
+              </a>
               <HeaderNavBar home />
             </>
           ) : (

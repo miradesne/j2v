@@ -67,3 +67,16 @@
   background-size: contain;
   background-position: top right;
 }
+
+@media screen and (max-width: 768px) {
+  .lightText {
+    font-size: 14px;
+    line-height: 17.22px;
+  }
+  .latestStoriesBackground {
+    background-image: url('/images/OurLatestStories.svg');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: top right;
+  }
+}

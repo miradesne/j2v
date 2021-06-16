@@ -149,7 +149,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   #footer-block-content {
     padding: 0 20px;
   }
