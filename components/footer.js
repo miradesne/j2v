@@ -42,7 +42,7 @@ export default function Footer({ children, home }) {
             <div className={styles['item-last']}>
               <Link href='/'>
                 <a>
-                  Subscribe to our latest stories&nbsp; <img width={20} height={20} src='/images/homepage/littlearrow.svg' />
+                  Subscribe &nbsp; <img width={20} height={20} src='/images/homepage/littlearrow.svg' />
                 </a>
               </Link>
             </div>

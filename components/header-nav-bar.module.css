@@ -45,9 +45,7 @@
     padding: 15px 30px;
     letter-spacing: -0.5px;
   }
-}
 
-@media screen and (max-width: 540px) {
   #navbar {
     display: none;
   }
@@ -56,7 +54,7 @@
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    height: 60px;
+    height: 45px;
   }
 
   #navbar-burger {
@@ -66,8 +64,9 @@
     align-items: center;
     height: 40px;
     width: 40px;
-    border: solid 3px black;
+    border: solid 1.8px black;
     border-radius: 50%;
+    background-color: transparent;
   }
   .navbar-burger-layer {
     width: 18px;

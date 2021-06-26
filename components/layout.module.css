@@ -18,12 +18,12 @@
 }
 
 .headerImage {
-  width: 6rem;
   height: auto;
   max-width: 100%;
   border: none;
   vertical-align: middle;
   display: inline-block;
+  cursor: pointer;
 }
 
 .backToHome {
@@ -40,10 +40,10 @@
 
 @media screen and (max-width: 768px) {
   .header {
-    /* width: 688px; */
-    margin: 15px 40px;
+    margin: 15px;
   }
-  .header img {
-    width: 60px;
+  .headerImage {
+    max-width: 60px;
+    height: auto;
   }
 }

@@ -16,42 +16,7 @@ export default function HeaderNavBar({ children, home }) {
   const closeDrawer = () => {
     setDrawerIsOpen(false);
   };
-  return home ? (
-    <>
-      {drawerIsOpen && <Backdrop onClick={closeDrawer}></Backdrop>}
-      <SideDrawer onClick={closeDrawer} show={drawerIsOpen}>
-        <div id={styles.navbarSideDrawer}>
-          <Link href='/'>
-            <div className={styles['navbar-button']}>Subscribe</div>
-          </Link>
-          <Link href='/stories-list'>
-            <div className={styles['navbar-button']}>Stories</div>
-          </Link>
-          <Link href='/stories-list'>
-            <div className={styles['navbar-button']}>About</div>
-          </Link>
-        </div>
-      </SideDrawer>
-      <div id={styles.navbar}>
-        <Link href='/'>
-          <div className={styles['navbar-button']}>Subscribe</div>
-        </Link>
-        <Link href='/stories-list'>
-          <div className={styles['navbar-button']}>Stories</div>
-        </Link>
-        <Link href='/stories-list'>
-          <div className={styles['navbar-button']}>About</div>
-        </Link>
-      </div>
-      <div id={styles['navbar-burger-container']}>
-        <button id={styles['navbar-burger']} onClick={openDrawer}>
-          <div className={styles['navbar-burger-layer']}></div>
-          <div className={styles['navbar-burger-layer']}></div>
-          <div className={styles['navbar-burger-layer']}></div>
-        </button>
-      </div>
-    </>
-  ) : (
+  return (
     <>
       {drawerIsOpen && <Backdrop onClick={closeDrawer}></Backdrop>}
       <SideDrawer onClick={closeDrawer} show={drawerIsOpen}>

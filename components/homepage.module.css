@@ -549,6 +549,8 @@ Theme Name: Custom Home
   .home-our-latest-stories-job {
     font-size: 14px;
     line-height: 17px;
+    margin-top: 0;
+    margin-bottom: 16px;
   }
   .home-our-latest-stories-block hr {
     margin-top: 7.7vw;

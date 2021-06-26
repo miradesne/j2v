@@ -63,7 +63,7 @@ function WordPressPosts({ posts }) {
                     <a>{node.title}</a>
                   </Link>
                 </div>
-                <small className={utilStyles.lightText}>
+                <small className={`${utilStyles.lightText} ${storyCardStyles.date}`}>
                   Date: <Date dateString={node.date} />
                 </small>
                 <div className={storyCardStyles.hr}></div>

@@ -166,7 +166,7 @@ export default function Homepage() {
             name='subscriber-email' //Feel free to change the 'name' value to store the email data for the backend
             placeholder={'Enter your email here...'}></input>
           <Link href='/stories-list'>
-            <a id={styles['subscribe-to-our-latest-stories-more']}>Read More</a>
+            <a id={styles['subscribe-to-our-latest-stories-more']}>Subscribe</a>
           </Link>
         </div>
         <div id={styles['subscribe-to-our-latest-stories-right']}>
