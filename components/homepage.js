@@ -21,47 +21,9 @@ export default function Homepage() {
 
       <div id={styles['home-downarrow']} className={styles['home-flex']}></div>
 
-      {/* <div id={styles['home-our-goals-row']} className={styles['home-flex']}>
-        <div id={styles['home-our-goals-grid-container']}>
-          <div id={styles['home-our-goals-grid']}>
-            <div id={styles['home-our-goals-inside']}>
-              <div id={styles['home-our-goals-flexbox']}>
-                <h1>
-                  Our
-                  <br /> Goals
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id={styles['home-checklist-grid-container']}>
-          <div className={styles['div-list']}>
-            <div className={styles['checkbox-list']}>
-              <img src='images/homepage/Icon-check-mark.webp' alt='' />
-            </div>
-            <div className={styles['text-list']}>
-              To share real <span className={styles['orange-text-color']}>career</span> experience.
-            </div>
-          </div>
-          <div className={styles['div-list']}>
-            <div className={styles['checkbox-list']}>
-              <img src='images/homepage/Icon-check-mark.webp' alt='' />
-            </div>
-            <div className={styles['text-list']}>
-              To provide creative <span className={styles['pink-text-color']}>inspiration</span>.
-            </div>
-          </div>
-          <div className={styles['div-list-last']}>
-            <div className={styles['checkbox-list']}>
-              <img src='images/homepage/Icon-check-mark.webp' alt='' />
-            </div>
-            <div className={styles['text-list']}>
-              To <span className={styles['yellow-text-color']}>help</span> each other.
-            </div>
-          </div>
-        </div>
-      </div> */}
+      <Link href='/stories-list'>
+        <button className={styles['home-explore-button']}>Explore</button>
+      </Link>
 
       <div id={styles['home-our-latest-stories-first']} className={styles['home-our-latest-stories']}>
         <div className={`${styles['home-our-latest-stories-column']} ${styles['home-our-latest-stories-column-left']}`}>
@@ -155,24 +117,69 @@ export default function Homepage() {
       </div>
 
       <div id={styles['subscribe-to-our-latest-stories']}>
-        <div id={styles['subscribe-to-our-latest-stories-left']}>
+        <img id={styles['subscribe-to-our-latest-stories-background']} src={'/images/homepage/subscribe_aio.svg'}></img>
+        <div id={styles['subscribe-to-our-latest-stories-content']}>
           <div id={styles['subscribe-to-our-latest-stories-sub-title']}>
-            <h3>Subscribe To</h3>
-            <h3>Our Latest Stories</h3>
+            <h2>Subscribe To</h2>
+            <h2>Our Latest Stories</h2>
           </div>
-          <input
-            id={styles['subscribe-to-our-latest-stories-input']}
-            type='email'
-            name='subscriber-email' //Feel free to change the 'name' value to store the email data for the backend
-            placeholder={'Enter your email here...'}></input>
-          <Link href='/stories-list'>
-            <a id={styles['subscribe-to-our-latest-stories-more']}>Subscribe</a>
-          </Link>
-        </div>
-        <div id={styles['subscribe-to-our-latest-stories-right']}>
-          <img src={'/images/homepage/blog_image.svg'}></img>
+          <div id={styles['subscribe-to-our-latest-stories-paragraph']}>
+            <p>We are passionate to share real and valuable personal experiences. Unsubscribe anytime. It's free!</p>
+          </div>
+          <div id={styles['subscribe-to-our-latest-stories-input-container']}>
+            <input
+              id={styles['subscribe-to-our-latest-stories-input']}
+              type='email'
+              name='subscriber-email' //Feel free to change the 'name' value to store the email data for the backend
+              placeholder={'Enter your email here...'}></input>
+            <button id={styles['subscribe-to-our-latest-stories-subscribe']}>Subscribe</button>
+          </div>
         </div>
       </div>
     </>
   );
+}
+
+{
+  /* <div id={styles['home-our-goals-row']} className={styles['home-flex']}>
+        <div id={styles['home-our-goals-grid-container']}>
+          <div id={styles['home-our-goals-grid']}>
+            <div id={styles['home-our-goals-inside']}>
+              <div id={styles['home-our-goals-flexbox']}>
+                <h1>
+                  Our
+                  <br /> Goals
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id={styles['home-checklist-grid-container']}>
+          <div className={styles['div-list']}>
+            <div className={styles['checkbox-list']}>
+              <img src='images/homepage/Icon-check-mark.webp' alt='' />
+            </div>
+            <div className={styles['text-list']}>
+              To share real <span className={styles['orange-text-color']}>career</span> experience.
+            </div>
+          </div>
+          <div className={styles['div-list']}>
+            <div className={styles['checkbox-list']}>
+              <img src='images/homepage/Icon-check-mark.webp' alt='' />
+            </div>
+            <div className={styles['text-list']}>
+              To provide creative <span className={styles['pink-text-color']}>inspiration</span>.
+            </div>
+          </div>
+          <div className={styles['div-list-last']}>
+            <div className={styles['checkbox-list']}>
+              <img src='images/homepage/Icon-check-mark.webp' alt='' />
+            </div>
+            <div className={styles['text-list']}>
+              To <span className={styles['yellow-text-color']}>help</span> each other.
+            </div>
+          </div>
+        </div>
+      </div> */
 }

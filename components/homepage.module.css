@@ -35,7 +35,7 @@ Theme Name: Custom Home
 #home-world {
   margin: 0px;
   margin-top: 40px;
-  margin-bottom: 157px;
+  margin-bottom: 123px;
   display: flex;
   justify-content: center;
 }
@@ -60,6 +60,116 @@ Theme Name: Custom Home
   border-radius: 0px 22px 22px 0px;
   padding-top: 440px;
   position: relative;
+}
+
+.home-explore-button {
+  width: 256px;
+  height: 78px;
+  color: black;
+  font-size: 24px;
+  line-height: 120%;
+  font-family: Roobert;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #ffb929;
+  border-radius: 50px;
+  margin: auto;
+  background-color: transparent;
+}
+
+.home-explore-button:hover {
+  cursor: pointer;
+  background-color: #ffb929;
+}
+
+#subscribe-to-our-latest-stories {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 550px;
+  margin: 0 auto;
+  justify-content: space-around;
+  margin-bottom: 300px;
+}
+
+#subscribe-to-our-latest-stories-background {
+  position: absolute;
+  padding-top: 45px;
+}
+#subscribe-to-our-latest-stories-content {
+  z-index: 1;
+  width: 100%;
+}
+#subscribe-to-our-latest-stories-sub-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 80px;
+  margin-bottom: 72px;
+}
+#subscribe-to-our-latest-stories-sub-title h2 {
+  font-family: Roobert;
+  font-size: 56px;
+  line-height: 70px;
+  margin: 0;
+  padding: 0;
+}
+
+#subscribe-to-our-latest-stories-paragraph {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 48px;
+  padding-left: 60px;
+}
+
+#subscribe-to-our-latest-stories-paragraph p {
+  font-family: Roobert;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 125%;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+  width: 60%;
+}
+
+#subscribe-to-our-latest-stories-input-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#subscribe-to-our-latest-stories-input {
+  border: 3px solid black;
+  border-right: none;
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 22px;
+  box-sizing: border-box;
+  width: 553px;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0;
+  padding: 14px 18px;
+  outline: none;
+}
+
+#subscribe-to-our-latest-stories-subscribe {
+  border: 3px solid black;
+  background-color: black;
+  font-size: 24px;
+  color: white;
+  padding: 14px 24px;
+  font-family: Roobert;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0;
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+}
+#subscribe-to-our-latest-stories-subscribe:hover {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1367px) {
@@ -264,7 +374,7 @@ Theme Name: Custom Home
 
 #home-our-latest-stories-more-row {
   margin-top: 170px;
-  margin-bottom: 170px;
+  margin-bottom: 300px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -305,44 +415,6 @@ Theme Name: Custom Home
   margin-top: 40px;
 }
 
-#subscribe-to-our-latest-stories {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  margin-bottom: 395px;
-}
-#subscribe-to-our-latest-stories-sub-title h3 {
-  font-family: Roobert;
-  font-size: 48px;
-  line-height: 57.6px;
-  margin: 0;
-  padding: 0;
-}
-#subscribe-to-our-latest-stories-sub-title {
-  margin-bottom: 83px;
-}
-#subscribe-to-our-latest-stories-input {
-  border: 3px solid black;
-  border-radius: 22px;
-  box-sizing: border-box;
-  width: 553px;
-  height: 89px;
-  font-size: 24px;
-  padding: 17px 24px 16px 17px;
-  outline: none;
-  margin-bottom: 50px;
-}
-#subscribe-to-our-latest-stories-more:hover {
-  text-decoration: none;
-  background-color: #ffb929;
-}
-#subscribe-to-our-latest-stories-more:active {
-  color: white;
-}
-#subscribe-to-our-latest-stories-right img {
-  width: 588px;
-  height: 588px;
-}
 @media screen and (min-width: 769px) {
   #home-downarrow {
     display: none;
