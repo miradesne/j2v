@@ -123,17 +123,23 @@ export default function Homepage() {
             <h2>Subscribe To</h2>
             <h2>Our Latest Stories</h2>
           </div>
-          <div id={styles['subscribe-to-our-latest-stories-paragraph']}>
-            <p>We are passionate to share real and valuable personal experiences. Unsubscribe anytime. It's free!</p>
+          <div id={styles['subscribe-to-our-latest-stories-paragraph-input-container']}>
+            <div id={styles['subscribe-to-our-latest-stories-paragraph']}>
+              <p>We are passionate to share real and valuable personal experiences. Unsubscribe anytime. It's free!</p>
+            </div>
+            <div id={styles['subscribe-to-our-latest-stories-input-container']}>
+              <input
+                id={styles['subscribe-to-our-latest-stories-input']}
+                type='email'
+                name='subscriber-email' //Feel free to change the 'name' value to store the email data for the backend
+                placeholder={'Enter your email here...'}></input>
+              <button id={styles['subscribe-to-our-latest-stories-subscribe']}>Subscribe</button>
+            </div>
           </div>
-          <div id={styles['subscribe-to-our-latest-stories-input-container']}>
-            <input
-              id={styles['subscribe-to-our-latest-stories-input']}
-              type='email'
-              name='subscriber-email' //Feel free to change the 'name' value to store the email data for the backend
-              placeholder={'Enter your email here...'}></input>
-            <button id={styles['subscribe-to-our-latest-stories-subscribe']}>Subscribe</button>
-          </div>
+        </div>
+        <div id={styles['subscribe-to-our-latest-stories-bottom-ornaments']}>
+          <img id={styles['subscribe-to-our-latest-stories-megaphone']} src={'/images/homepage/megaphone-subscribe.svg'}></img>
+          <img src={'/images/homepage/ornament-icons.svg'}></img>
         </div>
       </div>
     </>

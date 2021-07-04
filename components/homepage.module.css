@@ -117,12 +117,13 @@ Theme Name: Custom Home
   padding: 0;
 }
 
+#subscribe-to-our-latest-stories-paragraph-input-container {
+  padding-left: 22vw;
+}
+
 #subscribe-to-our-latest-stories-paragraph {
-  display: flex;
-  justify-content: center;
   width: 100%;
   margin-bottom: 48px;
-  padding-left: 60px;
 }
 
 #subscribe-to-our-latest-stories-paragraph p {
@@ -133,12 +134,10 @@ Theme Name: Custom Home
   letter-spacing: 0;
   margin: 0;
   padding: 0;
-  width: 60%;
+  width: 65%;
 }
 
 #subscribe-to-our-latest-stories-input-container {
-  display: flex;
-  justify-content: center;
   width: 100%;
 }
 #subscribe-to-our-latest-stories-input {
@@ -170,6 +169,10 @@ Theme Name: Custom Home
 }
 #subscribe-to-our-latest-stories-subscribe:hover {
   cursor: pointer;
+}
+
+#subscribe-to-our-latest-stories-bottom-ornaments {
+  display: none;
 }
 
 @media screen and (min-width: 1367px) {
@@ -421,15 +424,17 @@ Theme Name: Custom Home
   }
 }
 @media screen and (max-width: 1180px) {
-  #subscribe-to-our-latest-stories {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  #subscibe-to-our-latest-stories-paragraph-input-container {
+    padding-left: 15vw;
+  }
+
+  #subscribe-to-our-latest-stories-paragraph p {
+    width: 80%;
   }
 }
 
 /* Tablet version, 481px - 768px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   #home-journey-to-valley-row {
     min-height: 72px;
     margin-top: 70px;
@@ -447,8 +452,18 @@ Theme Name: Custom Home
   }
 
   #home-downarrow {
-    margin-top: 41px;
-    margin-bottom: 147px;
+    display: none;
+    /* margin-top: 41px;
+    margin-bottom: 147px; */
+  }
+
+  #home-our-latest-stories-more,
+  .home-explore-button {
+    font-size: 20px;
+    width: 157px;
+    height: 48px;
+    margin-top: 78px;
+    margin-bottom: 140px;
   }
 
   #home-our-goals-row {
@@ -532,13 +547,51 @@ Theme Name: Custom Home
     font-size: 14px;
     line-height: 100%;
   }
+
   #home-our-latest-stories-more-row {
+    margin-top: 118px;
     margin-bottom: 200px;
+  }
+  #home-our-latest-stories-more {
+    margin: 0;
   }
 
   #subscribe-to-our-latest-stories {
+    width: 100%;
+    height: 593px;
+    margin-bottom: 200px;
+    background-color: #fcdba2;
+  }
+
+  #subscribe-to-our-latest-stories-paragraph-input-container {
+    padding-left: 5vw;
+  }
+  #subscribe-to-our-latest-stories-sub-title {
+    margin-top: 84px;
+    padding-left: 5vw;
+  }
+  #subscribe-to-our-latest-stories-input {
+    width: 497px;
+  }
+  #subscribe-to-our-latest-stories-subscribe {
+    width: 191px;
+  }
+
+  #subscribe-to-our-latest-stories-background {
     display: none;
-    flex-direction: column;
+  }
+
+  #subscribe-to-our-latest-stories-bottom-ornaments {
+    position: absolute;
+    bottom: -85px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  #subscribe-to-our-latest-stories-megaphone {
+    transform: scale(0.8);
   }
 }
 
@@ -640,5 +693,9 @@ Theme Name: Custom Home
     width: 178px;
     height: 56px;
     border-width: 4px;
+  }
+
+  #subscribe-to-our-latest-stories {
+    display: none;
   }
 }
