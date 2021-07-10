@@ -5,6 +5,8 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import SideDrawer from './side-drawer';
 import Backdrop from './backdrop';
+import Scroll from 'react-scroll';
+const ScrollLink = Scroll.Link;
 
 export default function HeaderNavBar({ children, home }) {
   const [drawerIsOpen, setDrawerIsOpen] = useState(false);
@@ -21,9 +23,15 @@ export default function HeaderNavBar({ children, home }) {
       {drawerIsOpen && <Backdrop onClick={closeDrawer}></Backdrop>}
       <SideDrawer onClick={closeDrawer} show={drawerIsOpen}>
         <div id={styles.navbarSideDrawer}>
-          <Link href='/'>
+          <ScrollLink
+            onClick={closeDrawer}
+            className={styles['navbar-button']}
+            to='subscribe-section'
+            spy={true}
+            smooth={true}
+            duration={800}>
             <div className={styles['navbar-button']}>Subscribe</div>
-          </Link>
+          </ScrollLink>
           <Link href='/stories-list'>
             <div className={styles['navbar-button']}>Stories</div>
           </Link>
@@ -36,9 +44,9 @@ export default function HeaderNavBar({ children, home }) {
         </div>
       </SideDrawer>
       <div id={styles.navbar}>
-        <Link href='/'>
+        <ScrollLink to='subscribe-section' spy={true} smooth={true} duration={500}>
           <div className={styles['navbar-button']}>Subscribe</div>
-        </Link>
+        </ScrollLink>
         <Link href='/stories-list'>
           <div className={styles['navbar-button']}>Stories</div>
         </Link>
@@ -51,9 +59,7 @@ export default function HeaderNavBar({ children, home }) {
       </div>
       <div id={styles['navbar-burger-container']}>
         <button id={styles['navbar-burger']} onClick={openDrawer}>
-          <div className={styles['navbar-burger-layer']}></div>
-          <div className={styles['navbar-burger-layer']}></div>
-          <div className={styles['navbar-burger-layer']}></div>
+          <img src='images/hamburger-icon.svg' alt='burger-icon'></img>
         </button>
       </div>
     </>

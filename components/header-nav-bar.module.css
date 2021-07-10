@@ -68,14 +68,6 @@
     border-radius: 50%;
     background-color: transparent;
   }
-  .navbar-burger-layer {
-    width: 18px;
-    height: 1.8px;
-    border-radius: 10px;
-    background-color: black;
-    margin: 3px 0;
-    padding: 0;
-  }
 
   #navbarSideDrawer {
     display: flex;

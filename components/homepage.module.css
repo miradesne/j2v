@@ -40,7 +40,8 @@ Theme Name: Custom Home
   justify-content: center;
 }
 #home-world img {
-  min-width: 480px;
+  width: 582px;
+  /* min-width: 480px; */
   object-fit: contain;
 }
 
@@ -96,7 +97,10 @@ Theme Name: Custom Home
 
 #subscribe-to-our-latest-stories-background {
   position: absolute;
+  width: 1126px;
   padding-top: 45px;
+  margin-left: 120px;
+  margin-right: 120px;
 }
 #subscribe-to-our-latest-stories-content {
   z-index: 1;
@@ -106,7 +110,7 @@ Theme Name: Custom Home
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 80px;
+  padding-left: 7%;
   margin-bottom: 72px;
 }
 #subscribe-to-our-latest-stories-sub-title h2 {
@@ -118,7 +122,7 @@ Theme Name: Custom Home
 }
 
 #subscribe-to-our-latest-stories-paragraph-input-container {
-  padding-left: 22vw;
+  margin-left: 22%;
 }
 
 #subscribe-to-our-latest-stories-paragraph {
@@ -172,6 +176,10 @@ Theme Name: Custom Home
 }
 
 #subscribe-to-our-latest-stories-bottom-ornaments {
+  display: none;
+}
+
+#subscribe-to-our-latest-stories-bottom-ornaments-phone {
   display: none;
 }
 
@@ -268,13 +276,13 @@ Theme Name: Custom Home
 .home-our-latest-stories-column-left {
   align-items: flex-end;
   justify-content: flex-end;
-  margin-top: 50px;
+  margin-top: 84px;
   margin-right: 44px;
 }
 .home-our-latest-stories-column-right {
   align-items: flex-start;
   justify-content: flex-start;
-  margin-top: 50px;
+  margin-top: 84px;
   margin-left: 22px;
 }
 
@@ -288,92 +296,101 @@ Theme Name: Custom Home
   text-align: right;
   color: #ffb929;
   opacity: 0.36;
-  margin-left: 44px;
+  margin-left: 25px;
   display: flex;
   align-items: flex-end;
+  /* box-sizing: border-box; */
 }
-
-.home-our-latest-stories-column .home-our-latest-stories-block {
+/* ====================Card==================== */
+.home-our-latest-stories-card-container {
+  background-color: white;
+  border-radius: 22px;
   width: 80%;
-  min-width: 360px;
-  min-height: 320px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.bg-quote-pink {
-  background-image: url('/images/homepage/Story-Card-pink.webp');
-}
-.bg-quote-teal {
-  background-image: url('/images/homepage/Story-Card-2-light-blue.webp');
-}
-.bg-quote-orange {
-  background-image: url('/images/homepage/Story-Card-orange.webp');
-}
-.home-our-latest-stories-block hr {
-  margin-top: 4vw;
-  margin-bottom: 1vw;
-  width: 75px;
-  border: 1px solid #c4c4c4;
-}
-.home-our-latest-stories-identity {
-  margin-bottom: 40px;
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-}
-.home-our-latest-stories-pic {
-  max-width: 100px;
-}
-.home-our-latest-stories-id-text {
-  margin-left: 40px;
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.home-our-latest-stories-quote {
-  margin-top: 105px;
-  width: 90%;
-  font-family: Roobert;
-  font-size: 24px;
-  line-height: 100%;
-}
-.home-our-latest-stories-name {
-  font-family: Roobert;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 100%;
-}
-.home-our-latest-stories-job {
-  font-family: Roobert;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 100%;
-  color: #747474;
-
-  margin-top: 16px;
-}
-
-.home-our-latest-stories-grid {
-  padding-top: 87.28%;
+  max-width: 511px;
+  height: 389px;
   position: relative;
 }
-.home-our-latest-stories-inside {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#home-our-latest-stories-card-container-pink {
+  box-shadow: 7px 7px #f39dc0;
 }
-.home-our-latest-stories-flexbox {
+#home-our-latest-stories-card-container-orange {
+  box-shadow: 7px 7px #f46d36;
+}
+#home-our-latest-stories-card-container-teal {
+  box-shadow: 7px 7px #3fc9c8;
+}
+.home-our-latest-stories-card-quote {
+  height: 20%;
+  position: absolute;
+  left: 30px;
+  top: -37px;
+}
+.home-our-latest-stories-card-content {
+  width: 100%;
+  max-width: 511px;
+  height: 100%;
+  padding: 75px 45px 0 51px;
+}
+
+.home-our-latest-stories-card-container hr {
+  width: 73px;
+}
+
+.home-our-latest-stories-card-story-quote {
+  font-family: Life;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -1px;
+  margin-bottom: 37px;
+}
+
+.home-our-latest-stories-card-author {
+  display: flex;
+  justify-content: space-between;
+}
+
+#home-our-latest-stories-card-author-avatar-pink {
+  border: 3px solid #f39dc0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+#home-our-latest-stories-card-author-avatar-teal {
+  border: 3px solid #3fc9c8;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+#home-our-latest-stories-card-author-avatar-orange {
+  border: 3px solid #f46d36;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.home-our-latest-stories-card-author-identity {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  font-family: Roobert;
+  margin-left: 15px;
 }
+.home-our-latest-stories-card-author-identity-name {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.home-our-latest-stories-card-author-identity-job {
+  font-size: 18px;
+  line-height: 21.6px;
+  font-weight: 500;
+  color: #747474;
+}
+
+/* ============================================ */
 
 #home-our-latest-stories-more-row {
   margin-top: 170px;
@@ -457,6 +474,14 @@ Theme Name: Custom Home
     margin-bottom: 147px; */
   }
 
+  .home-our-latest-stories-card-story-quote {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0;
+  }
+  .home-our-latest-stories-card-author {
+    margin-top: 31px;
+  }
   #home-our-latest-stories-more,
   .home-explore-button {
     font-size: 20px;
@@ -514,17 +539,16 @@ Theme Name: Custom Home
     width: 100%;
     display: flex;
     flex-direction: row;
+    margin-top: 133px;
   }
   .home-our-latest-stories-column-left {
     align-items: center;
     justify-content: center;
-    margin-top: 70px;
     margin-right: 0px;
   }
   .home-our-latest-stories-column-right {
     align-items: center;
     justify-content: center;
-    margin-top: 70px;
     margin-left: 0px;
   }
   .home-our-latest-stories-column .home-our-latest-stories-block {
@@ -563,18 +587,24 @@ Theme Name: Custom Home
     background-color: #fcdba2;
   }
 
+  #subscribe-to-our-latest-stories-input-container {
+    display: flex;
+  }
   #subscribe-to-our-latest-stories-paragraph-input-container {
-    padding-left: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
   #subscribe-to-our-latest-stories-sub-title {
     margin-top: 84px;
     padding-left: 5vw;
   }
   #subscribe-to-our-latest-stories-input {
-    width: 497px;
+    width: 60%;
+    max-width: 497px;
   }
   #subscribe-to-our-latest-stories-subscribe {
-    width: 191px;
+    width: 40%;
+    max-width: 191px;
   }
 
   #subscribe-to-our-latest-stories-background {
@@ -612,37 +642,11 @@ Theme Name: Custom Home
     width: 91.5vw;
   }
   #home-world {
-    margin-top: 0px;
+    margin-top: 32px;
   }
   #home-world img {
-    min-width: 360px;
-    min-height: 360px;
+    width: 243px;
     object-fit: contain;
-  }
-
-  #home-our-goals-row #home-our-goals-grid-container {
-    height: 80px;
-    width: 215px;
-  }
-  #home-our-goals-grid {
-    padding-top: 80px;
-  }
-  #home-our-goals-grid #home-our-goals-inside h1 {
-    font-size: 24px;
-    line-height: 29px;
-  }
-  #home-our-goals-row #home-checklist-grid-container .checkbox-list img {
-    height: 100%;
-    min-width: 50px;
-    width: 50px;
-  }
-  #home-our-goals-row #home-checklist-grid-container .text-list {
-    font-size: 18px;
-    line-height: 22px;
-    margin-left: 40px;
-  }
-  #home-our-goals-row #home-checklist-grid-container {
-    width: 80%;
   }
 
   .home-our-latest-stories #home-our-latest-stories-big-text {
@@ -656,37 +660,56 @@ Theme Name: Custom Home
     background-size: cover;
     background-repeat: no-repeat;
   }
-  .home-our-latest-stories-quote {
-    font-family: Roobert;
-    font-size: 18px;
-    line-height: 150%;
-  }
-  .home-our-latest-stories-pic img {
-    max-width: 71px;
-  }
-  .home-our-latest-stories-id-text {
-    margin-left: 30px;
-  }
-  .home-our-latest-stories-name {
-    font-size: 18px;
-    line-height: 22px;
-  }
-  .home-our-latest-stories-job {
-    font-size: 14px;
-    line-height: 17px;
-    margin-top: 0;
-    margin-bottom: 16px;
-  }
-  .home-our-latest-stories-block hr {
-    margin-top: 7.7vw;
-    margin-bottom: 1.5vw;
-    width: 75px;
-    border: 1px solid #c4c4c4;
+  .home-explore-button {
+    margin-bottom: 86px;
   }
 
+  .home-our-latest-stories-column {
+    margin-top: 101px;
+  }
+  .home-our-latest-stories-card-container {
+    width: 315px;
+    height: 100%;
+    /* height: 487px; */
+  }
+  .home-our-latest-stories-card-quote {
+    height: 8%;
+    top: -18px;
+    left: 11px;
+  }
+  .home-our-latest-stories-card-content {
+    padding: 46px 15px 46px 19px;
+  }
+  .home-our-latest-stories-card-story-quote {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 28px;
+  }
+  .home-our-latest-stories-card-author {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-our-latest-stories-card-author-identity {
+    text-align: center;
+  }
+  .home-our-latest-stories-card-author-avatar {
+    margin-bottom: 14px;
+  }
+  .home-our-latest-stories-card-author-identity-job > span {
+    display: flex;
+    flex-flow: column;
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+
+  .home-our-latest-stories-card-author-identity-name {
+    margin-bottom: 14px;
+    font-size: 18px;
+    line-height: 21.6px;
+  }
   #home-our-latest-stories-more-row {
-    margin-top: 90px;
-    margin-bottom: 90px;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
   #home-our-latest-stories-more {
     font-size: 18px;
@@ -694,8 +717,53 @@ Theme Name: Custom Home
     height: 56px;
     border-width: 4px;
   }
-
   #subscribe-to-our-latest-stories {
+    height: 688px;
+  }
+  #subscribe-to-our-latest-stories-sub-title {
+    margin-top: 62px;
+    margin-bottom: 42px;
+  }
+  #subscribe-to-our-latest-stories-sub-title h2 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  #subscribe-to-our-latest-stories-paragraph p {
+    font-size: 18px;
+  }
+
+  #subscribe-to-our-latest-stories-input-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #subscribe-to-our-latest-stories-input {
+    width: 100%;
+    height: 64px;
+    border-radius: 25px;
+    margin-bottom: 48px;
+    border: 4px solid black;
+    font-size: 18px;
+  }
+
+  #subscribe-to-our-latest-stories-subscribe {
+    height: 48px;
+    border-radius: 25px;
+    font-size: 18px;
+    padding: 0;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  #subscribe-to-our-latest-stories-bottom-ornaments-phone {
+    display: flex;
+    position: absolute;
+    bottom: -80px;
+    width: 100%;
+    left: 0;
+  }
+  #subscribe-to-our-latest-stories-bottom-ornaments-phone > img {
+    width: 100%;
+  }
+  #subscribe-to-our-latest-stories-bottom-ornaments {
     display: none;
   }
 }

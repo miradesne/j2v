@@ -36,14 +36,12 @@ export default function Footer({ children, home }) {
             </div>
             <div className={styles.item}>
               <Link href='/'>
-                <a>Privacy policy and term </a>
+                <a>Subscribe</a>
               </Link>
             </div>
-            <div className={styles['item-last']}>
+            <div className={`${styles.item} ${styles['privacy-policy']}`}>
               <Link href='/'>
-                <a>
-                  Subscribe &nbsp; <img width={20} height={20} src='/images/homepage/littlearrow.svg' />
-                </a>
+                <a>Privacy policy and term </a>
               </Link>
             </div>
           </div>
@@ -69,7 +67,7 @@ export default function Footer({ children, home }) {
         </div>
 
         <div className={styles.row} id={styles['copyright-block']}>
-          Copyright © 2020 journeytovalley.org. All Rights Reserved.
+          © 2021 Journey to Valley. All Rights Reserved.
         </div>
       </div>
     </div>

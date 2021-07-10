@@ -1,5 +1,7 @@
 import styles from './homepage.module.css';
 import Link from 'next/link';
+import { Element } from 'react-scroll';
+import WelcomeToOurCommunity from './subscribe-welcome';
 
 export default function Homepage() {
   return (
@@ -14,41 +16,47 @@ export default function Homepage() {
           companies.
         </h1>
       </div>
-
+      {/* <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+        <WelcomeToOurCommunity></WelcomeToOurCommunity>
+      </div> */}
       <figure id={styles['home-world']}>
-        <img src='images/homepage/front_pic-1.webp' alt='' />
+        <img src='images/homepage/front_pic-1.svg' alt='home-world' />
       </figure>
 
       <div id={styles['home-downarrow']} className={styles['home-flex']}></div>
 
       <Link href='/stories-list'>
-        <button className={styles['home-explore-button']}>Explore</button>
+        <button className={styles['home-explore-button']}>Start Reading</button>
       </Link>
 
       <div id={styles['home-our-latest-stories-first']} className={styles['home-our-latest-stories']}>
         <div className={`${styles['home-our-latest-stories-column']} ${styles['home-our-latest-stories-column-left']}`}>
-          <div className={`${styles['home-our-latest-stories-block']} ${styles['bg-quote-pink']}`}>
-            <div className={styles['home-our-latest-stories-grid']}>
-              <div className={styles['home-our-latest-stories-inside']}>
-                <div className={styles['home-our-latest-stories-flexbox']}>
-                  <div className={styles['home-our-latest-stories-quote']}>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et."
+          <div className={styles['home-our-latest-stories-card-container']} id={styles['home-our-latest-stories-card-container-pink']}>
+            <img className={styles['home-our-latest-stories-card-quote']} src='/images/homepage/pink-quote.svg'></img>
+            <div className={styles['home-our-latest-stories-card-content']}>
+              <div className={styles['home-our-latest-stories-card-story-quote']}>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et."
+              </div>
+              <hr />
+              <div className={styles['home-our-latest-stories-card-author']}>
+                <img
+                  className={styles['home-our-latest-stories-card-author-avatar']}
+                  id={styles['home-our-latest-stories-card-author-avatar-pink']}
+                  src='images/Ellipse-52.webp'></img>
+                <div className={styles['home-our-latest-stories-card-author-identity']}>
+                  <div className={styles['home-our-latest-stories-card-author-identity-name']}>
+                    <strong>Firstname Lastname</strong>
                   </div>
-                  <hr />
-                  <div className={styles['home-our-latest-stories-identity']}>
-                    <div className={styles['home-our-latest-stories-pic']}>
-                      <img src='images/Ellipse-52.webp' />
-                    </div>
-                    <div className={styles['home-our-latest-stories-id-text']}>
-                      <div className={styles['home-our-latest-stories-name']}>Firstname Lastname</div>
-                      <div className={styles['home-our-latest-stories-job']}>Software Engineer @ Facebook</div>
-                    </div>
+                  <div className={styles['home-our-latest-stories-card-author-identity-job']}>
+                    <span>Software Engineer</span>
+                    <span> @ Facebook</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <div id={styles['home-our-latest-stories-big-text']}>
           Our
           <br />
@@ -60,22 +68,25 @@ export default function Homepage() {
 
       <div id={styles['home-our-latest-stories-second']} className={styles['home-our-latest-stories']}>
         <div className={`${styles['home-our-latest-stories-column']} ${styles['home-our-latest-stories-column-left']}`}>
-          <div className={`${styles['home-our-latest-stories-block']} ${styles['bg-quote-teal']}`}>
-            <div className={styles['home-our-latest-stories-grid']}>
-              <div className={styles['home-our-latest-stories-inside']}>
-                <div className={styles['home-our-latest-stories-flexbox']}>
-                  <div className={styles['home-our-latest-stories-quote']}>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et."
+          <div className={styles['home-our-latest-stories-card-container']} id={styles['home-our-latest-stories-card-container-teal']}>
+            <img className={styles['home-our-latest-stories-card-quote']} src='/images/homepage/teal-quote.svg'></img>
+            <div className={styles['home-our-latest-stories-card-content']}>
+              <div className={styles['home-our-latest-stories-card-story-quote']}>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et."
+              </div>
+              <hr />
+              <div className={styles['home-our-latest-stories-card-author']}>
+                <img
+                  className={styles['home-our-latest-stories-card-author-avatar']}
+                  id={styles['home-our-latest-stories-card-author-avatar-teal']}
+                  src='images/Ellipse-52.webp'></img>
+                <div className={styles['home-our-latest-stories-card-author-identity']}>
+                  <div className={styles['home-our-latest-stories-card-author-identity-name']}>
+                    <strong>Firstname Lastname</strong>
                   </div>
-                  <hr />
-                  <div className={styles['home-our-latest-stories-identity']}>
-                    <div className={styles['home-our-latest-stories-pic']}>
-                      <img src='images/Ellipse-52.webp' />
-                    </div>
-                    <div className={styles['home-our-latest-stories-id-text']}>
-                      <div className={styles['home-our-latest-stories-name']}>Firstname Lastname</div>
-                      <div className={styles['home-our-latest-stories-job']}>Software Engineer @ Facebook</div>
-                    </div>
+                  <div className={styles['home-our-latest-stories-card-author-identity-job']}>
+                    <span>Software Engineer</span>
+                    <span> @ Facebook</span>
                   </div>
                 </div>
               </div>
@@ -84,22 +95,25 @@ export default function Homepage() {
         </div>
 
         <div className={`${styles['home-our-latest-stories-column']} ${styles['home-our-latest-stories-column-right']}`}>
-          <div className={`${styles['home-our-latest-stories-block']} ${styles['bg-quote-orange']}`}>
-            <div className={styles['home-our-latest-stories-grid']}>
-              <div className={styles['home-our-latest-stories-inside']}>
-                <div className={styles['home-our-latest-stories-flexbox']}>
-                  <div className={styles['home-our-latest-stories-quote']}>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et."
+          <div className={styles['home-our-latest-stories-card-container']} id={styles['home-our-latest-stories-card-container-orange']}>
+            <img className={styles['home-our-latest-stories-card-quote']} src='/images/homepage/orange-quote.svg'></img>
+            <div className={styles['home-our-latest-stories-card-content']}>
+              <div className={styles['home-our-latest-stories-card-story-quote']}>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et."
+              </div>
+              <hr />
+              <div className={styles['home-our-latest-stories-card-author']}>
+                <img
+                  className={styles['home-our-latest-stories-card-author-avatar']}
+                  id={styles['home-our-latest-stories-card-author-avatar-orange']}
+                  src='images/Ellipse-52.webp'></img>
+                <div className={styles['home-our-latest-stories-card-author-identity']}>
+                  <div className={styles['home-our-latest-stories-card-author-identity-name']}>
+                    <strong>Firstname Lastname</strong>
                   </div>
-                  <hr />
-                  <div className={styles['home-our-latest-stories-identity']}>
-                    <div className={styles['home-our-latest-stories-pic']}>
-                      <img src='images/Ellipse-52.webp' />
-                    </div>
-                    <div className={styles['home-our-latest-stories-id-text']}>
-                      <div className={styles['home-our-latest-stories-name']}>Firstname Lastname</div>
-                      <div className={styles['home-our-latest-stories-job']}>Software Engineer @ Facebook</div>
-                    </div>
+                  <div className={styles['home-our-latest-stories-card-author-identity-job']}>
+                    <span>Software Engineer</span>
+                    <span> @ Facebook</span>
                   </div>
                 </div>
               </div>
@@ -116,32 +130,37 @@ export default function Homepage() {
         </Link>
       </div>
 
-      <div id={styles['subscribe-to-our-latest-stories']}>
-        <img id={styles['subscribe-to-our-latest-stories-background']} src={'/images/homepage/subscribe_aio.svg'}></img>
-        <div id={styles['subscribe-to-our-latest-stories-content']}>
-          <div id={styles['subscribe-to-our-latest-stories-sub-title']}>
-            <h2>Subscribe To</h2>
-            <h2>Our Latest Stories</h2>
+      <Element id='subscribe-section' name='subscribe-section'>
+        <div id={styles['subscribe-to-our-latest-stories']}>
+          <img id={styles['subscribe-to-our-latest-stories-background']} src={'/images/homepage/subscribe_aio.svg'}></img>
+          <div id={styles['subscribe-to-our-latest-stories-content']}>
+            <div id={styles['subscribe-to-our-latest-stories-sub-title']}>
+              <h2>Subscribe To</h2>
+              <h2>Our Latest Stories</h2>
+            </div>
+            <div id={styles['subscribe-to-our-latest-stories-paragraph-input-container']}>
+              <div id={styles['subscribe-to-our-latest-stories-paragraph']}>
+                <p>We are passionate to share real and valuable personal experiences. Unsubscribe anytime. It's free!</p>
+              </div>
+              <div id={styles['subscribe-to-our-latest-stories-input-container']}>
+                <input
+                  id={styles['subscribe-to-our-latest-stories-input']}
+                  type='email'
+                  name='subscriber-email' //Feel free to change the 'name' value to store the email data for the backend
+                  placeholder={'Enter your email here...'}></input>
+                <button id={styles['subscribe-to-our-latest-stories-subscribe']}>Subscribe</button>
+              </div>
+            </div>
           </div>
-          <div id={styles['subscribe-to-our-latest-stories-paragraph-input-container']}>
-            <div id={styles['subscribe-to-our-latest-stories-paragraph']}>
-              <p>We are passionate to share real and valuable personal experiences. Unsubscribe anytime. It's free!</p>
-            </div>
-            <div id={styles['subscribe-to-our-latest-stories-input-container']}>
-              <input
-                id={styles['subscribe-to-our-latest-stories-input']}
-                type='email'
-                name='subscriber-email' //Feel free to change the 'name' value to store the email data for the backend
-                placeholder={'Enter your email here...'}></input>
-              <button id={styles['subscribe-to-our-latest-stories-subscribe']}>Subscribe</button>
-            </div>
+          <div id={styles['subscribe-to-our-latest-stories-bottom-ornaments']}>
+            <img id={styles['subscribe-to-our-latest-stories-megaphone']} src={'/images/homepage/megaphone-subscribe.svg'}></img>
+            <img src={'/images/homepage/ornament-icons.svg'}></img>
+          </div>
+          <div id={styles['subscribe-to-our-latest-stories-bottom-ornaments-phone']}>
+            <img src={'/images/homepage/subscribe-phone-illustration.svg'} alt='phone ornament'></img>
           </div>
         </div>
-        <div id={styles['subscribe-to-our-latest-stories-bottom-ornaments']}>
-          <img id={styles['subscribe-to-our-latest-stories-megaphone']} src={'/images/homepage/megaphone-subscribe.svg'}></img>
-          <img src={'/images/homepage/ornament-icons.svg'}></img>
-        </div>
-      </div>
+      </Element>
     </>
   );
 }
