@@ -47,3 +47,10 @@
     height: auto;
   }
 }
+
+@media screen and (max-width: 559px) {
+  .header {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

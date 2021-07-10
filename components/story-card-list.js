@@ -69,7 +69,7 @@ function WordPressPosts({ posts }) {
                 <div className={storyCardStyles.hr}></div>
                 <div className={storyCardStyles.author}>
                   <div className={storyCardStyles.name}>By Firstname Lastname</div>
-                  <div className={`storyCardStyles.position ${utilStyles.lightText}`}>Software Engineer @ Google</div>
+                  <div className={`${storyCardStyles.position} ${utilStyles.lightText}`}>Software Engineer @ Google</div>
                 </div>
               </div>
               <div className={storyCardStyles.cardPadding}></div>

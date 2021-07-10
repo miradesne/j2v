@@ -200,6 +200,11 @@
 
     border-radius: 50%;
   }
+  #footer-block-arrow-bg {
+    transform: scale(0.55);
+    left: -90px;
+    top: -22px;
+  }
 
   #menu-block-inner .item {
     font-size: 18px;

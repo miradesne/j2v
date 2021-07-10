@@ -181,7 +181,7 @@ $color_orange: #ffb929;
     }
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 559px) {
     flex-direction: row;
     max-width: 935px;
     .meta {
@@ -233,11 +233,13 @@ $color_orange: #ffb929;
   font-family: Roobert;
   font-weight: bold;
   font-size: 24px;
+  line-height: 30px;
 }
 
 .position {
   flex-basis: 50%;
-  font-size: 24px;
+  font-size: 20px;
+  line-height: 25px;
 }
 
 .excerpt {
@@ -266,6 +268,14 @@ $color_orange: #ffb929;
       font-size: 28px;
       line-height: 34.44px;
     }
+    .name {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .position {
+      font-size: 14px;
+      line-height: 21px;
+    }
 
     .hr {
       width: 25%;
@@ -273,14 +283,40 @@ $color_orange: #ffb929;
       display: flex;
       height: 1px;
       background-color: #747474;
-      margin-top: 15px;
-      margin-bottom: 12px;
+      margin-top: 12px;
+      margin-bottom: 10px;
     }
 
     .name {
       font-size: 20px;
       height: 70px;
       flex-basis: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 559px) {
+  .card {
+    margin-bottom: 48px;
+    height: 335px;
+    margin-right: 20px;
+    margin-left: 20px;
+    .photo {
+      height: 171px;
+    }
+    .description {
+      padding: 0 12px 24px;
+    }
+    .title {
+      font-size: 22px;
+    }
+    .name {
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 12px;
+    }
+    .position {
+      font-size: 12px;
     }
   }
 }
