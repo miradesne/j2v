@@ -32,12 +32,16 @@ export default function Layout({ children, home }) {
         <header className={styles.header}>
           {home ? (
             <>
-              <img src='https://journeytovalley.org/wp-content/uploads/2020/09/logo.png' className={`${styles.headerImage}`} alt={name} />
+              <Link href='/'>
+                <img src='https://journeytovalley.org/wp-content/uploads/2020/09/logo.png' className={`${styles.headerImage}`} alt={name} />
+              </Link>
               <HeaderNavBar home />
             </>
           ) : (
             <>
-              <img src='https://journeytovalley.org/wp-content/uploads/2020/09/logo.png' className={`${styles.headerImage}`} alt={name} />
+              <Link href='/'>
+                <img src='https://journeytovalley.org/wp-content/uploads/2020/09/logo.png' className={`${styles.headerImage}`} alt={name} />
+              </Link>
               <HeaderNavBar home={false} />
             </>
           )}
@@ -45,9 +49,7 @@ export default function Layout({ children, home }) {
         <main>{children}</main>
       </div>
 
-      <footer id={styles['footer-toplevel']}>
-        <Footer />
-      </footer>
+      <footer id={styles['footer-toplevel']}>{home ? <Footer home /> : <Footer home={false} />}</footer>
     </div>
   );
 }

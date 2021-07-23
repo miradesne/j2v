@@ -298,7 +298,7 @@ $color_orange: #ffb929;
 @media screen and (max-width: 559px) {
   .card {
     margin-bottom: 48px;
-    height: 335px;
+    height: 350px;
     margin-right: 20px;
     margin-left: 20px;
     .photo {
@@ -309,6 +309,8 @@ $color_orange: #ffb929;
     }
     .title {
       font-size: 22px;
+      margin-top: 14px;
+      font-weight: 700;
     }
     .name {
       font-size: 18px;

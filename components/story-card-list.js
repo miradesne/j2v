@@ -77,14 +77,14 @@ function WordPressPosts({ posts }) {
           );
         })}
       </div>
-      <div className={storyListPageStyles.cardPagination}>
+      {/* <div className={storyListPageStyles.cardPagination}>
         <div className={storyListPageStyles.cardPaginationNav}>Back</div>
         <div className={storyListPageStyles.cardPaginationNumber}>
           <div className={storyListPageStyles.cardPaginationIndex}>2</div>
           <div className={storyListPageStyles.cardPaginationDownArrow}>&#9660;</div>
         </div>
         <div className={storyListPageStyles.cardPaginationNav}>Next</div>
-      </div>
+      </div> */}
     </section>
   );
 }

@@ -13,6 +13,9 @@
   position: relative;
   top: -27px;
 }
+.item a {
+  cursor: pointer;
+}
 
 .row {
   display: flex;
@@ -20,6 +23,10 @@
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
+}
+
+#socmed-block a {
+  height: 56px;
 }
 .left {
   width: 67px;

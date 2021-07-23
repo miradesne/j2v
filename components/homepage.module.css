@@ -133,8 +133,8 @@ Theme Name: Custom Home
 #subscribe-to-our-latest-stories-paragraph p {
   font-family: Roobert;
   font-size: 24px;
-  font-weight: 500;
-  line-height: 125%;
+  font-weight: 400;
+  line-height: 30px;
   letter-spacing: 0;
   margin: 0;
   padding: 0;
@@ -143,6 +143,8 @@ Theme Name: Custom Home
 
 #subscribe-to-our-latest-stories-input-container {
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 #subscribe-to-our-latest-stories-input {
   border: 3px solid black;
@@ -299,7 +301,13 @@ Theme Name: Custom Home
   margin-left: 25px;
   display: flex;
   align-items: flex-end;
-  /* box-sizing: border-box; */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
 }
 /* ====================Card==================== */
 .home-our-latest-stories-card-container {
@@ -617,11 +625,22 @@ Theme Name: Custom Home
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0 40px;
+    padding: 0 2.5vw;
   }
 
   #subscribe-to-our-latest-stories-megaphone {
     transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #subscribe-to-our-latest-stories {
+    height: 620px;
+  }
+}
+@media screen and (max-width: 504px) {
+  #subscribe-to-our-latest-stories {
+    height: 700px;
   }
 }
 
@@ -717,8 +736,9 @@ Theme Name: Custom Home
     height: 56px;
     border-width: 4px;
   }
+
   #subscribe-to-our-latest-stories {
-    height: 688px;
+    height: 750px;
   }
   #subscribe-to-our-latest-stories-sub-title {
     margin-top: 62px;
@@ -738,17 +758,16 @@ Theme Name: Custom Home
   }
   #subscribe-to-our-latest-stories-input {
     width: 100%;
-    height: 64px;
+    height: 56px;
     border-radius: 25px;
     margin-bottom: 48px;
-    border: 4px solid black;
+    border: 3px solid black;
     font-size: 18px;
   }
 
   #subscribe-to-our-latest-stories-subscribe {
     height: 48px;
     border-radius: 25px;
-    font-size: 18px;
     padding: 0;
     font-size: 20px;
     line-height: 24px;

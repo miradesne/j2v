@@ -23,15 +23,21 @@ export default function HeaderNavBar({ children, home }) {
       {drawerIsOpen && <Backdrop onClick={closeDrawer}></Backdrop>}
       <SideDrawer onClick={closeDrawer} show={drawerIsOpen}>
         <div id={styles.navbarSideDrawer}>
-          <ScrollLink
-            onClick={closeDrawer}
-            className={styles['navbar-button']}
-            to='subscribe-section'
-            spy={true}
-            smooth={true}
-            duration={800}>
-            <div className={styles['navbar-button']}>Subscribe</div>
-          </ScrollLink>
+          {home ? (
+            <ScrollLink
+              onClick={closeDrawer}
+              className={styles['navbar-button']}
+              to='subscribe-section'
+              spy={true}
+              smooth={true}
+              duration={800}>
+              <div className={styles['navbar-button']}>Subscribe</div>
+            </ScrollLink>
+          ) : (
+            <a className={styles['navbar-button']} href='/#subscribe-section'>
+              Subscribe
+            </a>
+          )}
           <Link href='/stories-list'>
             <div className={styles['navbar-button']}>Stories</div>
           </Link>
@@ -44,9 +50,15 @@ export default function HeaderNavBar({ children, home }) {
         </div>
       </SideDrawer>
       <div id={styles.navbar}>
-        <ScrollLink to='subscribe-section' spy={true} smooth={true} duration={500}>
-          <div className={styles['navbar-button']}>Subscribe</div>
-        </ScrollLink>
+        {home ? (
+          <ScrollLink to='subscribe-section' spy={true} smooth={true} duration={500}>
+            <div className={styles['navbar-button']}>Subscribe</div>
+          </ScrollLink>
+        ) : (
+          <a className={styles['navbar-button']} href='/#subscribe-section'>
+            Subscribe
+          </a>
+        )}
         <Link href='/stories-list'>
           <div className={styles['navbar-button']}>Stories</div>
         </Link>
