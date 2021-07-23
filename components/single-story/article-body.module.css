@@ -36,6 +36,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 81px;
 }
 .article-author-avatar {
   width: 76px;
@@ -60,4 +61,8 @@
 .article-author-social-media > img {
   margin-right: 16px;
   width: 36px;
+}
+
+.article-body-article {
+  margin-bottom: 124px;
 }

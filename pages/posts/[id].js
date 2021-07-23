@@ -6,8 +6,9 @@ import ArticleBody from '../../components/single-story/article-body';
 import CommentSection from '../../components/single-story/comment-section';
 import OtherStories from '../../components/single-story/other-stories';
 import styles from './single-article.module.css';
+import { getAllPostsForHome } from '../../lib/posts-graphql';
 
-export default function Post({ postData }) {
+export default function Post({ postData, wordPressPosts }) {
   return (
     <Layout home={false}>
       <Head>
@@ -15,7 +16,7 @@ export default function Post({ postData }) {
       </Head>
       <ArticleBody postData={postData} />
       <CommentSection />
-      <OtherStories />
+      <OtherStories wordPressPosts={wordPressPosts.edges} />
     </Layout>
   );
 }
@@ -30,10 +31,12 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const data = await getPostAndMorePosts(params.id);
+  const wordPressPosts = await getAllPostsForHome();
   const postData = data.post;
   return {
     props: {
       postData,
+      wordPressPosts,
     },
   };
 }

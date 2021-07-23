@@ -1,0 +1,204 @@
+.comment-section-container {
+  padding: 0 311px;
+}
+
+.social-icon-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icon-left {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-family: Roobert;
+  line-height: 17.78px;
+  font-weight: 500;
+}
+
+.social-icon-cheers {
+  margin-right: 100px;
+}
+.social-icon-cheers,
+.social-icon-chats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-icon-cheers > img,
+.social-icon-chats > img {
+  width: 35px;
+  height: 35px;
+}
+.social-icon-cheers > span,
+.social-icon-chats > span {
+  margin-left: 10px;
+}
+
+.social-icon-social-media > img {
+  margin-right: 16px;
+  width: 36px;
+}
+
+.comment-section-container > hr {
+  margin-top: 30px;
+  margin-bottom: 32px;
+}
+
+.comment-section-input-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.comment-section-input-head > h2 {
+  font-family: Roobert;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45.72px;
+  margin: 0;
+}
+
+.comment-section-input-author {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.comment-section-input-author > input {
+  border-radius: 32px;
+  width: 362px;
+  height: 56px;
+  outline: none;
+  border: 3px solid #b4b4b4;
+  padding: 16px 18px;
+  font-size: 18px;
+  font-family: Roobert;
+  font-weight: 400;
+  line-height: 22.86px;
+}
+.comment-section-input-message > textarea {
+  border-radius: 22px;
+  width: 100%;
+  height: 168px;
+  outline: none;
+  border: 3px solid #b4b4b4;
+  padding: 18px;
+  font-size: 18px;
+  font-family: Roobert;
+  font-weight: 400;
+  line-height: 22.86px;
+}
+.comment-section-submit-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 58px auto;
+}
+.comment-section-submit-button {
+  border: black 3px solid;
+  background-color: transparent;
+  border-radius: 32px;
+  width: 178px;
+  height: 54px;
+  font-size: 24px;
+  font-family: Roobert;
+  font-weight: 700;
+  line-height: 28.8px;
+}
+.comment-section-submit-button:hover {
+  background-color: #ffb929;
+  border: 3px solid #ffb929;
+  cursor: pointer;
+}
+
+.comment-section-comments-cluster {
+  margin-top: 74px;
+}
+
+.comment-section-comments-card-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.comment-section-comments-card {
+  border: solid 3px aquamarine;
+  border-radius: 22px;
+  padding: 28px 32px 75px 28px;
+  background-color: white;
+  margin-bottom: 54px;
+}
+
+.comment-section-comments-card-author {
+  display: flex;
+  align-items: center;
+}
+.comment-section-comments-card-author > img {
+  width: 54px;
+  height: 54px;
+  padding: 4.5px;
+  border: solid 3px aquamarine;
+  border-radius: 50%;
+  background-color: aquamarine;
+  margin-right: 13px;
+}
+
+.comment-section-comments-card-author > p {
+  font-size: 18px;
+  font-family: Roobert;
+  font-weight: 700;
+  line-height: 22.86px;
+  color: #747474;
+}
+
+.comment-section-comments-card-date {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-family: Roobert;
+  font-weight: 400;
+  line-height: 22.86px;
+  color: #b1b1b1;
+}
+
+.comment-section-comments-card-message {
+  margin-left: 68px;
+  margin-right: 68px;
+  font-size: 18px;
+  font-family: Roobert;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.back-to-stories-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.back-to-stories-list button {
+  border: 3px solid black;
+  border-radius: 32px;
+  width: 178px;
+  height: 54px;
+  text-align: center;
+  background-color: transparent;
+}
+.back-to-stories-list button:hover {
+  background-color: #ffb929;
+  border: 3px solid #ffb929;
+  cursor: pointer;
+}
+.back-to-stories-list button {
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: Roobert;
+  font-weight: 700;
+  line-height: 28.8px;
+  color: black;
+}
