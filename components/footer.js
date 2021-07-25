@@ -1,12 +1,14 @@
-import styles from "./footer.module.css";
-import Link from "next/link";
-import Image from "next/image";
+import styles from './footer.module.css';
+import Link from 'next/link';
+import Image from 'next/image';
+import Scroll from 'react-scroll';
+const ScrollLink = Scroll.Link;
 
 export default function Footer({ children, home }) {
   return (
-    <div id={styles["footer-block"]}>
-      <div id={styles["footer-block-arrow-bg"]} />
-      <div id={styles["footer-block-content"]}>
+    <div id={styles['footer-block']}>
+      <div id={styles['footer-block-arrow-bg']} />
+      <div id={styles['footer-block-content']}>
         <div className={styles.row}>
           <div className={styles.left} id={styles.logo}>
             J2V
@@ -16,73 +18,64 @@ export default function Footer({ children, home }) {
           </div>
         </div>
 
-        <div className={styles.row} id={styles["menu-block"]}>
+        <div className={styles.row} id={styles['menu-block']}>
           <div className={styles.left} />
-          <div id={styles["menu-block-inner"]}>
+          <div id={styles['menu-block-inner']}>
             <div className={styles.item}>
-              <Link href="/">
+              <Link href='/'>
                 <a>About</a>
               </Link>
             </div>
             <div className={styles.item}>
-              <Link href="/stories-list">
+              <Link href='/stories-list'>
                 <a>Stories</a>
               </Link>
             </div>
             <div className={styles.item}>
-              <Link href="/">
+              <Link href='/'>
                 <a>Contact us</a>
               </Link>
             </div>
             <div className={styles.item}>
-              <Link href="/">
-                <a>Privacy policy and term</a>
-              </Link>
-            </div>
-            <div className={styles["item-last"]}>
-              <Link href="/">
-                <a>
-                  Subscribe to our latest stories{" "}
-                  <Image
-                    width={20}
-                    height={20}
-                    src="/images/homepage/littlearrow.svg"
-                  />
+              {home ? (
+                <ScrollLink to='subscribe-section' spy={true} smooth={true} duration={800}>
+                  Subscribe
+                </ScrollLink>
+              ) : (
+                <a className={styles['navbar-button']} href='/#subscribe-section'>
+                  Subscribe
                 </a>
+              )}
+            </div>
+            <div className={`${styles.item} ${styles['privacy-policy']}`}>
+              <Link href='/'>
+                <a>Privacy policy and term </a>
               </Link>
             </div>
           </div>
         </div>
 
-        <div className={styles.row} id={styles["follow-us-block"]}>
+        <div className={styles.row} id={styles['follow-us-block']}>
           Follow us
         </div>
 
-        <div className={styles.row} id={styles["socmed-block"]}>
-          <Link href="https://www.facebook.com/Journey-to-Valley-109788187490460/">
-            <a>
-              <img src="/images/homepage/fb_icon_grey.svg" />
-            </a>
-          </Link>
-          <Link href="https://www.linkedin.com/company/68686498/admin/">
-            <a>
-              <img src="/images/homepage/linkedin_icon_grey.svg" />
-            </a>
-          </Link>
-          <Link href="https://twitter.com/ValleyJourney">
-            <a>
-              <img src="/images/homepage/twitter_icon_grey.svg" />
-            </a>
-          </Link>
-          <Link href="https://www.instagram.com/journeytovalley/">
-            <a>
-              <img src="/images/homepage/ig_icon_grey.svg" />
-            </a>
-          </Link>
+        <div className={styles.row} id={styles['socmed-block']}>
+          <a target='_blank' href='https://www.facebook.com/Journey-to-Valley-109788187490460/'>
+            <img id={styles['socmed-block-fb']} src={'/images/homepage/fb_icon_grey.svg'} />
+          </a>
+          <a target='_blank' href='https://www.linkedin.com/company/68686498/admin/'>
+            <img id={styles['socmed-block-ln']} src={'/images/homepage/linkedin_icon_grey.svg'} />
+          </a>
+          <a target='_blank' href='https://twitter.com/ValleyJourney'>
+            <img id={styles['socmed-block-tw']} src={'/images/homepage/twitter_icon_grey.svg'} />
+          </a>
+          <a target='_blank' href='https://www.instagram.com/journeytovalley/'>
+            <img id={styles['socmed-block-ig']} src={'/images/homepage/ig_icon_grey.svg'} />
+          </a>
         </div>
 
-        <div className={styles.row} id={styles["copyright-block"]}>
-          Copyright © 2020 journeytovalley.org. All Rights Reserved.
+        <div className={styles.row} id={styles['copyright-block']}>
+          © 2021 Journey to Valley. All Rights Reserved.
         </div>
       </div>
     </div>

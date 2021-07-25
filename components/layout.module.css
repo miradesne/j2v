@@ -21,10 +21,12 @@
 }
 
 .headerImage {
-  width: 90px;
+  height: auto;
+  max-width: 100%;
   border: none;
   vertical-align: middle;
   display: inline-block;
+  cursor: pointer;
 }
 
 .backToHome {
@@ -37,4 +39,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    margin: 15px 40px;
+  }
+  .headerImage {
+    max-width: 60px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 559px) {
+  .header {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }

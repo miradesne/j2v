@@ -1,0 +1,57 @@
+#subscribe-welcome-container {
+  border: 1px solid transparent;
+  border-radius: 22px;
+  width: 553px;
+  height: 543px;
+  background-color: #ffb929;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Roobert;
+  position: relative;
+}
+#subscribe-welcome-cross {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+#subscribe-welcome-header {
+  font-size: 48px;
+  line-height: 127%;
+  text-align: center;
+  margin: 0;
+}
+#subscribe-welcome-check-mark {
+  width: 103px;
+  height: 103px;
+  margin-top: 44px;
+  margin-bottom: 71px;
+}
+#subscribe-welcome-followus-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 36px;
+}
+
+#subscribe-welcome-followus-container > p {
+  margin-left: 40px;
+  margin-right: 40px;
+  letter-spacing: 1.5px;
+  margin: 0 40px;
+}
+#subscribe-welcome-followus-container > span {
+  width: 121px;
+  height: 2px;
+  background-color: black;
+}
+#subscribe-welcome-icons-container {
+  width: 100%;
+  text-align: center;
+}
+#subscribe-welcome-icons-container > img {
+  margin-right: 11px;
+  margin-left: 11px;
+}
