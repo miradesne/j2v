@@ -10,6 +10,15 @@ import Scroll from 'react-scroll';
 const ScrollLink = Scroll.Link;
 
 export default function HeaderNavBar({ children, home }) {
+  const [drawerIsOpen, setDrawerIsOpen] = useState(false);
+
+  const openDrawer = () => {
+    setDrawerIsOpen(true);
+  };
+
+  const closeDrawer = () => {
+    setDrawerIsOpen(false);
+  };
   return (
     <>
       {drawerIsOpen && <Backdrop onClick={closeDrawer}></Backdrop>}

@@ -19,7 +19,8 @@
 }
 
 .headerImage {
-  width: 90px;
+  height: auto;
+  max-width: 100%;
   border: none;
   vertical-align: middle;
   display: inline-block;

@@ -1,22 +1,22 @@
-import Head from "next/head";
-import Layout from "../../components/layout";
-import Date from "../../components/date";
-import { getAllPostIds, getPostAndMorePosts } from "../../lib/posts-graphql";
-import utilStyles from "../../styles/utils.module.css";
+import Head from 'next/head';
+import Layout from '../../components/layout';
+import Date from '../../components/date';
+import { getAllPostIds, getPostAndMorePosts } from '../../lib/posts-graphql';
+import ArticleBody from '../../components/single-story/article-body';
+import CommentSection from '../../components/single-story/comment-section';
+import OtherStories from '../../components/single-story/other-stories';
+import styles from './single-article.module.css';
+import { getAllPostsForHome } from '../../lib/posts-graphql';
 
-export default function Post({ postData }) {
+export default function Post({ postData, wordPressPosts }) {
   return (
-    <Layout>
+    <Layout home={false}>
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
-          <Date dateString={postData.date} />
-        </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.content }} />
-      </article>
+      <ArticleBody postData={postData} />
+      <CommentSection />
+      <OtherStories wordPressPosts={wordPressPosts.edges} />
     </Layout>
   );
 }
@@ -25,16 +25,18 @@ export async function getStaticPaths() {
   const paths = await getAllPostIds();
   return {
     paths,
-    fallback: false
+    fallback: false,
   };
 }
 
 export async function getStaticProps({ params }) {
   const data = await getPostAndMorePosts(params.id);
+  const wordPressPosts = await getAllPostsForHome();
   const postData = data.post;
   return {
     props: {
-      postData
-    }
+      postData,
+      wordPressPosts,
+    },
   };
 }
