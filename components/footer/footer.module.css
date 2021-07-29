@@ -5,6 +5,7 @@
 #footer-block-content {
   padding: 40px;
   padding-top: 20px;
+  padding-left: 120px;
 }
 #footer-block-arrow-bg {
   background-image: url('/images/homepage/footer_arrow.svg');

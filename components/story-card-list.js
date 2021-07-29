@@ -66,7 +66,8 @@ function WordPressPosts({ posts }) {
                 <small className={`${utilStyles.lightText} ${storyCardStyles.date}`}>
                   Date: <Date dateString={node.date} />
                 </small>
-                <div className={storyCardStyles.hr}></div>
+                <hr className={storyCardStyles.hr}></hr>
+                {/* <div className={storyCardStyles.hr}></div> */}
                 <div className={storyCardStyles.author}>
                   <div className={storyCardStyles.name}>By Firstname Lastname</div>
                   <div className={`${storyCardStyles.position} ${utilStyles.lightText}`}>Software Engineer @ Google</div>
