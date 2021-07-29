@@ -33,14 +33,14 @@ export default function Layout({ children, home }) {
           {home ? (
             <>
               <Link href='/'>
-                <img src='https://journeytovalley.org/wp-content/uploads/2020/09/logo.png' className={`${styles.headerImage}`} alt={name} />
+                <img src='/images/J2V-Logo-1.svg' className={`${styles.headerImage}`} alt={name} />
               </Link>
               <HeaderNavBar home />
             </>
           ) : (
             <>
               <Link href='/'>
-                <img src='https://journeytovalley.org/wp-content/uploads/2020/09/logo.png' className={`${styles.headerImage}`} alt={name} />
+                <img src='/images/J2V-Logo-1.svg' className={`${styles.headerImage}`} alt={name} />
               </Link>
               <HeaderNavBar home={false} />
             </>

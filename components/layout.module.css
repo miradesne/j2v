@@ -21,7 +21,7 @@
 
 .headerImage {
   height: auto;
-  max-width: 100%;
+  max-width: 66px;
   border: none;
   vertical-align: middle;
   display: inline-block;
@@ -46,7 +46,7 @@
     margin: 15px 40px;
   }
   .headerImage {
-    max-width: 60px;
+    max-width: 66px;
     height: auto;
     margin-left: 0;
   }

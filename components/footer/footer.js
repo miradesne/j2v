@@ -11,7 +11,7 @@ export default function Footer({ children, home }) {
       <div id={styles['footer-block-content']}>
         <div className={styles.row}>
           <div className={styles.left} id={styles.logo}>
-            J2V
+            <img src='/images/J2V-Logo-1.svg' alt='Logo' />
           </div>
           <div className={styles.right} id={styles.title}>
             Journey to Valley
