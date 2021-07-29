@@ -16,7 +16,10 @@ Theme Name: Custom Home
   text-align: center;
 }
 #home-journey-to-valley-row {
-  min-height: 220px;
+  margin-top: 56px;
+  margin-bottom: 56px;
+  margin-left: 84px;
+  margin-right: 84px;
 }
 #home-journey-to-valley-row h1 {
   margin: 0px;
@@ -44,13 +47,11 @@ Theme Name: Custom Home
 #home-world {
   margin: 0px;
   margin-top: 40px;
-  margin-bottom: 123px;
   display: flex;
   justify-content: center;
 }
 #home-world img {
-  width: 582px;
-  /* min-width: 480px; */
+  min-width: 480px;
   object-fit: contain;
 }
 
@@ -284,7 +285,7 @@ Theme Name: Custom Home
 .home-our-latest-stories-column-left {
   align-items: flex-end;
   justify-content: flex-end;
-  margin-top: 84px;
+  margin-top: 50px;
   margin-right: 44px;
 }
 .home-our-latest-stories-column-right {
@@ -325,22 +326,30 @@ Theme Name: Custom Home
   height: 389px;
   position: relative;
 }
-#home-our-latest-stories-card-container-pink {
-  box-shadow: 7px 7px #f39dc0;
+.home-our-latest-stories-name {
+  font-family: Roobert;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 100%;
 }
-#home-our-latest-stories-card-container-orange {
-  box-shadow: 7px 7px #f46d36;
+.home-our-latest-stories-job {
+  font-family: Roobert;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  color: #747474;
+
+  margin-top: 16px;
 }
-#home-our-latest-stories-card-container-teal {
-  box-shadow: 7px 7px #3fc9c8;
+
+.home-our-latest-stories-grid {
+  padding-top: 87.28%;
+  position: relative;
 }
-.home-our-latest-stories-card-quote {
-  height: 20%;
+.home-our-latest-stories-inside {
   position: absolute;
-  left: 30px;
-  top: -37px;
-}
-.home-our-latest-stories-card-content {
+  top: 0;
+  left: 0;
   width: 100%;
   max-width: 480px;
   height: 100%;
@@ -364,32 +373,10 @@ Theme Name: Custom Home
 
 .home-our-latest-stories-card-author {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
-
-#home-our-latest-stories-card-author-avatar-pink {
-  border: 3px solid #f39dc0;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  box-sizing: border-box;
-}
-#home-our-latest-stories-card-author-avatar-teal {
-  border: 3px solid #3fc9c8;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  box-sizing: border-box;
-}
-#home-our-latest-stories-card-author-avatar-orange {
-  border: 3px solid #f46d36;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  box-sizing: border-box;
-}
-
-.home-our-latest-stories-card-author-identity {
+.home-our-latest-stories-flexbox {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -417,17 +404,14 @@ Theme Name: Custom Home
   color: #747474;
 }
 
-/* ============================================ */
-
 #home-our-latest-stories-more-row {
   margin-top: 170px;
-  margin-bottom: 300px;
+  margin-bottom: 170px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-#home-our-latest-stories-more,
-#subscribe-to-our-latest-stories-more {
+#home-our-latest-stories-more {
   width: 256px;
   height: 78px;
   color: black;

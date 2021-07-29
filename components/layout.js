@@ -32,24 +32,30 @@ export default function Layout({ children, home }) {
         <header className={styles.header}>
           {home ? (
             <>
-              <Link href='/'>
-                <img src='https://journeytovalley.org/wp-content/uploads/2020/09/logo.png' className={`${styles.headerImage}`} alt={name} />
-              </Link>
-              <HeaderNavBar home />
+              <img src='https://journeytovalley.org/wp-content/uploads/2020/09/logo.png' className={`${styles.headerImage}`} alt={name} />
+              <HeaderNavBar />
             </>
           ) : (
             <>
               <Link href='/'>
-                <img src='https://journeytovalley.org/wp-content/uploads/2020/09/logo.png' className={`${styles.headerImage}`} alt={name} />
+                <a>
+                  <img
+                    src='https://journeytovalley.org/wp-content/uploads/2020/09/logo.png'
+                    className={`${styles.headerImage}`}
+                    alt={name}
+                  />
+                </a>
               </Link>
-              <HeaderNavBar home={false} />
+              <HeaderNavBar />
             </>
           )}
         </header>
         <main>{children}</main>
       </div>
 
-      <footer id={styles['footer-toplevel']}>{home ? <Footer home /> : <Footer home={false} />}</footer>
+      <footer id={styles['footer-toplevel']}>
+        <Footer />
+      </footer>
     </div>
   );
 }
