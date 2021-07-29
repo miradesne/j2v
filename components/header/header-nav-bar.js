@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import styles from './header-nav-bar.module.css';
-import utilStyles from '../styles/utils.module.css';
+import utilStyles from '../../styles/utils.module.css';
 import Link from 'next/link';
 import SideDrawer from './side-drawer';
-import Backdrop from './backdrop';
+import Backdrop from '../backdrop';
+import { NavLink } from './navlink';
 import Scroll from 'react-scroll';
 const ScrollLink = Scroll.Link;
 
@@ -31,43 +32,43 @@ export default function HeaderNavBar({ children, home }) {
               spy={true}
               smooth={true}
               duration={800}>
-              <div className={styles['navbar-button']}>Subscribe</div>
+              Subscribe
             </ScrollLink>
           ) : (
             <a className={styles['navbar-button']} href='/#subscribe-section'>
               Subscribe
             </a>
           )}
-          <Link href='/stories-list'>
-            <div className={styles['navbar-button']}>Stories</div>
-          </Link>
-          <Link href='/stories-list'>
-            <div className={styles['navbar-button']}>About</div>
-          </Link>
-          <Link href='/'>
-            <div className={styles['navbar-button']}>Home</div>
-          </Link>
+          <NavLink exact className={styles['navbar-button']} href='/stories-list'>
+            Stories
+          </NavLink>
+          <NavLink exact className={styles['navbar-button']} href='/about'>
+            About
+          </NavLink>
+          <NavLink exact className={styles['navbar-button']} href='/'>
+            Home
+          </NavLink>
         </div>
       </SideDrawer>
       <div id={styles.navbar}>
         {home ? (
-          <ScrollLink to='subscribe-section' spy={true} smooth={true} duration={500}>
-            <div className={styles['navbar-button']}>Subscribe</div>
+          <ScrollLink className={styles['navbar-button']} to='subscribe-section' spy={true} smooth={true} duration={500}>
+            Subscribe
           </ScrollLink>
         ) : (
           <a className={styles['navbar-button']} href='/#subscribe-section'>
             Subscribe
           </a>
         )}
-        <Link href='/stories-list'>
-          <div className={styles['navbar-button']}>Stories</div>
-        </Link>
-        <Link href='/stories-list'>
-          <div className={styles['navbar-button']}>About</div>
-        </Link>
-        <Link href='/'>
-          <div className={styles['navbar-button']}>Home</div>
-        </Link>
+        <NavLink exact className={styles['navbar-button']} href='/stories-list'>
+          Stories
+        </NavLink>
+        <NavLink exact className={styles['navbar-button']} href='/about'>
+          About
+        </NavLink>
+        <NavLink exact className={styles['navbar-button']} href='/'>
+          Home
+        </NavLink>
       </div>
       <div id={styles['navbar-burger-container']}>
         <button id={styles['navbar-burger']} onClick={openDrawer}>

@@ -178,8 +178,12 @@
   #menu-block-inner .item-last {
     font-family: Roobert;
     font-size: 24px;
-    font-weight: 500;
+    font-style: normal;
+    font-weight: 400;
     line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+
     margin-top: 36px;
   }
 
@@ -214,10 +218,25 @@
   }
 
   #menu-block-inner .item {
+    font-family: Roobert;
     font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
     line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
   }
   #follow-us-block {
     margin-top: 64px;
+  }
+
+  #copyright-block {
+    font-family: Roobert;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
   }
 }

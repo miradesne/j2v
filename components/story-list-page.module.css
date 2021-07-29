@@ -92,7 +92,7 @@
   }
 }
 
-@media screen and (max-width: 559px) {
+@media screen and (max-width: 480px) {
   .cardPagination {
     width: 100%;
     margin-top: 12px;

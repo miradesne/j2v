@@ -12,6 +12,7 @@
 
 .header {
   margin: 20px;
+  margin-top: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -24,6 +25,7 @@
   vertical-align: middle;
   display: inline-block;
   cursor: pointer;
+  margin-left: 105px;
 }
 
 .backToHome {
@@ -45,10 +47,11 @@
   .headerImage {
     max-width: 60px;
     height: auto;
+    margin-left: 0;
   }
 }
 
-@media screen and (max-width: 559px) {
+@media screen and (max-width: 480px) {
   .header {
     margin-left: 20px;
     margin-right: 20px;

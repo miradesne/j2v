@@ -2,8 +2,8 @@ import Head from 'next/head';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
-import HeaderNavBar from './header-nav-bar';
-import Footer from './footer';
+import HeaderNavBar from './header/header-nav-bar';
+import Footer from './footer/footer';
 
 const name = 'Journey to Valley';
 export const siteTitle = 'Next.js J2V Website';

@@ -23,8 +23,6 @@ export default function Homepage() {
         <img src='images/homepage/front_pic-1.svg' alt='home-world' />
       </figure>
 
-      <div id={styles['home-downarrow']} className={styles['home-flex']}></div>
-
       <Link href='/stories-list'>
         <button className={styles['home-explore-button']}>Start Reading</button>
       </Link>
@@ -132,7 +130,7 @@ export default function Homepage() {
 
       <Element id='subscribe-section' name='subscribe-section'>
         <div id={styles['subscribe-to-our-latest-stories']}>
-          <img id={styles['subscribe-to-our-latest-stories-background']} src={'/images/homepage/subscribe_aio.svg'}></img>
+          {/* <img id={styles['subscribe-to-our-latest-stories-background']} src={'/images/homepage/subscribe_aio.svg'}></img> */}
           <div id={styles['subscribe-to-our-latest-stories-content']}>
             <div id={styles['subscribe-to-our-latest-stories-sub-title']}>
               <h2>Subscribe To</h2>
@@ -154,7 +152,7 @@ export default function Homepage() {
           </div>
           <div id={styles['subscribe-to-our-latest-stories-bottom-ornaments']}>
             <img id={styles['subscribe-to-our-latest-stories-megaphone']} src={'/images/homepage/megaphone-subscribe.svg'}></img>
-            <img src={'/images/homepage/ornament-icons.svg'}></img>
+            <img id={styles['subscribe-to-our-latest-stories-ornament-icons']} src={'/images/homepage/ornament-icons.svg'}></img>
           </div>
           <div id={styles['subscribe-to-our-latest-stories-bottom-ornaments-phone']}>
             <img src={'/images/homepage/subscribe-phone-illustration.svg'} alt='phone ornament'></img>
