@@ -56,11 +56,16 @@ const CommentSection = () => {
         <hr></hr>
 
         <div className={styles['comment-section-comments-cluster']}>
+          <h2 className={styles['comment-section-comments-head']}>Comments</h2>
           <div className={styles['comment-section-comments-card']} id={styles['comment-section-comments-card-1']}>
             <div className={styles['comment-section-comments-card-meta']}>
               <div className={styles['comment-section-comments-card-author']}>
                 <img src='/images/single-story/User01_Blue.svg' alt='comments-avatar' />
                 <p>Firstname Lastname</p>
+                <div className={styles['comment-section-comments-card-author-date-mobile']}>
+                  <p>Firstname Lastname</p>
+                  <div className={styles['comment-section-comments-card-date-mobile']}>Posted June 30th, 2021</div>
+                </div>
               </div>
               <div className={styles['comment-section-comments-card-date']}>Posted June 30th, 2021</div>
             </div>
@@ -76,6 +81,10 @@ const CommentSection = () => {
               <div className={styles['comment-section-comments-card-author']}>
                 <img src='/images/single-story/User01_Pink.svg' alt='comments-avatar' />
                 <p>Firstname Lastname</p>
+                <div className={styles['comment-section-comments-card-author-date-mobile']}>
+                  <p>Firstname Lastname</p>
+                  <div className={styles['comment-section-comments-card-date-mobile']}>Posted June 30th, 2021</div>
+                </div>
               </div>
               <div className={styles['comment-section-comments-card-date']}>Posted June 30th, 2021</div>
             </div>
@@ -91,6 +100,10 @@ const CommentSection = () => {
               <div className={styles['comment-section-comments-card-author']}>
                 <img src='/images/single-story/User01_Orange.svg' alt='comments-avatar' />
                 <p>Firstname Lastname</p>
+                <div className={styles['comment-section-comments-card-author-date-mobile']}>
+                  <p>Firstname Lastname</p>
+                  <div className={styles['comment-section-comments-card-date-mobile']}>Posted June 30th, 2021</div>
+                </div>
               </div>
               <div className={styles['comment-section-comments-card-date']}>Posted June 30th, 2021</div>
             </div>

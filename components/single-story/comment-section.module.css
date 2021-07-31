@@ -164,6 +164,9 @@
 .comment-section-comments-cluster {
   margin-top: 74px;
 }
+.comment-section-comments-head {
+  display: none;
+}
 
 .comment-section-comments-card {
   background-repeat: no-repeat;
@@ -206,6 +209,9 @@
   font-weight: 700;
   line-height: 22.86px;
   color: #747474;
+}
+.comment-section-comments-card-author-date-mobile {
+  display: none;
 }
 
 .comment-section-comments-card-date {
@@ -306,5 +312,170 @@
     line-height: 27px;
     letter-spacing: 0em;
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .comment-section-container {
+    max-width: 320px;
+  }
+  .social-icon-group {
+    flex-direction: column;
+  }
+  .social-icon-left {
+    margin-bottom: 36px;
+  }
+  .social-icon-cheers {
+    margin: 0;
+  }
+  .social-icon-cheers > img,
+  .social-icon-chats > img {
+    width: 26px;
+    height: 26px;
+  }
+  .social-icon-cheers > span,
+  .social-icon-chats > span {
+    font-family: Roobert;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .social-icon-social-media {
+    display: flex;
+    justify-content: center;
+  }
+  .social-icon-social-media img {
+    width: 26px;
+    height: 26px;
+  }
+  .comment-section-container > hr {
+    margin-top: 0;
+  }
+  .comment-section-input-head > h2 {
+    font-family: Roobert;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .comment-section-input-head > img {
+    width: 22px;
+    height: 25px;
+  }
+  .comment-section-input-author {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .comment-section-input-author > input {
+    max-width: 319px;
+    margin-bottom: 26px;
+    font-family: Roobert;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .comment-section-input-message > textarea {
+    font-family: Roobert;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .comment-section-comments-cluster {
+    margin-top: 48px;
+  }
+  .comment-section-comments-head {
+    display: block;
+    font-family: Roobert;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .comment-section-comments-card {
+    height: 293px;
+    padding: 9px 14px 64px;
+  }
+
+  #comment-section-comments-card-1 {
+    background-image: url('/images/single-story/card360/Blue360.svg');
+  }
+  #comment-section-comments-card-2 {
+    background-image: url('/images/single-story/card360/Pink360.svg');
+  }
+  #comment-section-comments-card-3 {
+    background-image: url('/images/single-story/card360/Orange360.svg');
+  }
+
+  .comment-section-comments-card-meta {
+    all: initial;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 22px;
+  }
+  .comment-section-comments-card-author > img {
+    width: 28px;
+    height: 28px;
+  }
+  .comment-section-comments-card-author > p,
+  .comment-section-comments-card-date {
+    display: none;
+  }
+  .comment-section-comments-card-author-date-mobile {
+    display: block;
+  }
+  .comment-section-comments-card-author-date-mobile > p {
+    font-family: Roobert;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin: 0;
+  }
+  .comment-section-comments-card-date-mobile {
+    display: block;
+    font-family: Roobert;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #b1b1b1;
+  }
+  .comment-section-comments-card-message {
+    margin: 0;
+    font-family: Roobert;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .back-to-stories-list button {
+    width: 157px;
+    height: 48px;
+    font-family: Roobert;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
   }
 }

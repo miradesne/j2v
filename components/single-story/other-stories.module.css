@@ -52,3 +52,24 @@
     margin-left: 40px;
   }
 }
+
+@media screen and (max-width: 360px) {
+  .other-stories-container {
+    margin-top: 100px;
+  }
+  .other-stories-container h2 {
+    margin-left: 20px;
+    font-family: Roobert;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 48px;
+  }
+  .related-stories-card {
+    max-width: 320px;
+    height: 335px;
+  }
+}

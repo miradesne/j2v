@@ -196,3 +196,72 @@
     padding-right: 88px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .article-container {
+    max-width: 320px;
+  }
+  .article-head-title {
+    font-family: Roobert;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 32px;
+  }
+  .article-sub-title {
+    font-family: Life;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: -0.015em;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .article-main-image {
+    margin-bottom: 48px;
+  }
+  .article-main-image > img {
+    height: 120px;
+  }
+  .article-main-image > span {
+    font-family: Roobert;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .article-author-container {
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+  .article-author-avatar {
+    width: 56px;
+    height: 56px;
+  }
+  .article-author-identity {
+    max-width: 231px;
+    padding-left: 0;
+    margin-left: 11px;
+  }
+
+  .article-author-social-media {
+    display: none;
+  }
+  .article-body-article {
+    padding: 0;
+    font-family: Life;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 32px;
+  }
+}
