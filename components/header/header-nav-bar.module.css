@@ -15,7 +15,6 @@
   color: black;
   justify-content: center;
   align-items: center;
-  border: 3px solid transparent;
   padding: 15px 49px;
   font-family: Roobert;
   font-weight: 700;
@@ -24,20 +23,25 @@
   font-style: normal;
   letter-spacing: 0em;
   text-align: center;
+  border: 3px solid transparent;
 }
 
 .navbar-button:hover {
   border: 3px solid #ffb929;
   border-radius: 50px;
-  text-decoration: none;
   cursor: pointer;
+  text-decoration: none;
 }
 .navbar-button:active {
   background-color: #ffb929;
-}
-
-#navbar a:hover {
-  text-decoration: none;
+  border: 3px solid #ffb929;
+  font-family: Roobert;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-align: center;
 }
 
 /* Navbar Burger Side Drawer */
