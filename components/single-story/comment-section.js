@@ -17,11 +17,19 @@ const CommentSection = () => {
           </div>
         </div>
         <div className={styles['social-icon-social-media']}>
-          <img src='/images/homepage/fb_icon_grey.svg' />
-          <img src='/images/homepage/linkedin_icon_grey.svg' />
-          <img src='/images/homepage/twitter_icon_grey.svg' />
-          <img src='/images/homepage/ig_icon_grey.svg' />
-          <img src='/images/homepage/share_icon.svg' />
+          <a target='_blank' href='https://www.facebook.com/Journey-to-Valley-109788187490460/'>
+            <img id={styles['socmed-block-fb']} src={'/images/homepage/fb_icon_grey.svg'} />
+          </a>
+          <a target='_blank' href='https://www.linkedin.com/company/68686498/admin/'>
+            <img id={styles['socmed-block-ln']} src={'/images/homepage/linkedin_icon_grey.svg'} />
+          </a>
+          <a target='_blank' href='https://twitter.com/ValleyJourney'>
+            <img id={styles['socmed-block-tw']} src={'/images/homepage/twitter_icon_grey.svg'} />
+          </a>
+          <a target='_blank' href='https://www.instagram.com/journeytovalley/'>
+            <img id={styles['socmed-block-ig']} src={'/images/homepage/ig_icon_grey.svg'} />
+          </a>
+          <img src='/images/homepage/share_icon.svg'></img>
         </div>
       </div>
       <hr></hr>

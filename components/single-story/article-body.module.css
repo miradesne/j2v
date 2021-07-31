@@ -5,13 +5,21 @@
 .article-head-title {
   font-family: Roobert;
   font-size: 50px;
-  line-height: 62.5px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 63px;
+  letter-spacing: 0em;
+  text-align: left;
   margin-bottom: 30px;
 }
 .article-sub-title {
   font-family: Life;
   font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 45px;
+  letter-spacing: -0.015em;
+  text-align: left;
   margin-bottom: 57px;
   color: #747474;
 }
@@ -42,18 +50,28 @@
   width: 76px;
   height: 76px;
   border-radius: 50%;
-  border: black solid 3px;
+  border: aquamarine solid 3px;
 }
 .article-author-identity {
   width: 362px;
 }
 #article-author-name {
+  font-family: Roobert;
   font-size: 22px;
-  line-height: 26.4px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
   margin: 0;
 }
 #article-author-date {
+  font-family: Roobert;
   font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
   margin: 0;
   color: #747474;
 }
@@ -64,5 +82,35 @@
 }
 
 .article-body-article {
+  font-family: Life;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
   margin-bottom: 124px;
+}
+
+.article-author-social-media img {
+  margin: 8px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+#socmed-block-fb:hover {
+  content: url('/images/homepage/fb_icon_yellow.svg');
+}
+
+#socmed-block-ln:hover {
+  content: url('/images/homepage/linkedin_icon_yellow.svg');
+}
+
+#socmed-block-tw:hover {
+  content: url('/images/homepage/twitter_icon_yellow.svg');
+}
+
+#socmed-block-ig:hover {
+  content: url('/images/homepage/ig_icon_yellow.svg');
 }

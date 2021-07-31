@@ -1,3 +1,20 @@
 .other-stories-container {
-  margin: 152px 200px 200px;
+  margin-top: 152px;
+  margin-bottom: 200px;
+}
+.other-stories-container h2 {
+  margin-bottom: 74px;
+  margin-left: 120px;
+  font-family: Roobert;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.related-stories-card {
+  max-width: 942px;
+  height: 264px;
 }

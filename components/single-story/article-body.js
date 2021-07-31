@@ -15,13 +15,23 @@ const ArticleBody = ({ postData }) => {
         <img className={styles['article-author-avatar']} src='https://www.thelegendofheroes.com/tocs3/sp/img/chara/bust/laura.png'></img>
         <div className={styles['article-author-identity']}>
           <p id={styles['article-author-name']}>By Firstname Lastname</p>
-          <p id={styles['article-author-date']}>Posted:&nbsp;{DateTime.fromISO(postData.date).toLocaleString()}</p>
+          <p id={styles['article-author-date']}>
+            Posted:&nbsp;{DateTime.fromISO(postData.date).toLocaleString({ month: 'long', day: 'numeric', year: 'numeric' })}
+          </p>
         </div>
         <div className={styles['article-author-social-media']}>
-          <img src='/images/homepage/fb_icon_grey.svg'></img>
-          <img src='/images/homepage/linkedin_icon_grey.svg'></img>
-          <img src='/images/homepage/twitter_icon_grey.svg'></img>
-          <img src='/images/homepage/ig_icon_grey.svg'></img>
+          <a target='_blank' href='https://www.facebook.com/Journey-to-Valley-109788187490460/'>
+            <img id={styles['socmed-block-fb']} src={'/images/homepage/fb_icon_grey.svg'} />
+          </a>
+          <a target='_blank' href='https://www.linkedin.com/company/68686498/admin/'>
+            <img id={styles['socmed-block-ln']} src={'/images/homepage/linkedin_icon_grey.svg'} />
+          </a>
+          <a target='_blank' href='https://twitter.com/ValleyJourney'>
+            <img id={styles['socmed-block-tw']} src={'/images/homepage/twitter_icon_grey.svg'} />
+          </a>
+          <a target='_blank' href='https://www.instagram.com/journeytovalley/'>
+            <img id={styles['socmed-block-ig']} src={'/images/homepage/ig_icon_grey.svg'} />
+          </a>
           <img src='/images/homepage/share_icon.svg'></img>
         </div>
       </div>

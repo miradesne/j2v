@@ -613,7 +613,7 @@ Theme Name: Custom Home
     padding-left: 5vw;
   }
   #subscribe-to-our-latest-stories-input {
-    /* width: 60%; */
+    width: 100%;
     max-width: 497px;
   }
   #subscribe-to-our-latest-stories-subscribe {
@@ -629,9 +629,13 @@ Theme Name: Custom Home
     width: 100%;
     padding: 0 2.5vw;
   }
+  /* #subscribe-to-our-latest-stories-bottom-ornaments img {
+    width: 100%;
+  } */
 
-  #subscribe-to-our-latest-stories-megaphone {
-    transform: scale(0.8);
+  #subscribe-to-our-latest-stories-megaphone,
+  #subscribe-to-our-latest-stories-ornament-icons {
+    min-width: 200px;
   }
 }
 

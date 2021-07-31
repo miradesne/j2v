@@ -33,11 +33,35 @@
 .social-icon-cheers > span,
 .social-icon-chats > span {
   margin-left: 10px;
+  font-family: Roobert;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
-.social-icon-social-media > img {
-  margin-right: 16px;
-  width: 36px;
+.social-icon-social-media img {
+  margin: 8px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+#socmed-block-fb:hover {
+  content: url('/images/homepage/fb_icon_yellow.svg');
+}
+
+#socmed-block-ln:hover {
+  content: url('/images/homepage/linkedin_icon_yellow.svg');
+}
+
+#socmed-block-tw:hover {
+  content: url('/images/homepage/twitter_icon_yellow.svg');
+}
+
+#socmed-block-ig:hover {
+  content: url('/images/homepage/ig_icon_yellow.svg');
 }
 
 .comment-section-container > hr {
@@ -54,8 +78,11 @@
 .comment-section-input-head > h2 {
   font-family: Roobert;
   font-size: 36px;
+  font-style: normal;
   font-weight: 700;
-  line-height: 45.72px;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: left;
   margin: 0;
 }
 
@@ -74,10 +101,13 @@
   outline: none;
   border: 3px solid #b4b4b4;
   padding: 16px 18px;
-  font-size: 18px;
   font-family: Roobert;
+  font-size: 18px;
+  font-style: normal;
   font-weight: 400;
-  line-height: 22.86px;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 .comment-section-input-message > textarea {
   border-radius: 22px;
@@ -86,10 +116,13 @@
   outline: none;
   border: 3px solid #b4b4b4;
   padding: 18px;
-  font-size: 18px;
   font-family: Roobert;
+  font-size: 18px;
+  font-style: normal;
   font-weight: 400;
-  line-height: 22.86px;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 .comment-section-submit-button-container {
   width: 100%;
@@ -168,10 +201,13 @@
 .comment-section-comments-card-message {
   margin-left: 68px;
   margin-right: 68px;
-  font-size: 18px;
   font-family: Roobert;
+  font-size: 18px;
+  font-style: normal;
   font-weight: 400;
   line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .back-to-stories-list {
