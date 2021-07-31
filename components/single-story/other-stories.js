@@ -42,6 +42,9 @@ const OtherStories = ({ wordPressPosts }) => {
           );
         }
       })}
+      <div className={styles['other-stories-more']}>
+        <button className={styles['other-stories-more-button']}>More</button>
+      </div>
     </div>
   );
 };

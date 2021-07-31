@@ -56,57 +56,48 @@ const CommentSection = () => {
         <hr></hr>
 
         <div className={styles['comment-section-comments-cluster']}>
-          <div
-            className={styles['comment-section-comments-card']}
-            style={{ backgroundImage: 'url(/images/single-story/card1366/Blue1366.svg)' }}>
+          <div className={styles['comment-section-comments-card']} id={styles['comment-section-comments-card-1']}>
             <div className={styles['comment-section-comments-card-meta']}>
               <div className={styles['comment-section-comments-card-author']}>
-                <img src='https://www.thelegendofheroes.com/tocs3/sp/img/chara/bust/laura.png' alt='comments-avatar' />
+                <img src='/images/single-story/User01_Blue.svg' alt='comments-avatar' />
                 <p>Firstname Lastname</p>
               </div>
               <div className={styles['comment-section-comments-card-date']}>Posted June 30th, 2021</div>
             </div>
             <div className={styles['comment-section-comments-card-message']}>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore aperiam necessitatibus eos magni quis cumque libero autem
-              ratione, excepturi nostrum assumenda neque tenetur animi quibusdam reprehenderit repudiandae accusamus, accusantium tempora
-              doloremque praesentium. Magni nobis recusandae maiores voluptatibus quo quis nemo ipsam cumque incidunt mollitia in
-              praesentium, animi et culpa excepturi consectetur
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo, pulvinar suspendisse id blandit. Tellus nisl quis cras dolor
+              dui sem. Euismod tempus dictum nunc nunc euismod. Consectetur id porttitor sit elementum justo, quis mauris. Diam id interdum
+              habitant faucibus. Vivamus dolor habitant tincidunt tortor orci, consequat.
             </div>
           </div>
 
-          <div
-            className={styles['comment-section-comments-card']}
-            style={{ backgroundImage: 'url(/images/single-story/card1366/Pink1366.svg)' }}>
+          <div className={styles['comment-section-comments-card']} id={styles['comment-section-comments-card-2']}>
             <div className={styles['comment-section-comments-card-meta']}>
               <div className={styles['comment-section-comments-card-author']}>
-                <img src='https://www.thelegendofheroes.com/tocs3/sp/img/chara/bust/laura.png' alt='comments-avatar' />
+                <img src='/images/single-story/User01_Pink.svg' alt='comments-avatar' />
                 <p>Firstname Lastname</p>
               </div>
               <div className={styles['comment-section-comments-card-date']}>Posted June 30th, 2021</div>
             </div>
             <div className={styles['comment-section-comments-card-message']}>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore aperiam necessitatibus eos magni quis cumque libero autem
-              ratione, excepturi nostrum assumenda neque tenetur animi quibusdam reprehenderit repudiandae accusamus, accusantium tempora
-              doloremque praesentium. Magni nobis recusandae maiores voluptatibus quo quis nemo ipsam cumque incidunt mollitia in
-              praesentium, animi et culpa excepturi consectetur
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo, pulvinar suspendisse id blandit. Tellus nisl quis cras dolor
+              dui sem. Euismod tempus dictum nunc nunc euismod. Consectetur id porttitor sit elementum justo, quis mauris. Diam id interdum
+              habitant faucibus. Vivamus dolor habitant tincidunt tortor orci, consequat.
             </div>
           </div>
 
-          <div
-            className={styles['comment-section-comments-card']}
-            style={{ backgroundImage: 'url(/images/single-story/card1366/Orange1366.svg)' }}>
+          <div className={styles['comment-section-comments-card']} id={styles['comment-section-comments-card-3']}>
             <div className={styles['comment-section-comments-card-meta']}>
               <div className={styles['comment-section-comments-card-author']}>
-                <img src='https://www.thelegendofheroes.com/tocs3/sp/img/chara/bust/laura.png' alt='comments-avatar' />
+                <img src='/images/single-story/User01_Orange.svg' alt='comments-avatar' />
                 <p>Firstname Lastname</p>
               </div>
               <div className={styles['comment-section-comments-card-date']}>Posted June 30th, 2021</div>
             </div>
             <div className={styles['comment-section-comments-card-message']}>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore aperiam necessitatibus eos magni quis cumque libero autem
-              ratione, excepturi nostrum assumenda neque tenetur animi quibusdam reprehenderit repudiandae accusamus, accusantium tempora
-              doloremque praesentium. Magni nobis recusandae maiores voluptatibus quo quis nemo ipsam cumque incidunt mollitia in
-              praesentium, animi et culpa excepturi consectetur
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo, pulvinar suspendisse id blandit. Tellus nisl quis cras dolor
+              dui sem. Euismod tempus dictum nunc nunc euismod. Consectetur id porttitor sit elementum justo, quis mauris. Diam id interdum
+              habitant faucibus. Vivamus dolor habitant tincidunt tortor orci, consequat.
             </div>
           </div>
         </div>

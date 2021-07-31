@@ -18,3 +18,37 @@
   max-width: 942px;
   height: 264px;
 }
+
+.other-stories-more {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.other-stories-more-button {
+  font-family: Roobert;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 22px;
+  width: 157px;
+  height: 48px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+.other-stories-more-button:hover,
+.other-stories-more-button:active {
+  cursor: pointer;
+  border: 3px solid #ffb929;
+  background-color: #ffb929;
+}
+
+@media screen and (max-width: 768px) {
+  .other-stories-container h2 {
+    margin-left: 40px;
+  }
+}

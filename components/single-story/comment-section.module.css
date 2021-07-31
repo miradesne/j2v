@@ -1,5 +1,6 @@
 .comment-section-container {
-  padding: 0 311px;
+  max-width: 744px;
+  margin: auto;
 }
 
 .social-icon-group {
@@ -29,6 +30,14 @@
 .social-icon-chats > img {
   width: 35px;
   height: 35px;
+}
+.social-icon-cheers > img:hover {
+  content: url('/images/single-story/toast-1-hover.svg');
+  cursor: pointer;
+}
+.social-icon-chats > img:hover {
+  content: url('/images/single-story/chat-1-hover.svg');
+  cursor: pointer;
 }
 .social-icon-cheers > span,
 .social-icon-chats > span {
@@ -74,6 +83,10 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 24px;
+}
+.comment-section-input-head > img:hover {
+  content: url('/images/single-story/community-guidelines-hover.svg');
+  cursor: pointer;
 }
 .comment-section-input-head > h2 {
   font-family: Roobert;
@@ -153,14 +166,22 @@
 }
 
 .comment-section-comments-card {
-  /* border: solid 3px red; */
-  /* background-image: url('/images/single-story/card1366/Blue1366.svg'); */
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   height: 381px;
   padding: 26px 32px 65px 28px;
   margin-bottom: 54px;
+}
+
+#comment-section-comments-card-1 {
+  background-image: url('/images/single-story/card1366/Blue1366.svg');
+}
+#comment-section-comments-card-2 {
+  background-image: url('/images/single-story/card1366/Pink1366.svg');
+}
+#comment-section-comments-card-3 {
+  background-image: url('/images/single-story/card1366/Orange1366.svg');
 }
 .comment-section-comments-card-meta {
   display: flex;
@@ -175,10 +196,7 @@
 .comment-section-comments-card-author > img {
   width: 54px;
   height: 54px;
-  padding: 4.5px;
-  border: solid 3px aquamarine;
   border-radius: 50%;
-  background-color: aquamarine;
   margin-right: 13px;
 }
 
@@ -239,4 +257,54 @@
   font-weight: 700;
   line-height: 28.8px;
   color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .comment-section-container {
+    max-width: 688px;
+    margin: auto;
+  }
+
+  .comment-section-input-author > input {
+    width: 334px;
+    height: 48px;
+  }
+  .comment-section-submit-button {
+    font-family: Roobert;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 157px;
+    height: 48px;
+  }
+  .comment-section-comments-card {
+    height: 351px;
+    padding: 32px 19px 100px;
+  }
+  .comment-section-comments-card-meta {
+    margin-right: 75px;
+  }
+
+  #comment-section-comments-card-1 {
+    background-image: url('/images/single-story/card768/Blue768.svg');
+  }
+  #comment-section-comments-card-2 {
+    background-image: url('/images/single-story/card768/Pink768.svg');
+  }
+  #comment-section-comments-card-3 {
+    background-image: url('/images/single-story/card768/Orange768.svg');
+  }
+
+  .comment-section-comments-card-message {
+    font-family: Roobert;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
 }
