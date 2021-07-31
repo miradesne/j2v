@@ -152,18 +152,20 @@
   margin-top: 74px;
 }
 
+.comment-section-comments-card {
+  /* border: solid 3px red; */
+  /* background-image: url('/images/single-story/card1366/Blue1366.svg'); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 381px;
+  padding: 26px 32px 65px 28px;
+  margin-bottom: 54px;
+}
 .comment-section-comments-card-meta {
   display: flex;
   justify-content: space-between;
   margin-bottom: 18px;
-}
-
-.comment-section-comments-card {
-  border: solid 3px aquamarine;
-  border-radius: 22px;
-  padding: 28px 32px 75px 28px;
-  background-color: white;
-  margin-bottom: 54px;
 }
 
 .comment-section-comments-card-author {
