@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import HeaderNavBar from './header/header-nav-bar';
 import Footer from './footer/footer';
+import Logo from './header/logo';
 
 const name = 'Journey to Valley';
 export const siteTitle = 'Next.js J2V Website';
@@ -32,16 +33,12 @@ export default function Layout({ children, home }) {
         <header className={styles.header}>
           {home ? (
             <>
-              <Link href='/'>
-                <img src='/images/J2V-Logo-1.svg' className={`${styles.headerImage}`} alt={name} />
-              </Link>
+              <Logo name={name}></Logo>
               <HeaderNavBar home />
             </>
           ) : (
             <>
-              <Link href='/'>
-                <img src='/images/J2V-Logo-1.svg' className={`${styles.headerImage}`} alt={name} />
-              </Link>
+              <Logo name={name}></Logo>
               <HeaderNavBar home={false} />
             </>
           )}

@@ -90,6 +90,7 @@ Theme Name: Custom Home
   line-height: 30px;
   letter-spacing: 0em;
   text-align: center;
+  transition: all 0.3s ease-out;
 }
 
 .home-explore-button:hover {
@@ -443,6 +444,7 @@ Theme Name: Custom Home
   line-height: 29px;
   letter-spacing: 0em;
   text-align: center;
+  transition: all 0.3s ease-out;
 }
 #home-our-latest-stories-more-row a {
   display: inline-block;
