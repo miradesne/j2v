@@ -31,6 +31,7 @@
   border-radius: 50px;
   cursor: pointer;
   text-decoration: none;
+  cursor: pointer;
 }
 .navbar-button:active {
   background-color: #ffb929;
