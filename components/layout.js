@@ -27,8 +27,8 @@ export default function Layout({ children, home }) {
           />
           <meta name='og:title' content={siteTitle} />
           <meta name='twitter:card' content='summary_large_image' />
-          <script src='https://jam.dev/jam.js'></script>
-          <script>Jam.init('ultimate-slug-71')</script>
+          {/* <script src='https://jam.dev/jam.js'></script> */}
+          {/* <script>Jam.init('ultimate-slug-71')</script> */}
         </Head>
         <header className={styles.header}>
           {home ? (
