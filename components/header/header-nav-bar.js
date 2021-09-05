@@ -72,7 +72,7 @@ export default function HeaderNavBar({ children, home }) {
       </div>
       <div id={styles['navbar-burger-container']}>
         <button id={styles['navbar-burger']} onClick={openDrawer}>
-          <img src='images/hamburger-icon.svg' alt='burger-icon'></img>
+          <img src='/images/hamburger-icon.svg' alt='burger-icon'></img>
         </button>
       </div>
     </>

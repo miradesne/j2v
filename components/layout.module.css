@@ -57,4 +57,8 @@
     margin-left: 20px;
     margin-right: 20px;
   }
+  .headerImage {
+    max-width: 34px;
+    height: auto;
+  }
 }

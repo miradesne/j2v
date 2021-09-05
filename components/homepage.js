@@ -24,7 +24,7 @@ export default function Homepage() {
       </figure>
 
       <Link href='/stories-list'>
-        <button className={styles['home-explore-button']}>Start Reading boye</button>
+        <button className={styles['home-explore-button']}>Start Reading</button>
       </Link>
 
       <div id={styles['home-our-latest-stories-first']} className={styles['home-our-latest-stories']}>

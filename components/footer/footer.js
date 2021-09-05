@@ -1,6 +1,7 @@
 import styles from './footer.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
+import Logo from '../header/logo';
 import Scroll from 'react-scroll';
 const ScrollLink = Scroll.Link;
 
@@ -10,9 +11,10 @@ export default function Footer({ children, home }) {
       <div id={styles['footer-block-arrow-bg']} />
       <div id={styles['footer-block-content']}>
         <div className={styles.row}>
-          <div className={styles.left} id={styles.logo}>
-            <img src='/images/J2V-Logo-1.svg' alt='Logo' />
-          </div>
+          {/* <div className={styles.left} id={styles.logo}> */}
+          {/* <img src='/images/J2V-Logo-1.svg' alt='Logo' /> */}
+          <Logo></Logo>
+          {/* </div> */}
           <div className={styles.right} id={styles.title}>
             Journey to Valley
           </div>

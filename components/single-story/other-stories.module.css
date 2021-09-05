@@ -1,3 +1,75 @@
 .other-stories-container {
-  margin: 152px 200px 200px;
+  margin-top: 152px;
+  margin-bottom: 200px;
+}
+.other-stories-container h2 {
+  margin-bottom: 74px;
+  margin-left: 120px;
+  font-family: Roobert;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.related-stories-card {
+  max-width: 942px;
+  height: 264px;
+}
+
+.other-stories-more {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.other-stories-more-button {
+  font-family: Roobert;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 22px;
+  width: 157px;
+  height: 48px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+.other-stories-more-button:hover,
+.other-stories-more-button:active {
+  cursor: pointer;
+  border: 3px solid #ffb929;
+  background-color: #ffb929;
+}
+
+@media screen and (max-width: 768px) {
+  .other-stories-container h2 {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .other-stories-container {
+    margin-top: 100px;
+  }
+  .other-stories-container h2 {
+    margin-left: 20px;
+    font-family: Roobert;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 48px;
+  }
+  .related-stories-card {
+    max-width: 320px;
+    height: 335px;
+  }
 }

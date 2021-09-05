@@ -17,11 +17,19 @@ const CommentSection = () => {
           </div>
         </div>
         <div className={styles['social-icon-social-media']}>
-          <img src='/images/homepage/fb_icon_grey.svg' />
-          <img src='/images/homepage/linkedin_icon_grey.svg' />
-          <img src='/images/homepage/twitter_icon_grey.svg' />
-          <img src='/images/homepage/ig_icon_grey.svg' />
-          <img src='/images/homepage/share_icon.svg' />
+          <a target='_blank' href='https://www.facebook.com/Journey-to-Valley-109788187490460/'>
+            <img id={styles['socmed-block-fb']} src={'/images/homepage/fb_icon_grey.svg'} />
+          </a>
+          <a target='_blank' href='https://www.linkedin.com/company/68686498/admin/'>
+            <img id={styles['socmed-block-ln']} src={'/images/homepage/linkedin_icon_grey.svg'} />
+          </a>
+          <a target='_blank' href='https://twitter.com/ValleyJourney'>
+            <img id={styles['socmed-block-tw']} src={'/images/homepage/twitter_icon_grey.svg'} />
+          </a>
+          <a target='_blank' href='https://www.instagram.com/journeytovalley/'>
+            <img id={styles['socmed-block-ig']} src={'/images/homepage/ig_icon_grey.svg'} />
+          </a>
+          <img src='/images/homepage/share_icon.svg'></img>
         </div>
       </div>
       <hr></hr>
@@ -48,35 +56,61 @@ const CommentSection = () => {
         <hr></hr>
 
         <div className={styles['comment-section-comments-cluster']}>
-          <div className={styles['comment-section-comments-card']}>
+          <h2 className={styles['comment-section-comments-head']}>Comments</h2>
+          <div className={styles['comment-section-comments-card']} id={styles['comment-section-comments-card-1']}>
             <div className={styles['comment-section-comments-card-meta']}>
               <div className={styles['comment-section-comments-card-author']}>
-                <img src='https://www.thelegendofheroes.com/tocs3/sp/img/chara/bust/laura.png' alt='comments-avatar' />
+                <img src='/images/single-story/User01_Blue.svg' alt='comments-avatar' />
                 <p>Firstname Lastname</p>
+                <div className={styles['comment-section-comments-card-author-date-mobile']}>
+                  <p>Firstname Lastname</p>
+                  <div className={styles['comment-section-comments-card-date-mobile']}>Posted June 30th, 2021</div>
+                </div>
               </div>
               <div className={styles['comment-section-comments-card-date']}>Posted June 30th, 2021</div>
             </div>
             <div className={styles['comment-section-comments-card-message']}>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore aperiam necessitatibus eos magni quis cumque libero autem
-              ratione, excepturi nostrum assumenda neque tenetur animi quibusdam reprehenderit repudiandae accusamus, accusantium tempora
-              doloremque praesentium. Magni nobis recusandae maiores voluptatibus quo quis nemo ipsam cumque incidunt mollitia in
-              praesentium, animi et culpa excepturi consectetur
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo, pulvinar suspendisse id blandit. Tellus nisl quis cras dolor
+              dui sem. Euismod tempus dictum nunc nunc euismod. Consectetur id porttitor sit elementum justo, quis mauris. Diam id interdum
+              habitant faucibus. Vivamus dolor habitant tincidunt tortor orci, consequat.
             </div>
           </div>
 
-          <div className={styles['comment-section-comments-card']}>
+          <div className={styles['comment-section-comments-card']} id={styles['comment-section-comments-card-2']}>
             <div className={styles['comment-section-comments-card-meta']}>
               <div className={styles['comment-section-comments-card-author']}>
-                <img src='https://www.thelegendofheroes.com/tocs3/sp/img/chara/bust/laura.png' alt='comments-avatar' />
+                <img src='/images/single-story/User01_Pink.svg' alt='comments-avatar' />
                 <p>Firstname Lastname</p>
+                <div className={styles['comment-section-comments-card-author-date-mobile']}>
+                  <p>Firstname Lastname</p>
+                  <div className={styles['comment-section-comments-card-date-mobile']}>Posted June 30th, 2021</div>
+                </div>
               </div>
               <div className={styles['comment-section-comments-card-date']}>Posted June 30th, 2021</div>
             </div>
             <div className={styles['comment-section-comments-card-message']}>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore aperiam necessitatibus eos magni quis cumque libero autem
-              ratione, excepturi nostrum assumenda neque tenetur animi quibusdam reprehenderit repudiandae accusamus, accusantium tempora
-              doloremque praesentium. Magni nobis recusandae maiores voluptatibus quo quis nemo ipsam cumque incidunt mollitia in
-              praesentium, animi et culpa excepturi consectetur
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo, pulvinar suspendisse id blandit. Tellus nisl quis cras dolor
+              dui sem. Euismod tempus dictum nunc nunc euismod. Consectetur id porttitor sit elementum justo, quis mauris. Diam id interdum
+              habitant faucibus. Vivamus dolor habitant tincidunt tortor orci, consequat.
+            </div>
+          </div>
+
+          <div className={styles['comment-section-comments-card']} id={styles['comment-section-comments-card-3']}>
+            <div className={styles['comment-section-comments-card-meta']}>
+              <div className={styles['comment-section-comments-card-author']}>
+                <img src='/images/single-story/User01_Orange.svg' alt='comments-avatar' />
+                <p>Firstname Lastname</p>
+                <div className={styles['comment-section-comments-card-author-date-mobile']}>
+                  <p>Firstname Lastname</p>
+                  <div className={styles['comment-section-comments-card-date-mobile']}>Posted June 30th, 2021</div>
+                </div>
+              </div>
+              <div className={styles['comment-section-comments-card-date']}>Posted June 30th, 2021</div>
+            </div>
+            <div className={styles['comment-section-comments-card-message']}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo, pulvinar suspendisse id blandit. Tellus nisl quis cras dolor
+              dui sem. Euismod tempus dictum nunc nunc euismod. Consectetur id porttitor sit elementum justo, quis mauris. Diam id interdum
+              habitant faucibus. Vivamus dolor habitant tincidunt tortor orci, consequat.
             </div>
           </div>
         </div>

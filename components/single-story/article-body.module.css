@@ -1,17 +1,27 @@
 .article-container {
-  padding: 73px 311px 0;
+  max-width: 744px;
+  margin: auto;
+  margin-top: 73px;
 }
 
 .article-head-title {
   font-family: Roobert;
   font-size: 50px;
-  line-height: 62.5px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 63px;
+  letter-spacing: 0em;
+  text-align: left;
   margin-bottom: 30px;
 }
 .article-sub-title {
   font-family: Life;
   font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 45px;
+  letter-spacing: -0.015em;
+  text-align: left;
   margin-bottom: 57px;
   color: #747474;
 }
@@ -42,18 +52,28 @@
   width: 76px;
   height: 76px;
   border-radius: 50%;
-  border: black solid 3px;
+  border: aquamarine solid 3px;
 }
 .article-author-identity {
   width: 362px;
 }
 #article-author-name {
+  font-family: Roobert;
   font-size: 22px;
-  line-height: 26.4px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
   margin: 0;
 }
 #article-author-date {
+  font-family: Roobert;
   font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
   margin: 0;
   color: #747474;
 }
@@ -64,5 +84,184 @@
 }
 
 .article-body-article {
+  font-family: Life;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
   margin-bottom: 124px;
+}
+
+.article-author-social-media img {
+  margin: 8px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+#socmed-block-fb:hover {
+  content: url('/images/homepage/fb_icon_yellow.svg');
+}
+
+#socmed-block-ln:hover {
+  content: url('/images/homepage/linkedin_icon_yellow.svg');
+}
+
+#socmed-block-tw:hover {
+  content: url('/images/homepage/twitter_icon_yellow.svg');
+}
+
+#socmed-block-ig:hover {
+  content: url('/images/homepage/ig_icon_yellow.svg');
+}
+
+@media screen and (max-width: 768px) {
+  .article-container {
+    max-width: 688px;
+    margin: auto;
+    margin-top: 64px;
+  }
+  .article-head-title {
+    font-family: Roobert;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .article-sub-title {
+    font-family: Life;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.015em;
+    text-align: left;
+    margin-top: 35px;
+    margin-bottom: 72px;
+  }
+  .article-main-image {
+    margin-bottom: 93px;
+  }
+  .article-main-image > img {
+    height: 259px;
+  }
+  .article-main-image > span {
+    font-family: Roobert;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 12px;
+  }
+  .article-author-social-media img {
+    width: 36px;
+    height: 36px;
+  }
+  .article-author-identity {
+    max-width: 351px;
+    padding-left: 13px;
+  }
+  #article-author-name {
+    font-family: Roobert;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  #article-author-date {
+    font-family: Roobert;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .article-body-article {
+    font-family: Life;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 88px;
+    padding-right: 88px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .article-container {
+    max-width: 320px;
+  }
+  .article-head-title {
+    font-family: Roobert;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 32px;
+  }
+  .article-sub-title {
+    font-family: Life;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: -0.015em;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .article-main-image {
+    margin-bottom: 48px;
+  }
+  .article-main-image > img {
+    height: 120px;
+  }
+  .article-main-image > span {
+    font-family: Roobert;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .article-author-container {
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+  .article-author-avatar {
+    width: 56px;
+    height: 56px;
+  }
+  .article-author-identity {
+    max-width: 231px;
+    padding-left: 0;
+    margin-left: 11px;
+  }
+
+  .article-author-social-media {
+    display: none;
+  }
+  .article-body-article {
+    padding: 0;
+    font-family: Life;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 32px;
+  }
 }

@@ -5,6 +5,7 @@ import { COLORS } from '../constants';
 import Img from '../image';
 import Link from 'next/link';
 import utilStyles from '../../styles/utils.module.css';
+import { DateTime } from 'luxon';
 
 const OtherStories = ({ wordPressPosts }) => {
   let colors = [COLORS.yellow, COLORS.teal, COLORS.blue, COLORS.pink, COLORS.orange];
@@ -15,7 +16,7 @@ const OtherStories = ({ wordPressPosts }) => {
         if (index < 3) {
           let colorStyle = { '--shadow-color': colors[index % colors.length] };
           return (
-            <div className={storyCardStyles.card} style={colorStyle} key={node.slug}>
+            <div className={`${storyCardStyles.card} ${styles['related-stories-card']}`} style={colorStyle} key={node.slug}>
               <div className={storyCardStyles.meta}>
                 <div className={storyCardStyles.photo}>
                   <Img layout='fill' className={storyCardStyles.img} src={node.featuredImage.node.sourceUrl} />
@@ -28,7 +29,7 @@ const OtherStories = ({ wordPressPosts }) => {
                   </Link>
                 </div>
                 <small className={`${utilStyles.lightText} ${storyCardStyles.date}`}>
-                  Date: <Date dateString={node.date} />
+                  Date: {DateTime.fromISO(node.date).toLocaleString({ month: 'long', day: 'numeric', year: 'numeric' })}
                 </small>
                 <div className={storyCardStyles.hr}></div>
                 <div className={storyCardStyles.author}>
@@ -41,6 +42,9 @@ const OtherStories = ({ wordPressPosts }) => {
           );
         }
       })}
+      <div className={styles['other-stories-more']}>
+        <button className={styles['other-stories-more-button']}>More</button>
+      </div>
     </div>
   );
 };

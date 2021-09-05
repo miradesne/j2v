@@ -1,0 +1,61 @@
+.logo-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-image {
+  height: auto;
+  max-width: 66px;
+  border: none;
+  vertical-align: middle;
+  display: inline-block;
+  z-index: 5;
+}
+.header-image:hover {
+  cursor: pointer;
+}
+.logo-text {
+  position: absolute;
+  font-family: Roobert;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #2e4ea1;
+  transition: all 0.3s ease-out;
+}
+#journey {
+  transform: rotateZ(-90deg);
+  opacity: 0;
+  left: -8px;
+}
+#to-valley {
+  opacity: 0;
+  top: 11px;
+}
+.logo-container:hover > #journey {
+  opacity: 1;
+  transform: translateX(-17px) rotateZ(-90deg);
+}
+.logo-container:hover > #to-valley {
+  opacity: 1;
+  transform: translateY(-14px);
+}
+
+@media screen and (max-width: 999px) {
+  .header-image {
+    max-width: 66px;
+    height: auto;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-image {
+    max-width: 34px;
+    height: auto;
+  }
+}
