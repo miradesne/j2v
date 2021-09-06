@@ -1,11 +1,23 @@
+import { useState } from 'react';
 import styles from './homepage.module.css';
 import Link from 'next/link';
+import Head from 'next/head';
 import { Element } from 'react-scroll';
 import WelcomeToOurCommunity from './subscribe-welcome';
 
 export default function Homepage() {
+  const [subscribeValue, setSubscribeValue] = useState('');
+
+  const onSubscribeInput = event => {
+    const inputValue = event.target.value;
+    setSubscribeValue(inputValue);
+  };
+
   return (
     <>
+      <Head>
+        <title>Journey To Valley</title>
+      </Head>
       <div id={styles['home-journey-to-valley-row']} className={styles['home-flex']}>
         <h1>Journey to Valley</h1>
       </div>
@@ -145,7 +157,9 @@ export default function Homepage() {
                   id={styles['subscribe-to-our-latest-stories-input']}
                   type='email'
                   name='subscriber-email' //Feel free to change the 'name' value to store the email data for the backend
-                  placeholder={'Enter your email here...'}></input>
+                  placeholder={'Enter your email here...'}
+                  value={subscribeValue}
+                  onChange={onSubscribeInput}></input>
                 <button id={styles['subscribe-to-our-latest-stories-subscribe']}>Subscribe</button>
               </div>
             </div>
@@ -161,48 +175,4 @@ export default function Homepage() {
       </Element>
     </>
   );
-}
-
-{
-  /* <div id={styles['home-our-goals-row']} className={styles['home-flex']}>
-        <div id={styles['home-our-goals-grid-container']}>
-          <div id={styles['home-our-goals-grid']}>
-            <div id={styles['home-our-goals-inside']}>
-              <div id={styles['home-our-goals-flexbox']}>
-                <h1>
-                  Our
-                  <br /> Goals
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id={styles['home-checklist-grid-container']}>
-          <div className={styles['div-list']}>
-            <div className={styles['checkbox-list']}>
-              <img src='images/homepage/Icon-check-mark.webp' alt='' />
-            </div>
-            <div className={styles['text-list']}>
-              To share real <span className={styles['orange-text-color']}>career</span> experience.
-            </div>
-          </div>
-          <div className={styles['div-list']}>
-            <div className={styles['checkbox-list']}>
-              <img src='images/homepage/Icon-check-mark.webp' alt='' />
-            </div>
-            <div className={styles['text-list']}>
-              To provide creative <span className={styles['pink-text-color']}>inspiration</span>.
-            </div>
-          </div>
-          <div className={styles['div-list-last']}>
-            <div className={styles['checkbox-list']}>
-              <img src='images/homepage/Icon-check-mark.webp' alt='' />
-            </div>
-            <div className={styles['text-list']}>
-              To <span className={styles['yellow-text-color']}>help</span> each other.
-            </div>
-          </div>
-        </div>
-      </div> */
 }

@@ -7,7 +7,9 @@ import OurTeams from '../components/our-teams';
 const about = () => {
   return (
     <Layout home={false}>
-      <Head>About</Head>
+      <Head>
+        <title>About</title>
+      </Head>
       <LearnMoreAboutUs />
       <OurTeams />
     </Layout>
