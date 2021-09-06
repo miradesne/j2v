@@ -1,0 +1,106 @@
+.our-teams-container {
+  margin-left: 311px;
+  margin-right: 311px;
+}
+.our-teams-container > h2 {
+  font-family: Roobert;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: auto;
+}
+
+.our-teams-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.our-teams-member {
+  display: flex;
+  flex-direction: column;
+}
+
+.our-teams-avatar {
+  width: 266px;
+  height: 266px;
+  border-radius: 50%;
+}
+
+#our-team-member-1 {
+  border: 5px solid #f39dc0;
+}
+#our-team-member-2 {
+  border: 5px solid #3fc9c8;
+}
+#our-team-member-3 {
+  border: 5px solid #ffb929;
+}
+#our-team-member-4 {
+  border: 5px solid #2e4ea1;
+}
+
+.our-teams-name {
+  font-family: Roobert;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.our-teams-job-role {
+  font-family: Roobert;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.our-teams-company {
+  font-family: Roobert;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.our-teams-back-button > button {
+  all: unset;
+}
+
+.our-teams-back-button-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 300px;
+}
+.our-teams-back-button {
+  height: 54px;
+  width: 178px;
+  border-radius: 40px;
+  border: 3px solid black;
+  font-family: Roobert;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+.our-teams-back-button:hover {
+  cursor: pointer;
+  border-color: #ffb929;
+  background-color: #ffb929;
+}
