@@ -9,7 +9,9 @@ import StoryCardList from '../components/story-card-list';
 export default function StoriesList({ localPosts, wordPressPosts: { edges } }) {
   return (
     <Layout home={false}>
-      <Head>Stories List</Head>
+      <Head>
+        <title>Stories List</title>
+      </Head>
       <div className={`${utilStyles.latestStoriesBackground} ${storyListPageStyles.latestStoriesBackground}`}></div>
       <StoryCardList posts={edges} />
     </Layout>
