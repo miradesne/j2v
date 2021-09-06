@@ -1,0 +1,100 @@
+.lmau-container {
+  margin-left: 311px;
+  margin-right: 311px;
+  width: 746px;
+}
+
+.lmau-title {
+  font-family: Roobert;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 52px;
+}
+
+.lmau-image {
+  width: 744px;
+  height: 266px;
+  border-radius: 22px;
+  margin-bottom: 0;
+}
+
+.lmau-image-caption {
+  font-family: Roobert;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  color: #747474;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 61px;
+}
+
+.lmau-author-container {
+  display: flex;
+  margin-bottom: 83px;
+}
+
+.lmau-author-avatar {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  border: 2px lightgreen solid;
+  margin-right: 20px;
+}
+.lmau-author-identity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#lmau-author-name {
+  font-family: Roobert;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 10px;
+}
+#lmau-author-date {
+  font-family: Roobert;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #747474;
+  margin: 0;
+}
+
+.lmau-author-social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 200px;
+}
+.lmau-author-social-media img {
+  margin-left: 16px;
+  width: 36px;
+}
+
+.lmau-description-container > p {
+  font-family: Life;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}

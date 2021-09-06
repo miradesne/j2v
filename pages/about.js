@@ -8,9 +8,8 @@ const about = () => {
   return (
     <Layout home={false}>
       <Head>About</Head>
-      <LearnMoreAboutUs></LearnMoreAboutUs>
-      <OurTeams></OurTeams>
-      <h1>tes</h1>
+      <LearnMoreAboutUs />
+      <OurTeams />
     </Layout>
   );
 };
