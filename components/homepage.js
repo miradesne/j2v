@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './homepage.module.css';
 import Link from 'next/link';
 import Head from 'next/head';
@@ -7,11 +7,35 @@ import WelcomeToOurCommunity from './subscribe-welcome';
 
 export default function Homepage() {
   const [subscribeValue, setSubscribeValue] = useState('');
+  const [subscribeError, setSubscribeError] = useState('');
+  const [emailIsValid, setEmailIsValid] = useState(true);
+  const [submitIsValid, setSubmitIsValid] = useState(true);
+  const [shakeStyle, setShakeStyle] = useState(null);
 
-  const onSubscribeInput = event => {
+  const onSubscribeInputHandler = event => {
+    setEmailIsValid(true);
     const inputValue = event.target.value;
+    const regexEmail = /^\S+@\S+\.\S+$/.test(inputValue);
+    setSubscribeError('');
+    if (!regexEmail && inputValue) {
+      setSubscribeError('Ooops... Please input a valid email address');
+      setEmailIsValid(false);
+    }
     setSubscribeValue(inputValue);
   };
+
+  const onSubmitFormHandler = event => {
+    event.preventDefault();
+    setSubmitIsValid(true);
+    if (!emailIsValid || !subscribeValue) {
+      setSubmitIsValid(false);
+      setShakeStyle(`${styles['shaking']}`);
+    }
+    document.querySelector('.subscribe-to-our-latest-stories-input').focus();
+  };
+  useEffect(() => {
+    setShakeStyle(null);
+  }, [subscribeValue]);
 
   return (
     <>
@@ -153,15 +177,22 @@ export default function Homepage() {
                 <p>We are passionate to share real and valuable personal experiences. Unsubscribe anytime. It's free!</p>
               </div>
               <div id={styles['subscribe-to-our-latest-stories-input-container']}>
-                <input
-                  id={styles['subscribe-to-our-latest-stories-input']}
-                  type='email'
-                  name='subscriber-email' //Feel free to change the 'name' value to store the email data for the backend
-                  placeholder={'Enter your email here...'}
-                  value={subscribeValue}
-                  onChange={onSubscribeInput}></input>
-                <button id={styles['subscribe-to-our-latest-stories-subscribe']}>Subscribe</button>
+                <form className={shakeStyle} onSubmit={onSubmitFormHandler} style={{ display: 'flex', alignItems: 'center' }}>
+                  <input
+                    id={styles['subscribe-to-our-latest-stories-input']}
+                    style={{ color: emailIsValid ? 'black' : 'red' }}
+                    name='subscriber-email' //Feel free to change the 'name' value to store the email data for the backend
+                    placeholder={'Enter your email here...'}
+                    value={subscribeValue}
+                    onChange={onSubscribeInputHandler}
+                    className='subscribe-to-our-latest-stories-input'
+                  />
+                  <button type='submit' id={styles['subscribe-to-our-latest-stories-subscribe']}>
+                    Subscribe
+                  </button>
+                </form>
               </div>
+              <span id={`${styles['subscribe-error-message']}`}>{subscribeError}</span>
             </div>
           </div>
           <div id={styles['subscribe-to-our-latest-stories-bottom-ornaments']}>
