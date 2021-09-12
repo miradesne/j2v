@@ -69,8 +69,8 @@ function WordPressPosts({ posts }) {
                 <hr className={storyCardStyles.hr}></hr>
                 {/* <div className={storyCardStyles.hr}></div> */}
                 <div className={storyCardStyles.author}>
-                  <div className={storyCardStyles.name}>By Firstname Lastname</div>
-                  <div className={`${storyCardStyles.position} ${utilStyles.lightText}`}>Software Engineer @ Google</div>
+                  <div className={storyCardStyles.name}>By { node.j2vPostsCustomFields.customAuthorFirstname ?? 'Firstname' } { node.j2vPostsCustomFields.customAuthorLastname ?? 'Lastname' }</div>
+                  <div className={`${storyCardStyles.position} ${utilStyles.lightText}`}>{ node.j2vPostsCustomFields.customAuthorOccupation ?? 'Software Engineer' } @ { node.j2vPostsCustomFields.customAuthorCompany ?? 'Google' }</div>
                 </div>
               </div>
               <div className={storyCardStyles.cardPadding}></div>
