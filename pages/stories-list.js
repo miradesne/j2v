@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Layout from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
-import { getAllPosts } from '../lib/posts-graphql';
+import { getAllPostsForHome } from '../lib/posts-graphql';
 import utilStyles from '../styles/utils.module.css';
 import storyListPageStyles from '../components/story-list-page.module.css';
 import StoryCardList from '../components/story-card-list';
@@ -20,7 +20,7 @@ export default function StoriesList({ localPosts, wordPressPosts: { edges } }) {
 
 export async function getStaticProps() {
   const localPosts = getSortedPostsData();
-  let wordPressPosts = await getAllPosts();
+  let wordPressPosts = await getAllPostsForHome();
   // if (!wordPressPosts) wordPressPosts = { edges: [] };
   return {
     props: {

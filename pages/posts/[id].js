@@ -47,7 +47,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const data = await getPostAndMorePosts(params.id);
-  const wordPressPosts = await getAllPosts();
+  const wordPressPosts = await getAllPostsForHome();
   const postData = data.post;
   return {
     props: {
