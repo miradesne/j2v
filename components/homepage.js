@@ -69,7 +69,7 @@ export default function Homepage({ posts }) {
             <img className={styles['home-our-latest-stories-card-quote']} src='/images/homepage/pink-quote.svg'></img>
             <div className={styles['home-our-latest-stories-card-content']}>
               <div className={styles['home-our-latest-stories-card-story-quote']}>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et."
+                "{posts[0].node.j2vPostsCustomFields.customQuote}"
               </div>
               <hr />
               <div className={styles['home-our-latest-stories-card-author']}>
@@ -106,7 +106,7 @@ export default function Homepage({ posts }) {
             <img className={styles['home-our-latest-stories-card-quote']} src='/images/homepage/teal-quote.svg'></img>
             <div className={styles['home-our-latest-stories-card-content']}>
               <div className={styles['home-our-latest-stories-card-story-quote']}>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et."
+                "{posts[1].node.j2vPostsCustomFields.customQuote}"
               </div>
               <hr />
               <div className={styles['home-our-latest-stories-card-author']}>
@@ -133,7 +133,7 @@ export default function Homepage({ posts }) {
             <img className={styles['home-our-latest-stories-card-quote']} src='/images/homepage/orange-quote.svg'></img>
             <div className={styles['home-our-latest-stories-card-content']}>
               <div className={styles['home-our-latest-stories-card-story-quote']}>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et."
+                "{posts[2].node.j2vPostsCustomFields.customQuote}"
               </div>
               <hr />
               <div className={styles['home-our-latest-stories-card-author']}>
