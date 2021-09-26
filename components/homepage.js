@@ -5,7 +5,7 @@ import Head from 'next/head';
 import { Element } from 'react-scroll';
 import WelcomeToOurCommunity from './subscribe-welcome';
 
-export default function Homepage() {
+export default function Homepage({ posts }) {
   const [subscribeValue, setSubscribeValue] = useState('');
   const [subscribeError, setSubscribeError] = useState('');
   const [emailIsValid, setEmailIsValid] = useState(true);
@@ -68,9 +68,7 @@ export default function Homepage() {
           <div className={styles['home-our-latest-stories-card-container']} id={styles['home-our-latest-stories-card-container-pink']}>
             <img className={styles['home-our-latest-stories-card-quote']} src='/images/homepage/pink-quote.svg'></img>
             <div className={styles['home-our-latest-stories-card-content']}>
-              <div className={styles['home-our-latest-stories-card-story-quote']}>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et."
-              </div>
+              <div className={styles['home-our-latest-stories-card-story-quote']}>"{posts[0].node.j2vPostsCustomFields.customQuote}"</div>
               <hr />
               <div className={styles['home-our-latest-stories-card-author']}>
                 <img
@@ -79,11 +77,13 @@ export default function Homepage() {
                   src='images/Ellipse-52.webp'></img>
                 <div className={styles['home-our-latest-stories-card-author-identity']}>
                   <div className={styles['home-our-latest-stories-card-author-identity-name']}>
-                    <strong>Firstname Lastname</strong>
+                    <strong>
+                      {posts[0].node.j2vPostsCustomFields.customAuthorFirstname} {posts[0].node.j2vPostsCustomFields.customAuthorLastname}
+                    </strong>
                   </div>
                   <div className={styles['home-our-latest-stories-card-author-identity-job']}>
-                    <span>Software Engineer</span>
-                    <span> @ Facebook</span>
+                    <span>{posts[0].node.j2vPostsCustomFields.customAuthorOccupation}</span>
+                    <span> @ {posts[0].node.j2vPostsCustomFields.customAuthorCompany}</span>
                   </div>
                 </div>
               </div>
@@ -105,9 +105,7 @@ export default function Homepage() {
           <div className={styles['home-our-latest-stories-card-container']} id={styles['home-our-latest-stories-card-container-teal']}>
             <img className={styles['home-our-latest-stories-card-quote']} src='/images/homepage/teal-quote.svg'></img>
             <div className={styles['home-our-latest-stories-card-content']}>
-              <div className={styles['home-our-latest-stories-card-story-quote']}>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et."
-              </div>
+              <div className={styles['home-our-latest-stories-card-story-quote']}>"{posts[1].node.j2vPostsCustomFields.customQuote}"</div>
               <hr />
               <div className={styles['home-our-latest-stories-card-author']}>
                 <img
@@ -116,11 +114,13 @@ export default function Homepage() {
                   src='images/Ellipse-52.webp'></img>
                 <div className={styles['home-our-latest-stories-card-author-identity']}>
                   <div className={styles['home-our-latest-stories-card-author-identity-name']}>
-                    <strong>Firstname Lastname</strong>
+                    <strong>
+                      {posts[1].node.j2vPostsCustomFields.customAuthorFirstname} {posts[1].node.j2vPostsCustomFields.customAuthorLastname}
+                    </strong>
                   </div>
                   <div className={styles['home-our-latest-stories-card-author-identity-job']}>
-                    <span>Software Engineer</span>
-                    <span> @ Facebook</span>
+                    <span>{posts[1].node.j2vPostsCustomFields.customAuthorOccupation}</span>
+                    <span> @ {posts[1].node.j2vPostsCustomFields.customAuthorCompany}</span>
                   </div>
                 </div>
               </div>
@@ -132,9 +132,7 @@ export default function Homepage() {
           <div className={styles['home-our-latest-stories-card-container']} id={styles['home-our-latest-stories-card-container-orange']}>
             <img className={styles['home-our-latest-stories-card-quote']} src='/images/homepage/orange-quote.svg'></img>
             <div className={styles['home-our-latest-stories-card-content']}>
-              <div className={styles['home-our-latest-stories-card-story-quote']}>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et."
-              </div>
+              <div className={styles['home-our-latest-stories-card-story-quote']}>"{posts[2].node.j2vPostsCustomFields.customQuote}"</div>
               <hr />
               <div className={styles['home-our-latest-stories-card-author']}>
                 <img
@@ -143,11 +141,13 @@ export default function Homepage() {
                   src='images/Ellipse-52.webp'></img>
                 <div className={styles['home-our-latest-stories-card-author-identity']}>
                   <div className={styles['home-our-latest-stories-card-author-identity-name']}>
-                    <strong>Firstname Lastname</strong>
+                    <strong>
+                      {posts[2].node.j2vPostsCustomFields.customAuthorFirstname} {posts[2].node.j2vPostsCustomFields.customAuthorLastname}
+                    </strong>
                   </div>
                   <div className={styles['home-our-latest-stories-card-author-identity-job']}>
-                    <span>Software Engineer</span>
-                    <span> @ Facebook</span>
+                    <span>{posts[2].node.j2vPostsCustomFields.customAuthorOccupation}</span>
+                    <span> @ {posts[2].node.j2vPostsCustomFields.customAuthorCompany}</span>
                   </div>
                 </div>
               </div>
@@ -206,4 +206,14 @@ export default function Homepage() {
       </Element>
     </>
   );
+}
+
+export async function getStaticProps() {
+  let wordPressPosts = await getAllPostsForHome();
+  // if (!wordPressPosts) wordPressPosts = { edges: [] };
+  return {
+    props: {
+      wordPressPosts,
+    },
+  };
 }
