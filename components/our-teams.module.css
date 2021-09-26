@@ -104,3 +104,97 @@
   border-color: #ffb929;
   background-color: #ffb929;
 }
+
+@media screen and (max-width: 768px) {
+  .our-teams-container {
+    margin: auto;
+    max-width: 688px;
+  }
+
+  .our-teams-container > h2 {
+    font-family: Roobert;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150px;
+    letter-spacing: 0em;
+    text-align: center;
+    min-height: 48px;
+  }
+
+  .our-teams-row {
+    margin: auto 88px;
+    margin-bottom: 78px;
+  }
+  .our-teams-member {
+    align-items: center;
+    max-width: 178px;
+  }
+
+  .our-teams-avatar {
+    max-width: 178px;
+    height: auto;
+  }
+
+  .our-teams-name {
+    font-family: Roobert;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .our-teams-job-role,
+  .our-teams-company {
+    font-family: Roobert;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .our-teams-back-button-container {
+    margin-top: 74px;
+    margin-bottom: 200px;
+  }
+
+  .our-teams-back-button {
+    font-family: Roobert;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 157px;
+    height: 48px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .our-teams-container > h2 {
+    font-family: Roobert;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .our-teams-row {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .our-teams-member {
+    margin-bottom: 40px;
+  }
+
+  .our-teams-avatar {
+    margin-bottom: 10px;
+  }
+}

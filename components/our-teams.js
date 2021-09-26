@@ -10,7 +10,7 @@ const ourTeams = () => {
         <div className={styles['our-teams-member']}>
           <img
             className={styles['our-teams-avatar']}
-            src='https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-friends-matt-leblanc.jpg'
+            src='https://i.guim.co.uk/img/media/513976d50736695ee8bd5014175e007f9980531f/0_289_2980_1788/master/2980.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=77863ec7b2622437668af3ff9ecd7ae6'
             alt='avatar'
             id={styles['our-team-member-1']}
           />
