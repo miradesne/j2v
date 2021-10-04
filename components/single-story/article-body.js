@@ -35,22 +35,8 @@ const ArticleBody = ({ postData }) => {
           <img src='/images/homepage/share_icon.svg'></img>
         </div>
       </div>
-
-      {/* <div dangerouslySetInnerHTML={{ __html: postData.content }} /> */}
-      <div className={styles['article-body-article']}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iusto mollitia eos! Neque repellendus iusto earum blanditiis veniam
-        quos expedita aliquam! Cum, minima veniam. Itaque perferendis beatae nulla libero placeat, repellat rerum tempora, numquam earum
-        laboriosam quo exercitationem modi nesciunt ipsum odit corporis maiores ducimus? Pariatur totam laudantium quidem tempore odio
-        accusantium cumque quae eaque illum eligendi saepe explicabo, et voluptates nisi quisquam! Quasi expedita voluptatem odio maxime
-        tempore esse, fugit magni eligendi ducimus? Asperiores nam consequatur accusantium sit unde soluta voluptatibus dignissimos rem
-        maxime numquam officia aperiam quia distinctio sed possimus velit iusto quibusdam, totam quasi! Molestias reprehenderit dolore
-        cumque dignissimos similique voluptatibus perferendis error neque quisquam fugiat delectus, quaerat veniam quod adipisci esse
-        asperiores sunt, rerum nostrum aliquid a magnam corporis tempora. Animi, omnis dolores eligendi ipsa autem assumenda perferendis
-        accusamus laborum tenetur similique enim magnam culpa aliquid facere sequi id reprehenderit quia voluptatem iste voluptate aut!
-        Ipsam quasi cum, totam quisquam unde quia, soluta dolor doloribus illum dolores quam repellat perferendis laboriosam vero, atque
-        corporis mollitia accusantium amet aliquam corrupti quibusdam molestiae. Dolores molestiae qui ipsam neque perferendis facilis
-        cupiditate modi alias cumque, in illo quasi impedit consequuntur non tempore a quae.
-      </div>
+      {       // TODO: decide if we should use rendered or raw content. If raw, fix the null value returned by next js
+        <div className={styles['article-body-article']} dangerouslySetInnerHTML={{ __html: postData.content }} /> }
     </article>
   );
 };
