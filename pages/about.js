@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 import LearnMoreAboutUs from '../components/learn-more-about-us';
 import OurTeams from '../components/our-teams';
 
-const about = () => {
+const About = () => {
   return (
     <Layout home={false}>
       <Head>
@@ -16,4 +16,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

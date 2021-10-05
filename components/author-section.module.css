@@ -1,0 +1,114 @@
+.author-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 81px;
+}
+
+.author-avatar-identity {
+  display: flex;
+  align-items: center;
+}
+.author-avatar {
+  width: 76px;
+  height: auto;
+  border-radius: 50%;
+  border: aquamarine solid 3px;
+  margin-right: 20px;
+}
+
+#author-name {
+  font-family: Roobert;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 7px;
+}
+#author-date {
+  font-family: Roobert;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+  color: #747474;
+}
+
+.author-social-media img {
+  margin: 8px;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+}
+
+#socmed-block-fb:hover {
+  content: url('/images/homepage/fb_icon_yellow.svg');
+}
+
+#socmed-block-ln:hover {
+  content: url('/images/homepage/linkedin_icon_yellow.svg');
+}
+
+#socmed-block-tw:hover {
+  content: url('/images/homepage/twitter_icon_yellow.svg');
+}
+
+#socmed-block-ig:hover {
+  content: url('/images/homepage/ig_icon_yellow.svg');
+}
+
+@media screen and (max-width: 768px) {
+  #author-name {
+    font-family: Roobert;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  #author-date {
+    font-family: Roobert;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .author-social-media {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .author-avatar {
+    width: 56px;
+    height: auto;
+  }
+  #author-name {
+    font-family: Roobert;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  #author-date {
+    font-family: Roobert;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}

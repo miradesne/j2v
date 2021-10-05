@@ -1,0 +1,167 @@
+.privacy-policy-container {
+  margin: auto;
+  margin-top: 68px;
+  max-width: 742px;
+}
+.privacy-policy-intro {
+  margin-bottom: 128px;
+}
+
+.privacy-policy-title {
+  font-family: Roobert;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.privacy-policy-subtitle {
+  font-family: Life;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: -0.015em;
+  text-align: left;
+  max-width: 720px;
+  color: #747474;
+  margin-bottom: 47px;
+}
+
+.privacy-policy-section-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 66px;
+}
+.privacy-policy-section-image > img {
+  max-width: 744px;
+  height: auto;
+  border-radius: 22px;
+}
+.privacy-policy-section-image > span {
+  font-family: Roobert;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #747474;
+}
+
+.article-author-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 81px;
+}
+.article-author-avatar {
+  width: 76px;
+  height: auto;
+  border-radius: 50%;
+  border: aquamarine solid 3px;
+}
+.article-author-identity {
+  width: 362px;
+}
+#article-author-name {
+  font-family: Roobert;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+}
+#article-author-date {
+  font-family: Roobert;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+  color: #747474;
+}
+
+.article-author-social-media > img {
+  margin-right: 16px;
+  width: 36px;
+}
+
+.article-author-social-media img {
+  margin: 8px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+#socmed-block-fb:hover {
+  content: url('/images/homepage/fb_icon_yellow.svg');
+}
+
+#socmed-block-ln:hover {
+  content: url('/images/homepage/linkedin_icon_yellow.svg');
+}
+
+#socmed-block-tw:hover {
+  content: url('/images/homepage/twitter_icon_yellow.svg');
+}
+
+#socmed-block-ig:hover {
+  content: url('/images/homepage/ig_icon_yellow.svg');
+}
+.privacy-policy-content {
+  margin-bottom: 300px;
+}
+.privacy-policy-copywriting {
+  font-family: Life;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  margin-bottom: 178px;
+}
+
+.home-button {
+  display: flex;
+  justify-content: center;
+}
+.home-button button {
+  width: 178px;
+  min-height: 58px;
+  text-decoration: none;
+  border: 3px solid black;
+  border-radius: 40px;
+  background: transparent;
+  font-family: Roobert;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  transition: 0.1s all ease-out;
+}
+.home-button button:hover {
+  cursor: pointer;
+  background-color: #ffb929;
+  border-color: #ffb929;
+}
+
+@media screen and (max-width: 768px) {
+  .privacy-policy-container {
+    max-width: 688px;
+    margin: auto 40px;
+  }
+
+  .privacy-policy-section-image > img {
+    max-width: 688px;
+    width: 100%;
+  }
+}

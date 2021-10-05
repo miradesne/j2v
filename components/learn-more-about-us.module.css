@@ -37,58 +37,6 @@
   margin-bottom: 61px;
 }
 
-.lmau-author-container {
-  display: flex;
-  margin-bottom: 83px;
-}
-
-.lmau-author-avatar {
-  width: 76px;
-  height: 76px;
-  border-radius: 50%;
-  border: 2px lightgreen solid;
-  margin-right: 20px;
-}
-.lmau-author-identity {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#lmau-author-name {
-  font-family: Roobert;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 26px;
-  letter-spacing: 0em;
-  text-align: left;
-  margin: 0;
-  margin-bottom: 10px;
-}
-#lmau-author-date {
-  font-family: Roobert;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #747474;
-  margin: 0;
-}
-
-.lmau-author-social-media {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 200px;
-}
-.lmau-author-social-media img {
-  margin-left: 16px;
-  width: 36px;
-}
-
 .lmau-description-container > p {
   font-family: Life;
   font-size: 24px;
@@ -133,30 +81,6 @@
     margin-bottom: 92px;
   }
 
-  #lmau-author-name {
-    font-family: Roobert;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-  }
-
-  #lmau-author-date {
-    font-family: Roobert;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0em;
-    text-align: left;
-  }
-
-  .lmau-author-social-media {
-    margin: 0;
-    margin-left: auto;
-  }
-
   .lmau-description-container {
     margin-bottom: 140px;
   }
@@ -195,42 +119,6 @@
     text-align: center;
     min-height: 22px;
     margin-bottom: 50px;
-  }
-
-  .lmau-author-container {
-    margin-bottom: 40px;
-  }
-
-  .lmau-author-avatar {
-    max-width: 56px;
-    max-height: 56px;
-    margin-right: 10px;
-    border-width: 3px;
-  }
-
-  .lmau-author-social-media {
-    display: none;
-  }
-
-  #lmau-author-name {
-    font-family: Roobert;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 18px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-bottom: 5px;
-  }
-
-  #lmau-author-date {
-    font-family: Roobert;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 15px;
-    letter-spacing: 0em;
-    text-align: left;
   }
 
   .lmau-description-container > p {

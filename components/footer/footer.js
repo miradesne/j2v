@@ -50,7 +50,7 @@ export default function Footer({ children, home }) {
               )}
             </div>
             <div className={`${styles.item} ${styles['privacy-policy']}`}>
-              <Link href='/'>
+              <Link href='/privacy-policy'>
                 <a>Privacy policy and term </a>
               </Link>
             </div>
