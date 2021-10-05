@@ -118,6 +118,9 @@
   margin-bottom: 300px;
 }
 .privacy-policy-copywriting {
+  margin-bottom: 178px;
+}
+.privacy-policy-copywriting p {
   font-family: Life;
   font-size: 24px;
   font-style: normal;
@@ -125,7 +128,6 @@
   line-height: 34px;
   letter-spacing: 0.01em;
   text-align: left;
-  margin-bottom: 178px;
 }
 
 .home-button {
@@ -159,9 +161,96 @@
     max-width: 688px;
     margin: auto 40px;
   }
+  .privacy-policy-intro {
+    margin-bottom: 85px;
+  }
+  .privacy-policy-subtitle {
+    font-family: Life;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.015em;
+    text-align: left;
+    margin-top: 35px;
+    margin-bottom: 72px;
+  }
 
   .privacy-policy-section-image > img {
     max-width: 688px;
     width: 100%;
+  }
+  .privacy-policy-copywriting {
+    max-width: 590px;
+    padding-left: 95px;
+    margin-bottom: 100px;
+  }
+  .privacy-policy-copywriting p {
+    font-family: Life;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .home-button button {
+    max-width: 157px;
+    min-height: 48px;
+    font-family: Roobert;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .privacy-policy-content {
+    margin-bottom: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .privacy-policy-container {
+    max-width: 688px;
+    margin: auto 20px;
+  }
+  .privacy-policy-intro {
+    margin-bottom: 40px;
+  }
+  .privacy-policy-title {
+    font-family: Roobert;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .privacy-policy-subtitle {
+    font-family: Life;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: -0.015em;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .privacy-policy-section-image > span {
+    font-family: Roobert;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .privacy-policy-section-image {
+    margin-bottom: 40px;
+  }
+  .privacy-policy-copywriting {
+    padding-left: 0;
   }
 }

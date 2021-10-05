@@ -49,8 +49,7 @@ Theme Name: Custom Home
   justify-content: center;
 }
 #home-world img {
-  width: 582px;
-  /* min-width: 480px; */
+  max-width: 582px;
   object-fit: contain;
 }
 
@@ -121,7 +120,7 @@ Theme Name: Custom Home
   flex-direction: column;
   align-items: flex-start;
   padding-left: 7%;
-  margin-bottom: 72px;
+  margin-bottom: 48px;
 }
 #subscribe-to-our-latest-stories-sub-title h2 {
   font-family: Roobert;
@@ -133,7 +132,7 @@ Theme Name: Custom Home
 
 #subscribe-to-our-latest-stories-paragraph-input-container {
   width: 100%;
-  padding-left: 190px;
+  padding-left: 9rem;
   padding-right: 192px;
 }
 
@@ -154,18 +153,14 @@ Theme Name: Custom Home
   padding: 0;
 }
 
-#subscribe-to-our-latest-stories-input-container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
 #subscribe-to-our-latest-stories-input {
   border: 3px solid black;
   border-right: none;
   border-top-left-radius: 22px;
   border-bottom-left-radius: 22px;
   box-sizing: border-box;
-  width: 553px;
+  max-width: 553px;
+  width: 100%;
   font-size: 24px;
   line-height: 36px;
   letter-spacing: 0;
@@ -361,13 +356,14 @@ Theme Name: Custom Home
   user-select: none; /* Non-prefixed version, currently
                                 supported by Chrome, Edge, Opera and Firefox */
 }
+
 /* ====================Card==================== */
 .home-our-latest-stories-card-container {
   background-color: white;
   border-radius: 22px;
   width: 80%;
   max-width: 480px;
-  height: 389px;
+  min-height: 389px;
   position: relative;
 }
 #home-our-latest-stories-card-container-pink {
@@ -388,7 +384,6 @@ Theme Name: Custom Home
 .home-our-latest-stories-card-content {
   width: 100%;
   max-width: 480px;
-  height: 100%;
   padding: 75px 45px 0 51px;
 }
 
@@ -405,11 +400,14 @@ Theme Name: Custom Home
   line-height: 36px;
   letter-spacing: -0.015em;
   text-align: left;
+  height: 115px;
+  text-overflow: ellipsis;
+  overflow: scroll;
 }
 
 .home-our-latest-stories-card-author {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 #home-our-latest-stories-card-author-avatar-pink {
@@ -519,6 +517,10 @@ Theme Name: Custom Home
   }
   #home-world {
     margin-bottom: 0;
+  }
+  #home-world img {
+    max-width: 483px;
+    object-fit: contain;
   }
 
   .home-our-latest-stories-card-story-quote {
@@ -637,18 +639,16 @@ Theme Name: Custom Home
 
   #subscribe-to-our-latest-stories {
     width: 100%;
-    height: 593px;
+    height: auto;
     margin-bottom: 200px;
     background-color: #fcdba2;
     background-image: unset;
     background-position: unset;
     background-repeat: unset;
     background-size: unset;
+    padding-bottom: 143px;
   }
 
-  #subscribe-to-our-latest-stories-input-container {
-    display: flex;
-  }
   #subscribe-to-our-latest-stories-paragraph-input-container {
     margin: 0;
     padding-left: 41px;
@@ -657,6 +657,7 @@ Theme Name: Custom Home
   #subscribe-to-our-latest-stories-sub-title {
     margin-top: 84px;
     padding-left: 5vw;
+    padding-right: 5vw;
   }
   #subscribe-to-our-latest-stories-input {
     width: 100%;
@@ -795,7 +796,7 @@ Theme Name: Custom Home
   }
 
   #subscribe-to-our-latest-stories {
-    height: 693px;
+    padding-bottom: 270px;
   }
   #subscribe-to-our-latest-stories-sub-title {
     margin-top: 62px;
@@ -824,6 +825,11 @@ Theme Name: Custom Home
     flex-direction: column;
     align-items: center;
   }
+  #subscribe-to-our-latest-stories-input-container > form {
+    display: flex;
+    flex-direction: column;
+  }
+
   #subscribe-to-our-latest-stories-input {
     width: 100%;
     height: 56px;
