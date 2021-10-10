@@ -15,9 +15,9 @@ Theme Name: Custom Home
   justify-content: center;
   text-align: center;
 }
-#home-journey-to-valley-row {
+/* #home-journey-to-valley-row {
   min-height: 220px;
-}
+} */
 #home-journey-to-valley-row h1 {
   margin: 0px;
   color: #000000;
@@ -501,6 +501,70 @@ Theme Name: Custom Home
   color: white;
 }
 
+@media screen and (max-width: 1024px) {
+  #home-our-latest-stories-first {
+    flex-flow: column-reverse;
+    align-items: center;
+  }
+  #home-our-latest-stories-second {
+    flex-flow: column;
+    align-items: center;
+  }
+  .home-our-latest-stories #home-our-latest-stories-big-text {
+    width: 480px;
+    margin-left: 0px;
+    align-self: flex-end;
+    justify-content: flex-end;
+    font-size: 148px;
+    line-height: 110%;
+  }
+  .home-our-latest-stories .home-our-latest-stories-column {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 133px;
+  }
+  .home-our-latest-stories-column-left {
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+  }
+  .home-our-latest-stories-column-right {
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .home-our-latest-stories-column .home-our-latest-stories-block {
+    width: 68%;
+    min-width: 340px;
+    min-height: 296px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .home-our-latest-stories-quote {
+    font-size: 20px;
+    line-height: 125%;
+  }
+  .home-our-latest-stories-name {
+    font-size: 18px;
+    line-height: 100%;
+  }
+  .home-our-latest-stories-job {
+    font-size: 14px;
+    line-height: 100%;
+  }
+
+  #home-our-latest-stories-more-row {
+    margin-top: 118px;
+    margin-bottom: 200px;
+  }
+  #home-our-latest-stories-more {
+    margin: 0;
+    width: 157px;
+    height: 48px;
+  }
+}
 /* Tablet version, 481px - 768px */
 @media screen and (max-width: 768px) {
   #home-journey-to-valley-row {
@@ -572,69 +636,6 @@ Theme Name: Custom Home
     font-size: 28px;
     line-height: 34px;
     margin-left: 26px;
-  }
-
-  #home-our-latest-stories-first {
-    flex-flow: column-reverse;
-    align-items: center;
-  }
-  #home-our-latest-stories-second {
-    flex-flow: column;
-    align-items: center;
-  }
-  .home-our-latest-stories #home-our-latest-stories-big-text {
-    width: 480px;
-    margin-left: 0px;
-    align-self: flex-end;
-    justify-content: flex-end;
-    font-size: 148px;
-    line-height: 110%;
-  }
-  .home-our-latest-stories .home-our-latest-stories-column {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-top: 133px;
-  }
-  .home-our-latest-stories-column-left {
-    align-items: center;
-    justify-content: center;
-    margin-right: 0px;
-  }
-  .home-our-latest-stories-column-right {
-    align-items: center;
-    justify-content: center;
-    margin-left: 0px;
-  }
-  .home-our-latest-stories-column .home-our-latest-stories-block {
-    width: 68%;
-    min-width: 340px;
-    min-height: 296px;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .home-our-latest-stories-quote {
-    font-size: 20px;
-    line-height: 125%;
-  }
-  .home-our-latest-stories-name {
-    font-size: 18px;
-    line-height: 100%;
-  }
-  .home-our-latest-stories-job {
-    font-size: 14px;
-    line-height: 100%;
-  }
-
-  #home-our-latest-stories-more-row {
-    margin-top: 118px;
-    margin-bottom: 200px;
-  }
-  #home-our-latest-stories-more {
-    margin: 0;
-    width: 157px;
-    height: 48px;
   }
 
   #subscribe-to-our-latest-stories {

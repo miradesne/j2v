@@ -56,7 +56,7 @@ const ourTeams = () => {
       </div>
       <div className={styles['our-teams-back-button-container']}>
         <Link href='/'>
-          <button className={styles['our-teams-back-button']}>Back</button>
+          <button className={styles['our-teams-back-button']}>Home</button>
         </Link>
       </div>
     </section>

@@ -6,6 +6,9 @@
   transform: translateY(300px);
   opacity: 0;
   transition: ease 0.6s all;
+  background-color: #fffbf1;
+  border-radius: 50%;
+  z-index: 2;
 }
 .gototop:hover {
   cursor: pointer;
