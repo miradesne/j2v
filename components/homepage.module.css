@@ -402,7 +402,7 @@ Theme Name: Custom Home
   text-align: left;
   height: 115px;
   text-overflow: ellipsis;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .home-our-latest-stories-card-author {
