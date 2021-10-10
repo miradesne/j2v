@@ -1,6 +1,7 @@
 .our-teams-container {
-  margin-left: 311px;
-  margin-right: 311px;
+  width: 100%;
+  max-width: 744px;
+  margin: auto;
 }
 .our-teams-container > h2 {
   font-family: Roobert;
@@ -108,7 +109,9 @@
 @media screen and (max-width: 768px) {
   .our-teams-container {
     margin: auto;
-    max-width: 688px;
+    padding: 0 40px;
+    max-width: 591px;
+    width: 100%;
   }
 
   .our-teams-container > h2 {
@@ -122,10 +125,6 @@
     min-height: 48px;
   }
 
-  .our-teams-row {
-    margin: auto 88px;
-    margin-bottom: 78px;
-  }
   .our-teams-member {
     align-items: center;
     max-width: 178px;

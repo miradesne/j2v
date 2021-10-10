@@ -1,7 +1,7 @@
 .lmau-container {
-  margin-left: 311px;
-  margin-right: 311px;
-  width: 746px;
+  width: 100%;
+  max-width: 744px;
+  margin: auto;
 }
 
 .lmau-title {
@@ -16,8 +16,8 @@
 }
 
 .lmau-image {
-  width: 744px;
-  height: 266px;
+  max-width: 744px;
+  height: auto;
   border-radius: 22px;
   margin-bottom: 0;
 }
@@ -50,6 +50,8 @@
 @media screen and (max-width: 768px) {
   .lmau-container {
     margin: auto;
+    padding: 0 40px;
+    width: 100%;
     max-width: 688px;
   }
 
@@ -64,8 +66,8 @@
     margin-top: 64px;
     margin-bottom: 52px;
   }
-
   .lmau-image {
+    width: 100%;
     max-width: 688px;
   }
 
@@ -85,13 +87,14 @@
     margin-bottom: 140px;
   }
   .lmau-description-container > p {
-    margin: auto 88px;
+    margin: auto 0 0 95px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .lmau-container {
     max-width: 320px;
+    padding: 0;
   }
 
   .lmau-title {
@@ -119,6 +122,10 @@
     text-align: center;
     min-height: 22px;
     margin-bottom: 50px;
+  }
+  .lmau-description-container {
+    margin-top: 40px;
+    margin-bottom: 140px;
   }
 
   .lmau-description-container > p {

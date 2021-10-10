@@ -62,6 +62,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .author-container {
+    width: 100%;
+    max-width: 688px;
+  }
   #author-name {
     font-family: Roobert;
     font-size: 18px;
